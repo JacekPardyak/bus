@@ -1,0 +1,42 @@
+library(gifski)
+
+circle <- function(amp, freq, phase) amp*1i^(freq*seq(0,600,l=260)+phase)
+limits=3.5*c(-1,1)
+li <- seq(0,1,l=500)[-1]
+
+save_gif(lapply(1:length(li), function(ai){
+  
+  arg = li[ai]*5;
+  l = sin(pi*(2*arg-.5))+1
+  
+  z<-circle(1,1,0) + 
+    circle(l, ceiling(arg), -8*arg) + 
+    circle(l/2-1,ceiling(((-arg+2.5)%%5)-5), -4*arg) 
+  
+  par(mar=c(0,0,0,0), bg="#04010F")
+  
+  hue=(arg+(Re(z/10)))%%1
+  
+  plot(z, 
+       col=hsv(hue, 0.65,1), 
+       pch=20, lwd=1, cex=1.5, type="p", axes=F, 
+       xlim=limits, ylim=limits)
+  
+  z2 <- c(z[-1], z[1])
+  segments(Re(z), Im(z), Re(z2), Im(z2), 
+           col=hsv(hue, 0.65,1,.1), pch=20, lwd=1)
+  
+}), delay = 1/40, width=800, height=800, gif_file = "./mystery/mystery.gif")
+
+
+# -----------------------------------------
+library(tidyverse)
+circle <- function(amp, freq, phase) amp*1i^(freq*seq(0, 100, l=260)+phase)
+z <- circle(1,1,0) 
+z %>% 
+  as_tibble() %>%
+  mutate(x = Re(value)) %>%
+  mutate(y = Im(value)) %>% ggplot() +
+  aes(x = x, y = y) +
+  geom_point()
+    
