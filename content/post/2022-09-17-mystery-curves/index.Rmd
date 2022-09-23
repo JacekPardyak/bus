@@ -48,17 +48,6 @@ save_gif(lapply(1:length(li), function(ai){
 }), delay = 1/40, width=800, height=800, gif_file = "mystery.gif")
 
 
-# -----------------------------------------
-#library(tidyverse)
-#circle <- function(amp, freq, phase) amp*1i^(freq*seq(0, 100, l=260)+phase)
-#z <- circle(1,1,0) 
-#z %>% 
-#  as_tibble() %>%
-#  mutate(x = Re(value)) %>%
-#  mutate(y = Im(value)) %>% ggplot() +
-#  aes(x = x, y = y) +
-#  geom_point()
-
 ```
 
 

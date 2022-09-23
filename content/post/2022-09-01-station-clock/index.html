@@ -1,0 +1,151 @@
+---
+title: "Station clock"
+author: "JG Pardyak"
+date: 2020-12-01T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+
+<div id="the-question" class="section level1">
+<h1>The question</h1>
+<p>Can we animate a station clock in R?</p>
+<pre class="r"><code>library(inkscaper)
+library(tidyverse)
+## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+## ✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+## ✔ tibble  3.1.8     ✔ dplyr   1.0.9
+## ✔ tidyr   1.2.0     ✔ stringr 1.4.1
+## ✔ readr   2.1.2     ✔ forcats 0.5.1
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+library(sf)
+## Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE
+img = &quot;https://upload.wikimedia.org/wikipedia/commons/e/ef/Station_Clock.svg&quot; %&gt;%
+  inx_svg2png() %&gt;%
+  png::readPNG(native = TRUE) %&gt;%
+  grid::rasterGrob(interpolate=TRUE)
+ggplot() +
+  annotation_custom(img, xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Trying to import file as is we get:</p>
+<pre class="r"><code>&#39;https://upload.wikimedia.org/wikipedia/commons/e/ef/Station_Clock.svg&#39; %&gt;% inx_svg2sf() %&gt;%
+  ggplot() +
+  geom_sf()
+## Reading layer `entities&#39; from data source 
+##   `C:\Users\jacek\AppData\Local\Temp\RtmpAv2itl\inx_3698133e5ea5.dxf&#39; 
+##   using driver `DXF&#39;
+## Simple feature collection with 86 features and 6 fields
+## Geometry type: LINESTRING
+## Dimension:     XY
+## Bounding box:  xmin: 24.11265 ymin: 17.48536 xmax: 166.6203 ymax: 201.084
+## CRS:           NA</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>When converting objects to path before import we get:</p>
+<pre class="r"><code>&#39;https://upload.wikimedia.org/wikipedia/commons/e/ef/Station_Clock.svg&#39; %&gt;% 
+  inx_actions(&quot;select-all;object-to-path&quot;, ext = &quot;.svg&quot;) %&gt;%
+  inx_svg2sf() %&gt;%
+  ggplot() +
+  geom_sf()
+## Reading layer `entities&#39; from data source 
+##   `C:\Users\jacek\AppData\Local\Temp\RtmpAv2itl\inx_3698538f2557.dxf&#39; 
+##   using driver `DXF&#39;
+## Simple feature collection with 276 features and 6 fields
+## Geometry type: LINESTRING
+## Dimension:     XY
+## Bounding box:  xmin: 0 ymin: 6e-04 xmax: 211.666 ymax: 211.667
+## CRS:           NA</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>logo &lt;- &#39;https://upload.wikimedia.org/wikipedia/commons/e/ef/Station_Clock.svg&#39; %&gt;% 
+  inx_actions(&quot;select-all;object-to-path&quot;, ext = &quot;.svg&quot;) %&gt;%
+  inx_svg2sf()
+## Reading layer `entities&#39; from data source 
+##   `C:\Users\jacek\AppData\Local\Temp\RtmpAv2itl\inx_369862626580.dxf&#39; 
+##   using driver `DXF&#39;
+## Simple feature collection with 276 features and 6 fields
+## Geometry type: LINESTRING
+## Dimension:     XY
+## Bounding box:  xmin: 0 ymin: 6e-04 xmax: 211.666 ymax: 211.667
+## CRS:           NA
+logo %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>clock_face &lt;- logo %&gt;% slice(1:129) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first()
+clock_face %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>clock_scale &lt;- logo %&gt;% slice(130:193) %&gt;% st_union()
+clock_scale %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<pre class="r"><code>hour_hand &lt;- logo %&gt;% slice(194:198) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first()
+hour_hand %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-3.png" width="672" /></p>
+<pre class="r"><code>minute_hand &lt;- logo %&gt;% slice(199:203) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first()
+minute_hand %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-4.png" width="672" /></p>
+<pre class="r"><code>second_hand &lt;- logo %&gt;% slice(204:276) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first() %&gt;% nth(1)
+second_hand %&gt;% ggplot() +
+  geom_sf()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-5.png" width="672" /></p>
+<pre class="r"><code>clock_face &lt;- logo %&gt;% slice(1:129) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first() %&gt;% first()
+centre &lt;- st_centroid(clock_face) %&gt;% st_coordinates() %&gt;% as.vector()
+clock_face &lt;- clock_face - centre
+clock_face %&gt;% ggplot() +
+  geom_sf()
+clock_scale &lt;- logo %&gt;% slice(130:193) %&gt;% st_union()
+clock_scale &lt;- clock_scale - centre
+clock_scale %&gt;% ggplot() +
+  geom_sf()
+hour_hand &lt;- logo %&gt;% slice(194:198) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first() %&gt;% first()
+hour_hand &lt;- hour_hand - centre
+hour_hand %&gt;% ggplot() +
+  geom_sf()
+minute_hand &lt;- logo %&gt;% slice(199:203) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first() %&gt;% first()
+minute_hand &lt;- minute_hand - centre
+minute_hand %&gt;% ggplot() +
+  geom_sf()
+second_hand &lt;- logo %&gt;% slice(204:276) %&gt;% st_union() %&gt;% st_polygonize() %&gt;%
+  first() %&gt;% first()
+second_hand &lt;- second_hand - centre
+second_hand %&gt;% ggplot() +
+  geom_sf()
+rot = function(a) matrix(c(cos(2*pi*a), sin(2*pi*a), -sin(2*pi*a), cos(2*pi*a)), 2, 2)
+
+collection = st_sfc() %&gt;% st_sf()
+for (i in c(1:60)) {
+  second_hand &lt;- second_hand * rot(1/60)
+  tmp &lt;- clock_face %&gt;% st_sfc() %&gt;% st_sf() %&gt;% mutate(colour = &#39;black&#39;) %&gt;%
+    bind_rows(clock_scale %&gt;% st_sfc() %&gt;% st_sf() %&gt;% mutate(colour = &#39;black&#39;)) %&gt;%
+    bind_rows(hour_hand %&gt;% st_sfc() %&gt;% st_sf() %&gt;% mutate(colour = &#39;black&#39;)) %&gt;%
+    bind_rows(minute_hand %&gt;% st_sfc() %&gt;% st_sf() %&gt;% mutate(colour = &#39;black&#39;))  %&gt;%
+    bind_rows(second_hand %&gt;% st_sfc() %&gt;% st_sf() %&gt;% mutate(colour = &#39;black&#39;))  %&gt;%
+    mutate(facet = i)
+  collection &lt;- collection %&gt;% bind_rows(tmp)
+}
+
+
+library(gganimate)
+anim &lt;- collection %&gt;% ggplot() +
+  geom_sf() +
+#  aes(fill = colour) +
+  transition_time(facet) +
+#  scale_color_identity() +
+#  scale_fill_identity() +
+  theme_void()
+anim
+
+animate(anim, renderer = gifski_renderer(&quot;Station_Clock.gif&quot;), fps = 1, duration = 60)</code></pre>
+<p><img src="Station_Clock.gif" /></p>
+</div>
