@@ -1,0 +1,57 @@
+---
+title: seaborn
+author: JG Pardyak
+date: '2022-10-07'
+slug: seaborn
+categories: []
+tags: []
+---
+
+
+
+<pre class="r"><code>Sys.setenv(RETICULATE_MINICONDA_PATH = &#39;C:/Users/Public/r-miniconda&#39;)</code></pre>
+<pre class="python"><code>import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, &quot;-m&quot;, &quot;pip&quot;, &quot;install&quot;, package])
+
+install(&#39;seaborn&#39;)</code></pre>
+<pre class="python"><code># library &amp; dataset
+#import seaborn as sns
+#import matplotlib.pyplot as plt
+#df = sns.load_dataset(&#39;iris&#39;)
+
+# use the function regplot to make a scatterplot
+#sns.regplot(x=df[&quot;sepal_length&quot;], y=df[&quot;sepal_width&quot;])
+#plt.savefig(&#39;saving-a-seaborn-plot-as-pdf-file.svg&#39;)</code></pre>
+<pre class="python"><code>from string import ascii_letters
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt 
+
+sns.set_theme(style=&quot;white&quot;)
+
+# Generate a large random dataset
+rs = np.random.RandomState(33)
+d = pd.DataFrame(data=rs.normal(size=(100, 26)),
+                 columns=list(ascii_letters[26:]))
+
+# Compute the correlation matrix
+corr = d.corr()
+
+# Generate a mask for the upper triangle
+mask = np.triu(np.ones_like(corr, dtype=bool))
+
+# Set up the matplotlib figure
+f, ax = plt.subplots(figsize=(11, 9))
+
+# Generate a custom diverging colormap
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+
+# Draw the heatmap with the mask and correct aspect ratio
+sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+            square=True, linewidths=.5, cbar_kws={&quot;shrink&quot;: .5})
+f.savefig(&#39;saving-a-seaborn-plot-as-pdf-file.svg&#39;)</code></pre>
+<p><img src="saving-a-seaborn-plot-as-pdf-file.svg" /></p>

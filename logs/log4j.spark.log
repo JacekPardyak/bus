@@ -9713,3 +9713,14 @@ java.io.FileNotFoundException: Jar C:\Users\Jacek%20Pardyak\AppData\Local\R\win-
 22/09/27 13:15:08 INFO DAGScheduler: Job 215 is finished. Cancelling potential speculative or zombie tasks for this job
 22/09/27 13:15:08 INFO TaskSchedulerImpl: Killing all running tasks in stage 341: Stage finished
 22/09/27 13:15:08 INFO DAGScheduler: Job 215 finished: collect at utils.scala:26, took 0.026006 s
+22/09/27 13:27:09 INFO SparkContext: Invoking stop() from shutdown hook
+22/09/27 13:27:09 INFO SparkUI: Stopped Spark web UI at http://127.0.0.1:4040
+22/09/27 13:27:09 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/09/27 13:27:09 INFO MemoryStore: MemoryStore cleared
+22/09/27 13:27:09 INFO BlockManager: BlockManager stopped
+22/09/27 13:27:09 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/09/27 13:27:09 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/09/27 13:27:09 INFO SparkContext: Successfully stopped SparkContext
+22/09/27 13:27:09 INFO ShutdownHookManager: Shutdown hook called
+22/09/27 13:27:09 INFO ShutdownHookManager: Deleting directory C:\Users\Jacek Pardyak\AppData\Local\Temp\spark-4d2732ec-b822-4765-af49-43a9d51a9562
+22/09/27 13:27:09 INFO ShutdownHookManager: Deleting directory C:\Users\Jacek Pardyak\AppData\Local\spark\spark-3.1.1-bin-hadoop2.7\tmp\local\spark-a232c009-4b97-40a9-af8a-0843c5659e24
