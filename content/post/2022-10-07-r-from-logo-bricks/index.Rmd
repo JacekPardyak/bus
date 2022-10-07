@@ -1,3 +1,21 @@
+---
+title: R from Logo bricks
+author: 'JG Pardyak'
+date: '2022-10-07'
+slug: r-from-logo-bricks
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# The question
+
+How to build an R logo from Lego bricks?
+
+```{r}
 library(tidyverse)
 library(brickr)
 
@@ -7,9 +25,11 @@ library(brickr)
   grid::rasterGrob(interpolate=TRUE) %>% {
     ggplot() +
       annotation_custom(., xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)}
+```
 
+```{r}
 'https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg' %>%
-  inx_svg2png() %>%
+  inkscaper::inx_svg2png() %>%
   png::readPNG(native = FALSE) %>% 
   image_to_mosaic(
     img_size = c(72, 56), # width = 724; height = 561
@@ -17,5 +37,5 @@ library(brickr)
     #color_palette = 'bw'
     ) %>% 
   build_mosaic()
-  
+```
 

@@ -1,0 +1,43 @@
+---
+title: R from Logo bricks
+author: 'JG Pardyak'
+date: '2022-10-07'
+slug: r-from-logo-bricks
+categories: []
+tags: []
+---
+
+
+
+<div id="the-question" class="section level1">
+<h1>The question</h1>
+<p>How to build an R logo from Lego bricks?</p>
+<pre class="r"><code>library(tidyverse)
+## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+## ✔ ggplot2 3.3.6      ✔ purrr   0.3.5 
+## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+## ✔ readr   2.1.2      ✔ forcats 0.5.2 
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+library(brickr)
+
+&#39;https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg&#39; %&gt;%
+  inkscaper::inx_svg2png() %&gt;%
+  png::readPNG(native = TRUE) %&gt;%
+  grid::rasterGrob(interpolate=TRUE) %&gt;% {
+    ggplot() +
+      annotation_custom(., xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)}</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>&#39;https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg&#39; %&gt;%
+  inkscaper::inx_svg2png() %&gt;%
+  png::readPNG(native = FALSE) %&gt;% 
+  image_to_mosaic(
+    img_size = c(72, 56), # width = 724; height = 561
+    use_bricks = c(&#39;1x1&#39;),
+    #color_palette = &#39;bw&#39;
+    ) %&gt;% 
+  build_mosaic()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
