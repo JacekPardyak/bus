@@ -15,6 +15,10 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 How to build an R logo from Lego bricks?
 
+```{r, eval=FALSE}
+remotes::install_github("ryantimpe/brickr")
+```
+
 ```{r}
 library(tidyverse)
 library(brickr)
@@ -37,5 +41,9 @@ library(brickr)
     #color_palette = 'bw'
     ) %>% 
   build_mosaic()
+```
+
+```{r}
+ggsave("R_mosaic.svg")
 ```
 

@@ -1,0 +1,196 @@
+---
+title: R vfrs
+author: JG Pardyak
+date: '2022-10-01'
+slug: r-from-logdo-bricks
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# The question
+
+How to build an R logo from Lego bricks?
+
+```{r, eval=FALSE}
+#install.packages('dagitty')
+#install.packages('ggdag')
+install.packages('DiagrammeR')
+
+```
+
+
+```{r}
+library(dagitty)
+library(ggdag)
+library(ggplot2)
+
+dag <- dagitty("dag{y <- z -> x}")
+tidy_dagitty(dag)
+```
+
+
+```{r}
+dagify(y ~ 'Willem-Alexander' + 'Máxima',
+       x ~~ z) %>% 
+    node_canonical() %>% 
+    ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +
+      geom_dag_point() +
+      geom_dag_edges_diagonal() +
+      geom_dag_text() +
+      theme_dag()
+```
+
+```{r}
+
+,
+
+```
+
+```{r}
+OranjeNassau_dag <- dagify(willem ~ cholesterol,
+       cholesterol ~ smoking + weight,
+       smoking ~ catharina,
+       weight ~ catharina,
+       labels = c("willem" = 'Willem-Alexander', 
+                  "smoking" = "Smoking",
+                  "cholesterol" = "Cholesterol",
+                  "catharina" = 'Catharina-Amalia',
+                  "weight" = "Weight"),
+       latent = "catharina",
+       exposure = "smoking",
+       outcome = "willem") %>% 
+  tidy_dagitty()
+
+OranjeNassau_dag
+```
+
+```{r}
+OranjeNassau_dag %>%
+  ggdag_status(text = FALSE, use_labels = "label") +
+  guides(color = "none") +  # Turn off legend
+  theme_dag()
+
+Sophie	
+ 
+ 
+Willem III	
+ 
+Emma	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Willem	
+ 
+Wilhelmina	
+ 
+Hendrik	
+ 
+ 
+ 
+ 
+Maurits	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Alexander	
+ 
+ 
+ 
+Juliana	
+ 
+Bernhard
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+```
+
+
+```{r}
+dagify(
+  juliana_bernhard ~~ juliana,
+  beatrix ~~ juliana_bernhard,
+  beatrix_claus ~~ beatrix,
+  willem ~ beatrix_claus,
+  willem_maxima ~ willem,
+  amelia ~ willem_maxima,
+  alexia ~ willem_maxima,
+  ariane ~ willem_maxima, 
+  exposure = "willem",
+  outcome = "willem_maxima",
+  labels = c('juliana' = 'Juliana',
+             'juliana_bernhard' = 'Juliana + Bernhard \n \u00AB 1966 \u00BB',
+             'beatrix' = 'Beatrix',
+             'beatrix_claus' = 'Beatrix + Claus \n \u00AB 1966 \u00BB',
+             'willem' = 'Willem-Alexander',
+             'willem_maxima' = 'Willem-Alexander + Máxima \n \u00AB 2001 \u00BB',
+             'amelia' = 'Catharina-Amalia',
+             'alexia' = 'Alexia',
+             'ariane' = 'Ariane')
+) %>% 
+  tidy_dagitty() %>%
+  ggdag(text = FALSE, use_labels = "label") +
+  theme_dag()
+
+
+```
+```{r}
+ggsave("Oranje-Nassau.svg")
+```
