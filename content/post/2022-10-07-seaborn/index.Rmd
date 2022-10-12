@@ -1,11 +1,18 @@
 ---
-title: seaborn
+title: Python's Seaborn in RStudio
 author: JG Pardyak
 date: '2022-10-07'
 slug: seaborn
 categories: []
 tags: []
 ---
+
+
+# The question
+
+How to use Python's Seaborn in RStudio?
+
+# Preparations
 
 ```{r, eval = FALSE}
 Sys.setenv(RETICULATE_MINICONDA_PATH = 'C:/Users/Public/r-miniconda')
@@ -22,20 +29,9 @@ install('seaborn')
 
 ```
 
-```{python}
-# library & dataset
-#import seaborn as sns
-#import matplotlib.pyplot as plt
-#df = sns.load_dataset('iris')
+# Plot and save heatmap
 
-# use the function regplot to make a scatterplot
-#sns.regplot(x=df["sepal_length"], y=df["sepal_width"])
-#plt.savefig('saving-a-seaborn-plot-as-pdf-file.svg')
-```
-
-
-
-```{python, eval = FALSE}
+```{python, eval = F}
 from string import ascii_letters
 import numpy as np
 import pandas as pd
@@ -64,7 +60,37 @@ cmap = sns.diverging_palette(230, 20, as_cmap=True)
 # Draw the heatmap with the mask and correct aspect ratio
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
             square=True, linewidths=.5, cbar_kws={"shrink": .5})
-f.savefig('saving-a-seaborn-plot-as-pdf-file.svg')
+f.savefig('sns.heatmap.svg')
 ```
 
-![](saving-a-seaborn-plot-as-pdf-file.svg)
+![](sns.heatmap.svg)
+
+# Plot and save kdeplot
+
+```{python, eval = F}
+data = np.random.multivariate_normal([0, 0], [[5, 2], [2, 2]], size=2000)
+data = pd.DataFrame(data, columns=['x', 'y'])
+ 
+f, ax = plt.subplots(figsize=(11, 9))
+for col in 'xy':
+    sns.kdeplot(data[col], fill=True)
+f.savefig('sns.kdeplot.svg')    
+```
+
+![](sns.kdeplot.svg)
+
+# Plot and save swarmplot
+
+
+```{python, eval = F}
+import seaborn as sns
+sns.set_theme(style="whitegrid", palette="muted")
+
+# Load the penguins dataset
+df = sns.load_dataset("penguins")
+
+f, ax = plt.subplots(figsize=(11, 9))
+sns.swarmplot(data=df, x="body_mass_g", y="sex", hue="species")
+f.savefig('sns.swarmplot.svg')    
+```
+![](sns.swarmplot.svg)
