@@ -1,6 +1,11 @@
-graph Monarchie_in_Nederland {rankdir=TB;
-          subgraph cluster1 {
-              node [shape = box, fontname = Helvetica]
+graph Monarchie_in_Nederland {
+  #rankdir=TB;
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+          subgraph cluster_0 {
+            node [shape = box, fontname = Helvetica]
+            
     'Carlo Maria Buonaparte' ; 'Maria Laetitia Ramolino' ;
     'Lodewijk I' ; 'Hortense de Beauharnais';
     'Lodewijk II' ; 'Charlotte Bonaparte' ;
@@ -8,7 +13,8 @@ graph Monarchie_in_Nederland {rankdir=TB;
 # Monarchen
    'Lodewijk I' [shape = box, fontname = Helvetica, style = filled, fillcolor = DeepSkyBlue]
    'Lodewijk II' [shape = box, fontname = Helvetica, style = filled, fillcolor = DeepSkyBlue]
-
+  # Title
+  'Huis Bonaparte' [shape = none, fontsize = 40]
   # node as circle
   node [shape = circle, fixedsize = true, width = 0.1, fontcolor = white,  fontsize = 1] // sets as circles
   11; 12; 13
@@ -17,8 +23,12 @@ graph Monarchie_in_Nederland {rankdir=TB;
    'Carlo Maria Buonaparte' -- 13  ; 'Maria Laetitia Ramolino' -- 13; 13 --  'Lodewijk I'
    'Lodewijk I'	-- 12     ; 'Hortense de Beauharnais' -- 12    ; 12 -- 'Lodewijk II' ;
    'Lodewijk II' -- 11    ; 'Charlotte Bonaparte' -- 11 ;
+   
+   'Huis Bonaparte' --  'Carlo Maria Buonaparte'  [style = 'invis'];
+   'Huis Bonaparte' --  'Maria Laetitia Ramolino' [style = 'invis'];
+  
   }
-          subgraph cluster2 {
+          subgraph cluster_1 {
 node [shape = box, fontname = Helvetica]
     'Willem V van Oranje-Nassau' ; 'Wilhelmina van Pruisen (1751-1820)';
     'Willem I' ; 'Wilhelmina van Pruisen (1774-1837)';
@@ -39,7 +49,8 @@ node [shape = box, fontname = Helvetica]
   Beatrix [shape = box, fontname = Helvetica, style = filled, fillcolor = orange]
   'Willem-Alexander' [shape = box, fontname = Helvetica, style = filled, fillcolor = orange]
   'Catharina-Amalia' [shape = box, fontname = Helvetica, style=dotted]
-
+  # Title
+  'Huis Oranje-Nassau' [shape = none, fontsize = 40]
   # node as circle
   node [shape = circle, fixedsize = true, width = 0.1, fontcolor = white,  fontsize = 1] // sets as circles
   1; 2; 3; 4; 5; 6
@@ -54,6 +65,19 @@ node [shape = box, fontname = Helvetica]
   Beatrix	-- 2     ; 'Claus van Amsberg' -- 2    ; 2 -- 'Willem-Alexander' ;
   'Máxima Zorreguieta' -- 1      ; 'Willem-Alexander' -- 1 ; 
   1 -- 'Catharina-Amalia' [style=dotted] ;
+  
+
+  'Huis Oranje-Nassau' --  'Willem V van Oranje-Nassau' [style = 'invis'];
+  'Huis Oranje-Nassau' --  'Wilhelmina van Pruisen (1751-1820)' [style = 'invis'];
   }
 
+'Monarchie in Nederland' --  'Huis Oranje-Nassau' [style = 'invis'];
+'Monarchie in Nederland' --  'Huis Bonaparte' [style = 'invis'];
+
+# Title
+  'Monarchie in Nederland' [shape = none, fontsize = 70]
+
+# Note
+  'note' [label = "De grafiek toont de Nederlandse vorsten tot 2022 \n en hun ouders. Catharina-Amalia is de troonopvolger.", shape = none]  
+  11 -- 'note' [style = 'invis'];
     }
