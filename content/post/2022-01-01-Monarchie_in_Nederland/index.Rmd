@@ -19,7 +19,14 @@ library(magrittr)
 library(DiagrammeR)
 library(DiagrammeRsvg)
 
-'Monarchie_in_Nederland.gv' %>%
+my.download.file <- function(url){
+  destfile = tempfile(fileext = ".gv")
+  download.file(url, destfile)
+  destfile
+}
+
+'https://raw.githubusercontent.com/JacekPardyak/r4fun/master/content/post/2022-01-01-Monarchie_in_Nederland/Monarchie_in_Nederland.gv' %>% 
+  my.download.file() %>%
   grViz() %>%
   export_svg() %>%
   writeLines('Monarchie_in_Nederland.svg')

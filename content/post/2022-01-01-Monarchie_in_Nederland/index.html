@@ -14,7 +14,14 @@ slug: Monarchie_in_Nederland
 library(DiagrammeR)
 library(DiagrammeRsvg)
 
-&#39;Monarchie_in_Nederland.gv&#39; %&gt;%
+my.download.file &lt;- function(url){
+  destfile = tempfile(fileext = &quot;.gv&quot;)
+  download.file(url, destfile)
+  destfile
+}
+
+&#39;https://raw.githubusercontent.com/JacekPardyak/r4fun/master/content/post/2022-01-01-Monarchie_in_Nederland/Monarchie_in_Nederland.gv&#39; %&gt;% 
+  my.download.file() %&gt;%
   grViz() %&gt;%
   export_svg() %&gt;%
   writeLines(&#39;Monarchie_in_Nederland.svg&#39;)</code></pre>
