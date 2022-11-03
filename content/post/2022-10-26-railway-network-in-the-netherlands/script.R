@@ -39,3 +39,14 @@ forceNetwork(Links = df_d3$links, Nodes = df_d3$nodes,
 radialNetwork(List = df_d3, fontSize = 10, opacity = 0.9)
 
 ?forceNetwork
+library(ggnetwork)
+ggplot(ggnetwork(graph), aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges() +
+  theme_blank()
+
+ggnetwork(graph) -> n
+
+ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges(color = "black") +
+  geom_nodelabel(aes(label = name), fontface = "bold") +
+  theme_blank()
