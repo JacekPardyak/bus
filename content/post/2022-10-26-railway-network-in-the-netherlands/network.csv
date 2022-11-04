@@ -175,13 +175,35 @@ De Vink,Voorschoten
 Leiden Centraal,De Vink
 Leiden Lammenschans,Leiden Centraal
 Leiden Centraal,Sassenheim
-
+Sassenheim,Nieuw-Vennep
 Nieuw-Vennep,Hoofddorp
 Voorhout,Leiden Centraal
 Hillegom,Voorhout
 Hillegom,Heemstede-Aerdenhout
 Haarlem,Heemstede-Aerdenhout
 
+# C4
+Schiphol,Hoofddorp
+Schiphol,Rotterdam Centraal
+Schiphol,Amsterdam Centraal
+Schiphol,Amsterdam Centraal
+Schiphol,Amsterdam Lelylaan
+Amsterdam Sloterdijk,Amsterdam Lelylaan
+Schiphol,Amsterdam Zuid
+Amsterdam Zuid,Amsterdam RAI
+Amsterdam RAI,Duivendrecht
+Duivendrecht,Amsterdam Amstel
+Amsterdam RAI,Amsterdam Bijlmer ArenA
+Duivendrecht,Amsterdam Bijlmer ArenA
+Amsterdam Bijlmer ArenA,AAmsterdam Holendrecht
+Amsterdam Holendrecht,Abcoude
+Abcoude,Breukelen
+Breukelen,Woerden
+Woerden,Vleuten
+Woerden,Bodegraven
+Woerden,Gouda Goverwelle
+Bodegraven,Bodegraven
+Vleuten,Vleuten
 
 # B5
 Den Haag Hollands Spoor,Den Haag Laan van NOI
@@ -194,24 +216,24 @@ Den Haag Ypenburg,Zoetermeer
 Naarden-Bussum,Naarden-Bussum
 
 Aalten,Aalten
-Abcoude,Abcoude
+
 
 
 Alphen aan den Rijn,Leiden Lammenschans
 Amersfoort Centraal,Amersfoort Centraal
 Amersfoort Schothorst,Amersfoort Schothorst
 Amersfoort Vathorst,Amersfoort Vathorst
-Amsterdam Amstel,Amsterdam Amstel
+
 Amsterdam Arena,Amsterdam Arena
-Amsterdam Bijlmer ArenA,Amsterdam Bijlmer ArenA
-
-Amsterdam Holendrecht,Amsterdam Holendrecht
-Amsterdam Lelylaan,Amsterdam Lelylaan
-
-Amsterdam RAI,Amsterdam RAI
 
 
-Amsterdam Zuid,Amsterdam Zuid
+
+
+
+
+
+
+
 Apeldoorn De Maten,Apeldoorn De Maten
 Apeldoorn Osseveld,Apeldoorn Osseveld
 Apeldoorn,Apeldoorn
@@ -236,7 +258,7 @@ Best,Best
 Bilthoven,Bilthoven
 Blerick,Blerick
 
-Bodegraven,Bodegraven
+
 
 Boskoop,Alphen aan den Rijn
 Boskoop Snijdelwijk,Boskoop
@@ -246,7 +268,7 @@ Boxmeer,Boxmeer
 Boxtel,Boxtel
 Breda Prinsenbeek,Breda Prinsenbeek
 Breda,Breda
-Breukelen,Breukelen
+
 Brummen,Brummen
 Bunde,Bunde
 Bunnik,Bunnik
@@ -282,7 +304,7 @@ Driebergen-Zeist,Driebergen-Zeist
 
 
 Duiven,Duiven
-Duivendrecht,Duivendrecht
+
 Echt,Echt
 Ede Centrum,Ede Centrum
 Ede-Wageningen,Ede-Wageningen
@@ -312,7 +334,7 @@ Glanerbrug,Glanerbrug
 Goes,Goes
 Goor,Goor
 Gorinchem,Gorinchem
-Gouda Goverwelle,Gouda Goverwelle
+
 Gouda,Nieuwerkerk aan den IJssel
 Gouda,Waddinxveen Triangel	
 
@@ -447,7 +469,7 @@ Ruurlo,Ruurlo
 Schiedam Centrum,Rotterdam Centraal
 Schin op Geul,Schin op Geul
 Schinnen,Schinnen
-Schiphol,Schiphol
+
 's-Hertogenbosch Oost,'s-Hertogenbosch Oost
 's-Hertogenbosch,'s-Hertogenbosch
 Sittard,Sittard
@@ -492,7 +514,7 @@ Velp,Velp
 Venlo,Venlo
 Venray,Venray
 Vierlingsbeek,Vierlingsbeek
-Vleuten,Vleuten
+
 Vlissingen,Vlissingen
 Vlissingen Souburg,Vlissingen Souburg
 Voerendaal,Voerendaal
@@ -520,7 +542,7 @@ Wijchen,Wijchen
 
 Winterswijk,Winterswijk
 Winterswijk West,Winterswijk West
-Woerden,Woerden
+
 Wolfheze,Wolfheze
 
 

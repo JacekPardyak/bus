@@ -25,19 +25,6 @@ visNetwork(nodes = (df$nodes %>%
 
 
 
-library('networkD3')
-
-members <- rep(1, length(graph))
-# Convert to object suitable for networkD3
-df_d3 <- igraph_to_networkD3(graph, group = members)
-
-# Create force directed network plot
-forceNetwork(Links = df_d3$links, Nodes = df_d3$nodes, 
-             Source = 'source', Target = 'target', 
-             NodeID = 'name', Group = 'group', fontSize = 12)
-
-radialNetwork(List = df_d3, fontSize = 10, opacity = 0.9)
-
 ?forceNetwork
 library(ggnetwork)
 ggplot(ggnetwork(graph), aes(x = x, y = y, xend = xend, yend = yend)) +
@@ -50,3 +37,21 @@ ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
   geom_edges(color = "black") +
   geom_nodelabel(aes(label = name), fontface = "bold") +
   theme_blank()
+
+library(tidygraph)
+nodes <- tibble(name = c("Hadley", "David", "Romain", "Julia"))
+edges <- data.frame(from = c(1, 1, 1, 2, 3, 3, 4, 4, 4),
+                    to = c(2, 3, 4, 1, 1, 2, 1, 2, 3))
+network <- tbl_graph(nodes = nodes, edges = edges, directed = F)
+network
+
+tidy_net <- as_tbl_graph(graph)
+plot(tidy_net)
+
+
+library(ggraph)
+tidy_net %>%
+  ggraph(layout = "kk") +
+  geom_node_point() +
+  geom_edge_link()  + 
+  geom_node_text(aes(label = name), repel = TRUE, size = 7)
