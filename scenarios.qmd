@@ -1,0 +1,390 @@
+---
+title: "Practical Test Scenarios"
+subtitle: "Driving Licence Category D"
+format: 
+  pdf:
+    include-in-header: _custom.tex
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 4
+---
+
+
+```{r}
+#| eval: false
+#| echo: false 
+
+#format: 
+#  html:
+#    toc: true
+#    toc-title: "Table of Contents"
+#    toc-depth: 4
+    
+
+```
+
+# Introduction
+
+The test lasts 30 minutes. Within those 30 minutes, the candidate must complete 3 or 4 scenarios. Scenario 1 is the same in every test. The other scenarios are completed as a combination of scenarios. The test administrator, the person responsible for administering the test on behalf of the training institute, determines this. If a random sampler from CCV is present during the test, they will determine which combination of scenarios will be performed.
+
+The scenarios are questioned based on a text. This text serves as a common thread throughout the scenario questions for both the test administrator and the candidate.
+This makes the whole process more transparent for both parties.
+
+**Remember:** you will also need to be able to show your *driver's license* for this test. So bring it with you!
+You should count on one half-day (= one morning or afternoon) for the duration of this test.
+
+**Text:** A bus driver is instructed to pick up a group of passengers at a meeting point. He must transport this group to their destination smoothly, comfortably, and safely.
+The group will board at the same location, but they will be going to different destinations in Europe.
+
+Some of the group will be vacationing in Barcelona. They will be enjoying the sun for two weeks.
+In that group, there's someone who, after a week at the beach, is going skiing in the Pyrenees. He'll be bringing his own gear.
+
+Some other travelers will be disembarking in Luxembourg. They are members of one family who are going out because Grandma has turned 80. Grandma is still quite active, but has difficulty walking.
+They're going to have a fun week with games and such. They'll be bringing their own gear.
+
+The rest of the travelers are going to Euro Disney near Paris. They are members of a sports club celebrating their club's anniversary. They've been saving for a long time to make this trip possible.
+
+Finally, the driver has to take two boxes of work clothes for a colleague who organizes trips from Barcelona to cities in Spain. This is a request from his employer. These boxes are also ready at the meeting point where passengers board.
+
+As a little something extra, the bus company has a treat for the passengers, a Mars bar or something similar. It's also ready in a box.
+
+The driver has already received his addresses for the return trip. From Barcelona, he needs to go to Lyon, Strasbourg, and Munich.
+The driver must have his documents with him for the entire journey.
+He is also responsible for treating passengers appropriately.
+
+# Scenario 1: Preparing for the trip and instructing passengers upon departure
+
+First, you need to explain how you'll prepare for the trip.
+You'll explain how you'll handle this responsibly and, above all, safely.
+The bus must be in good condition, so: 
+
+- Clean inside and out;
+- All fluids checked and topped up, including those inside the bus;
+- Lighting, air conditioning, damage, tires, safety equipment, etc.
+
+Naturally, you'll plan a route so you can clearly inform passengers what to expect regarding the route and times.
+
+The documents you need to bring with you are important, as you share responsibility for them.
+You must be able to explain why you need to carry the following documents.
+
+| Personal documents      |
+|----------|----------------|
+| Driver's license | You must always carry it with you. |
+| Passport/ID | You must use this to identify yourself abroad. |
+| Medical certificate (Medipas) | You are transporting people, so you must be able to show that you have passed a medical examination. |
+| Tachograph discs / driver card | For driving and rest times (see also: completing and using the registration sheet) |
+| Employer's certificate (days off) | Proof that you have not driven on those days. You must have the data for 28 days (56 days as of 31 December 2024) with you, so tachograph records and leave notes. |
+| Fuel and toll passes | For quick payments everywhere. |
+
+| Vehicle documents      |
+|----------|----------------|
+| Vehicle registration certificate (parts 1a and 1b) | You must always carry with you |
+| MOT inspection report | A bus must have passed its MOT inspection before putting it into service and annually thereafter  |
+| Tempo-100 certificate | A statement that the bus is allowed to travel 100 km/h in Germany. The text also mentions the return trip via Munich. |
+| Green card | As proof that you have at least third-party liability insurance. This only applies outside the Netherlands, in countries not crossed. |
+| Tax declaration (Steuererklärung) | This is the VAT you must pay in Germany. |
+| Air conditioning logbook/STEK declaration | The bus has air conditioning and must be inspected annually by a certified company. |
+
+
+| Travel documents      |
+|----------|----------------|
+| Community licence (a copy or transcript thereof) | Required for passenger transport within the country, i.e., national transport and in EU countries, Norway, Switzerland. |
+| Licence for international regular services | For regular transport (accessible to everyone). |
+| Licence for special regular services | For special regular transport (not everyone). |
+| Journey form | For occasional transport (no timetable). Includes: license plate, company, driver, client, departure/destination, number of passengers, kilometers, type of transport. It is an irregular bus service, so EU journey form. |
+| Ride assignment | This describes exactly who and what goes where. Everything about the trip|
+| Passenger list | So you know who's going. |
+
+After preparing for the trip, you go to the boarding point to pick up the passengers.
+
+There, you act as the host on behalf of the carrier.
+
+You must welcome the passengers and give them a friendly welcome.
+
+Also, keep track of the passenger list.
+
+Once you've properly prepared the trip, you can chat with the various groups of passengers and discuss the details of the journey. Think of grandma and the club.
+
+The suitcases and other luggage must be received and loaded.
+
+You must also supervise boarding and ensure that people with walking difficulties can sit close to the exit.
+
+Once everyone is seated and present, before you depart, indicate that everyone must use their seatbelts and pass on the safety card.
+
+You walk through the bus again to check the seatbelts of children under 12. You also check the luggage rack and the aisles.
+
+Then you start driving. You grab the microphone.
+You welcome everyone again through the intercom and provide the following information:
+
+- Introduce yourself
+- Destination
+- Route
+- Distances
+- Stop and drive times
+- Smoking/no smoking
+- Disposal of waste
+- Armrest
+- Restroom
+- Operation of facilities (seat – reading light – blinds – emergency light – ventilation – luggage rack)
+- Safety card
+- Emergency code
+- Emergency door and emergency hatches
+- Seat belts
+- Emergency hammer(s)
+
+**Completing and using Record Sheet(s)**: Before inserting a tachograph disc (officially called a record sheet) into the tachograph, information must be entered on it. After completing the work, information must also be entered again. This is clearly shown in the adjacent image of the "center field" of a tachograph sheet. (Note: Entering the "distance traveled" is not legally required.)
+
+![Tachograph disc](images/g247.png)
+
+**Using the correct sheet in the Tachograph**: If a vehicle is changed during work, the same disc can generally be used again in the next vehicle. The following two conditions must be met:
+
+1. **Approval number**: On the back of each record sheet is a block with a series of numbers. On each tachograph identification plate, a number is displayed behind a square containing the letter "E."
+If this number is stated on the back of the record sheet, the first condition is met. The following condition must also be met.
+
+![Approval number](images/g263.png)
+
+2. **Speed range**: The tachograph's measuring range (usually 125 km/h) must match that of the record sheet. If this and the conditions mentioned under 1 are met, the record sheet can be used in the relevant tachograph.
+
+**Vehicle Change**: Only if the requirements under 1 and 2 above are met, must the registration sheet be used in a subsequent vehicle. In this case, the back of the sheet must **ALSO** be completed, as shown on the right. In this example, two vehicle changes are permitted. When changing vehicles, the final mileage must be entered on the front of the sheet.
+
+**Note**: Entering the "distance traveled" is not legally required.
+
+In accordance with legislation, the name of the location where the daily work is performed must be entered on the front of the sheet at the end of its use.
+
+![Tachograph disc](images/g296.png)
+
+**Work on both buses and taxis**: If, after driving a taxi, work continues on a bus/truck, this work (taxi) must be recorded on (the back of) the record sheet. In reverse order, this work (bus/truck) must be recorded in the "special details" section of the workbook.
+
+**Tachograph failure or malfunction**: If, due to a malfunction, the work can no longer be recorded by the tachograph, this must be manually recorded, for example, on (the back of) the record sheet. Completing the form is the same as for a workbook.
+
+**Transport to the pick-up point for the vehicle takeover**: The time required to travel [^1] to a location where the driver of another tachograph-required vehicle is taken over must be accounted for on the registration sheet used in the vehicle to be taken over, using the "crossed hammers" symbol. This is "other work."
+
+[^1]: regardless of the method of transport to or from the departure point / boarding point.
+
+**Note**: The above also applies to the return trip.
+
+The image below shows the method of accountability.
+Example: 
+
+- 10:00 AM departure to the boarding point
+- 01:00 PM arrival
+
+
+![Method of accountability](images/g335.png)
+
+**Repairs**: If a vehicle is not returned to its location within a week after a tachograph malfunction, the malfunction must be repaired en route. It is recommended that you request proof of the repair and keep it in the vehicle.
+
+**Other regulations**: Based on Regulation (EEC) No. 3821/85 and the AETR, the following regulations also apply regarding the use of record sheets:
+
+- Do not use dirty or damaged sheets
+- Do not remove the sheet before the end of working hours, unless otherwise necessary
+- Do not use for more than 24 hours (to avoid overlaps)
+- If the vehicle is manned by two drivers, the record sheet must also be changed when the driver changes
+- The time must correspond to the legal time in the vehicle's country of registration
+
+# Scenario 2: Checking safety features and comfort
+
+You must be able to explain the use of the following safety equipment:
+
+||
+|----------|----------------|
+| Seat belts | Passengers must use the seatbelts provided and fasten them properly. Walking is at your own risk. Point this out. |
+| First aid kit | Must be complete and present on the bus. Check before the trip. |
+| Fire extinguisher | Must be easy to reach and work. |
+| Safety card | Must be passed on so everyone knows what to look out for. |
+| Emergency supplies | Emergency exits must not be locked and must be operable, as must the emergency hatches. One or more emergency hammers must be present to break windows in an emergency. Aisles, emergency exits, and entrances and exits must not be blocked by passengers or luggage. |
+
+The candidate can explain to passengers how to use the comfort features:
+
+||
+|----------|----------------|
+| Chair adjustment | Explain how to adjust the seats in the bus. |
+| Ventilation | Explain how passengers above their seats can open and turn the ventilation openings. |
+| Radio | Consult with passengers about music en route. Not everyone wants to hear André Hazes. |
+| Toilet facilities | Explain how the toilet works. Ask the men to sit down when using the restroom while driving. |
+
+Provide trash bins and bags to keep the bus clean.
+Store hand luggage securely in the racks, away from aisles and emergency exits.
+Provide information on how to use the bus's amenities, such as the coffee machine, refrigerator, curtains, etc.
+
+![Safety card](images/g439.png)
+
+# Scenario 3: Specific characteristics of different target groups
+
+The goal of this scenario is to respond appropriately to the specific wishes, needs, and behaviors of different types of passengers. You should be able to illustrate this using examples. The text also features several different types of passengers. The bus is occupied by, among others:
+
+||
+|----------|----------------|
+| Children | **Schoolchildren** - daily trips from home to school and back. This is usually unaccompanied transport. A good relationship between the driver and the children is very important.<br> **Children transported in groups** - swimming lessons, sports facilities, school trips. Usually accompanied. Outside the bus, the accompanying person is responsible. Inside the bus, the driver has primary responsibility. He or she may use the accompanying persons as supervisors. He can have the supervisors sit spread out across the bus. Supervisors monitor crossings, etc. outside the bus. The driver and supervisors must always check whether all children are on the bus. Let children get off at a door where the driver/supervisor is standing.|
+| Disabled Persons | There are buses specifically equipped for disabled persons, such as kneeling buses. On public transport, special seats are reserved for disabled persons. On private buses, the best seating is determined for each individual. Disabled persons are people with one or more mobility impairments. They are often proud of movements they can perform with great difficulty. Try to let each disabled person do as much as possible independently. If a lift is available, it must be operated by the bus crew. During the ride, every wheelchair must be properly secured and fitted with seat belts. Before, during, and after the ride, have the attendants look after disabled persons as much as possible. Always check that wheelchairs brought as luggage are properly secured. |
+| Passengers with motion <br> sickness | Consider extra bags/containers. Ensure adequate ventilation. Provide space at the front of the bus. Divert attention, etc. |
+| Disruptive passengers | All passengers have the same rights on the bus. Disruptive behavior should not be used to enforce additional rights. Always report disruptive behavior to the bus company's management. Try to defuse conflicts. Avoid arguments. Don't be provoked into prohibited actions. Seek help from experts or your employer. |
+| Elderly | Vulnerable group. Groups of elderly people are usually accompanied. Ensure the escorts ensure the well-being of the passengers. Follow the rules for transporting children and people with disabilities as much as possible. Some elderly people react aggressively to changing circumstances; handle them appropriately. |
+
+# Scenario 4: Loading and unloading luggage
+
+Here, you must apply safety regulations when loading and unloading luggage. You must be mindful of physical risks. The candidate loads or unloads the available luggage, taking into account:
+
+- Correctly distributing the luggage across the axles
+- Securing the luggage to prevent sliding
+- Correctly distributing the luggage to ensure the stability of the bus (taking the center of gravity into account)
+- Lifting with a straight back
+- Bending at the knees while lifting the luggage
+- Using lifting aids
+- Using personal protective equipment
+
+Aids:
+
+- 6 suitcases labeled for 3 different destinations
+- 2 crates
+- 4 boxes of various sizes
+- Ski equipment
+- Wheelchair/bicycle and/or other irregularly shaped, difficult-to-secure items
+
+Therefore, the above-mentioned items must be loaded into the bus responsibly, and you must lift correctly.
+
+Tips:
+
+- Pay attention to the destination of the suitcases. Sort by destination. When loading, consider the correct order for unloading. So, as they say in logistics: last in, first out. Or in Dutch: het laatst geladen wordt het eerst gelost (last loaded is unloaded first).
+- When loading, estimate the amount of luggage available and the available loading floor. First, fill the floor space so that the luggage is secured and cannot slide. So, the suitcases hold each other up like a stack of blocks. If you have to stack suitcases, start with hard-shell suitcases and stack the rest on top of them. Few hard-shell suitcases and soft-shell suitcases should be placed flat on the floor. Many hard-shell suitcases should be placed upright next to each other like a floor, with the soft-shell suitcases and other luggage flat on top of that.
+- Think safety first. Start sorting luggage by destination. Shield your workspace with suitcases so passengers don't get in the way or bump their heads on open flaps. If you're loading or unloading along the road, place cones to mark your spot.
+
+![Luggage loading area designation](images/g594.png)
+
+# Scenario 5: Preventing crime and illegal activity
+
+In this scenario, you must be able to indicate how and how you can prevent crime for the driver, passengers, luggage, and vehicle. You must also indicate how you can prevent illegal activity. This refers to people who want to hide illegally on the bus to travel to another country.
+The candidate is able to list the measures (checklist) that can be used to prevent crime and illegal activity on the bus:
+
+- Lock the bus properly;
+- Choose a parking spot (lit area, park with others, or a supervised parking spot);
+- Whether or not to leave the bus depends on the time/parking spot;
+- Take care of personal and vehicle documents;
+- Remove valuables from the bus;
+- Beware of pickpockets;
+- Do not talk to strangers about passengers, valuables, or the route;
+- Do not pick up hitchhikers;
+- Do not accept suggestions from strangers for alternative hotels, restaurants, etc.;
+- Do not accept offers from unknown guides in cities;
+- Do not carry any unusual packages or similar items for people who are not traveling with you;
+- Fare dodgers can be very aggressive.
+
+The candidate must be able to identify where checks should be conducted before departing:
+
+- around the bus, 
+- under the bus, and 
+- other potential hiding places (luggage compartments, engine compartment, restroom, the sleeping cabin, and any empty seats).
+
+# Scenario 6: Emergency response
+
+The candidate must be able to explain what to do in an emergency. The candidate is able to assess a situation. The candidate must indicate the priorities (response to fire, ensuring passenger safety, and rescuing passengers from the bus). The candidate must indicate what they should do to prevent worse and how to alert emergency services. The candidate must indicate, using given example situations, what assistance they can provide to injured people (first aid).
+Consider:
+
+- Whether or not to provide assistance (whether others are already there to assist or not);
+- First, consider your own safety, then ensure no further casualties;
+- Call 112 to alert emergency services. Provide assistance;
+- Even if you don't have first aid, you can still provide assistance by talking to the casualty. If breathing is difficult, ensure a stable side position.
+
+Measures you can take regarding vehicle, guests and accidents:
+
+||
+|----------|----------------|
+| Vehicle-related measures | • Safely stop the vehicle <br> • Alert other traffic <br> • Mark the bus <br> • Evacuate the bus <br> • Alert emergency services <br> • Call for technical assistance <br> • European accident report form <br> • Report the situation <br> • Notify the tour operator <br> • Notify your employer <br> • Arrange alternative transportation <br> • Administrative processing, including evidence (photos) <br> • Extinguishing the fire |
+| Guest safety measures | • Reassure and inform guests <br> • Provide medical assistance to injured guests <br> • Transport guests to a safe location <br> • Alert professional emergency services |
+| Dealing with media | • In accordance with Stichting Bus guidelines <br> • Follow the emergency communication protocol |
+| Accident, illness, or death of guest(s) | • Measures to prevent worse <br> • Reassure guests <br> • Provide first aid <br> • Arrange medical assistance <br> • Contact: <br> - Tour operator <br> - Employer <br> - Travel insurance emergency call center <br> • Provide aftercare for those involved and other guests <br> • Inform destination of delays, etc. <br> • Contact local authorities <br> • Secure belongings |
+
+# Scenario 7: Actions in case of aggression
+
+The candidate must be able to respond to aggressive behavior and identify the appropriate measures.
+The candidate can, using an example situation, indicate how to act in case of aggression, ensuring the safety of passengers.
+There are different types of aggression. If you are confronted with verbal aggression, there are several approaches.
+
+But the rule of thumb is the **BBA**:
+
+- ***B**oosheid laten uiten* - Allow someone to express their anger. Listen, make eye contact, and don't argue.
+- ***B**egrip tonen* - Demonstrate understanding. Show that you're listening and summarize their words.
+- ***A**anbod doen* - Make an offer. Let them know what you can do, within reason.
+
+You may sometimes encounter unpleasant behavior from passengers. This could include threats, violence, or robbery (non-verbal aggression). If you encounter this (whether you are a victim or witness), act according to the **RAAK** principle:
+
+- ***R**ustig blijven* - Stay calm. Robbers aren't coming for people, but for money and possibly items.
+- ***A**ccepteren* - Accept. Don't resist or argue. Always assume that weapons are real and can be used.
+- ***A**fgeven* - Hand them over. Give them what they ask for. Everything is replaceable, except yourself.
+- ***K**ijken* - Observe. Record as many characteristics of the robbers as possible: face, hair, height, speech, clothing, and movement.
+
+Be mindful of your own safety and that of your passengers.
+
+Tips for your own safety:
+
+- Keep at least two to three good steps away, so you're out of reach in case someone tries to hit or grab you;
+- Stand at a 45-degree angle to the person; this also makes you harder to hit;
+- Keep your hands in front of your body and don't cross your arms, so you have your hands free if you need to react;
+- Stand behind a barricade. For example, a table. So if you're in a parking lot with a passenger, take them outside and stand at a picnic table and discuss the problem appropriately.
+
+**When you become aggressive**: When aggression arises, it's important to recognize signals and act on them. This "acting" primarily involves organizing a "time-out". Like the common refrain of counting to 10. Other important forms of a time-out are:
+
+- Consciously relax, muscle by muscle, starting with your toes, until you reach the top of your head or your anger has subsided;
+- Focus your attention elsewhere. Consciously stare at an object in the room for a few seconds, try not to think about anything, and focus on the opposite feeling of what you're experiencing at that moment;
+- Leave the situation. Simply leave when you feel anger rising. This solution won't always be possible on the bus;
+- When experiencing anger/aggression, don't use alcohol or drugs; they make the situation worse.
+
+# Scenario 8: Responses in case of slippery conditions or malfunctions
+
+**Scenario objective:** Appropriate response in case of slippery conditions or malfunctions.
+
+**Implementation:** The candidate can explain and demonstrate how to put on snow chains. The candidate can explain how to use the bus's auxiliary brakes in slippery conditions. Using the instruction manual, the candidate can respond appropriately in case of malfunctions in the vehicle.
+
+**Resources:** Bus instruction manual.
+
+![Winter tires and snow chains](images/g988.png)
+
+Snow chains come in different types. The first type must be fitted completely manually.
+Proceed as follows:
+
+- Remove the snow chains from the packaging and spread them out on the ground in front of the tire.
+- Pick up the chain in the middle and place it over the (driven) wheel.
+- Distribute the chain so that the clasp on one side is in front of the wheel. The other side should hang so that the chain doesn't fall off when the wheel turns.
+- Drive the vehicle forward half a meter. The vehicle is now resting on the chain.
+The clasp is free again because the wheel has rolled completely over it.
+The other clasp is still hanging on the wheel.
+- Now hook the clasps together, screw them together, or attach them in another way (depending on the brand).
+- Attach and tighten the tensioners at the front.
+- Attach the snow chain to the other side. So, fit the chains tire by tire. 8: After attaching the snow chains, drive 100 meters and then tighten the tensioners further.
+- Now you can drive with the snow chains. Remember: the maximum speed with snow chains is 50 km/h.
+
+**Using auxiliary brakes in slippery conditions**: We don't use a retarder in slippery conditions. Modern buses are equipped with ABS. This prevents wheel spin. An engine brake is useful in slippery conditions. These are found on trucks and modern coaches.
+
+**A retarder** = auxiliary brake; located behind the gearbox and brakes the drivetrain, i.e., the driven wheels. It works with oil or with electromagnets on the drive shaft.
+
+**Engine brake** = auxiliary brake; brakes the engine, i.e., the driven wheels. It works through a valve in the exhaust. The engine's exhaust stroke experiences back pressure. This requires power,
+so the engine slows down. The fuel supply is also shut off.
+In slippery conditions, we adjust the speed and apply the brakes in a controlled manner using the service brake.
+
+**Handling malfunctions**: You should be able to find instructions on what to do and what not to do in the event of a malfunction using a bus's instruction manual. You can also find instructions on how to open doors, etc.
+
+
+# Scenario 9: Completing a claim form
+
+The candidate must be able to properly complete a European claim form:
+
+- Location, date, and time of the accident;
+- Personal details of the parties involved;
+- Details of the other vehicle;
+- Witnesses;
+- Situation sketch;
+- Signatures of the parties involved;
+- Applicable crosses (add together);
+- Where and when the back of the form should be completed;
+
+**Tip**: **Box 3: wounded** is important. You're driving a bus. After a collision, passengers may sustain minor injuries that later turn out to be more serious. If nothing is recorded, an insurance company can say: "Were you actually present at that accident?" or "Prove that the injuries occurred in that accident." So fill in the box and make a list of passengers with injuries.
+
+**Tip**: The back can be filled out at home, but it asks questions you don't or can't know. For example: Are there solid lines on the road? or: How many lanes does the road have? So, fill out some of it on the spot because of these kinds of questions. 
+
+Below, you'll find a printout of a claim form. You should be able to explain how it should be filled out and in which box.
+
+![European claim form](images/g1117.png)
+
+
+![Explanation of the European claim form](images/g1121.png)
+
