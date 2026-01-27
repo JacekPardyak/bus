@@ -1,0 +1,80 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7]
+  edge [color = gray, fontsize = 7]
+  4900 [pos = "0, 0!", label = "BMR"]
+  4901 [pos = "1, 0!"]
+  4902 [pos = "1,-1!"]
+  4903 [pos = "2,-1!"]
+  4904 [pos = "4,-1!"]
+  4905 [pos = "4,-2!"]
+  4906 [pos = "4,-3!"]
+  4907 [pos = "3,-3!"]
+  4908 [pos = "3,-4!"]
+  4909 [pos = "2,-4!"]
+  4910 [pos = "2,-3!", label = "SWP"]
+
+  6601 [pos = "1, 1!"]
+  6602 [pos = "3, 1!"]
+  6603 [pos = "3, 2!"]
+  6604 [pos = "4, 2!"]
+  6605 [pos = "4, 1!"]
+  6606 [pos = "5, 1!"]
+  6607 [pos = "5,-2!"]
+  6608 [pos = "5,-4!"]
+  6609 [pos = "6,-4!"]
+  6610 [pos = "7,-4!", label = "VPS"]
+
+  36001 [pos = "2,-2!"]
+  36002 [pos = "3,-2!"]
+  36003 [pos = "4,-4!", label = "BEDL"]
+
+  4900 -> 4901 [label = "Hoogoorddreef"]
+  4901 -> 4902 [label = "Foppingadreef 
+ (lijn 49, 360)"]
+  4902 -> 4903 [label = "Karspeldreef"]
+  4903 -> 4904 [label = "Karspeldreef 
+ (lijn 49)"]
+  4904 -> 4905 [label = "Kromwijkdreef"]
+  4905 -> 4906 [label = "Loosdrechtdreef 
+ (lijn 49)"]
+  4906 -> 4907 [label = "Provincialeweg 
+ Gooilandseweg"]
+  4907 -> 4908 [label = "C.J. van Houtenlaan 
+ Prinses Irenelaan 
+ Casparuslaan"]
+  4908 -> 4909 [label = "Plataanlaan 
+ Herensingel"]
+  4909 -> 4910 [label = "M. Nijfoffstraat 
+ Herensingel"]
+
+  4903 -> 36001 [label = "Gooiseweg 
+ (lijn 360)"]
+  36001 -> 36002 [label = "Langbroekdreef"]
+  36002 -> 4905 [dir = "both", label = "Langbroekdreef 
+ (lijn 49 via
+St. Gaasperplas)"]
+
+  4901 -> 6601 [label = "Foppingadreef 
+ (lijn 66)"]
+  6601 -> 6602 [label = "Bijlmerdreef"]
+  6602 -> 6603 [label = "Elsrijkdreef"]
+  6603 -> 6604 [label = "Provincialeweg"]
+  6604 -> 6605 [label = "Muiderstraatweg"]
+  6605 -> 6606 [label = "Weteringweg"]
+
+  6606 -> 6607 [label = "Diemerpolderweg"]
+  6607 -> 6608 [label = "Diemerpolderweg 
+ Fortdiemerdamweg 
+ Muiderlaan"]
+  6608 -> 36003 [label = "Pampuslaan 
+ (lijn 360)"]
+  6608 -> 6609 [label = "Pampuslaan 
+ (lijn 66)"]
+  6609 -> 6610 [label = "IJburglaan"]
+  4905 -> 6607 [label = "A9 
+ A1 
+ Afrit 1a 
+ (lijn 360)"]
+}
+
