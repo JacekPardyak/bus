@@ -1,0 +1,57 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7]
+  edge [color=gray, fontsize = 7]
+
+  GW [pos = " 0, -2!", label = "GW"]
+  LLL [pos = "0, 0!", label = "LLL"]
+  MTH  [pos = "1,-2!", label = "MTH"]
+  HMM [pos = " 1, 1!", label = "HMS"]
+  ASA [pos = " 0, 5!", label = "ASA"]
+  GW01 [pos = " 0, -1!"]
+  GW02 [pos = " 1,-1!"]
+  GW03 [pos = " 2,-3!"]
+  GW04 [pos = " 1, 0!"]
+  GW05 [pos = " 0,-3!"]
+  GW06 [pos = " 2,-2!"]
+  GW07 [pos = "-1,-3!"]
+  GW08 [pos = "-1, 1!"]
+  GW09 [pos = " 0, 2!"]
+  GW10 [pos = " 1, 2!"]
+  GW11 [pos = " 0, 1!"]
+  GW13 [pos = " 0, 4!"]
+  GW14 [pos = "-1, 3!"]
+  GW15 [pos = " 1, 3!"]
+  GW12 [pos = " 1, 4!"]
+
+  GW -> GW01 [label = "Jan Tooropstraat"]
+  GW -> GW05 [label = "Jan Tooropstraat"]
+  GW01 -> GW02 [label = "Jan Evertsenstraat"]
+  GW02 -> GW04 [label = "Oostoever 
+ Johan Huizingalaan"]
+  GW03 -> GW06 [label = "President Allendelaan 
+ Ookmeerweg"]
+  GW04 -> LLL [label = "Pieter Calandlaan"]
+  GW05 -> GW03 [label = "Jan van Galenstraat 
+ Burgemeester Röellstraat"]
+  GW05 -> GW07 [label = "Jan van Galenstraat"]
+  GW06 -> MTH [label = "Baldwinstraat"]
+  GW07 -> GW08 [label = "[A10]*"]
+  GW08 -> GW11 [label = "(7): Slotervaart"]
+  GW08 -> GW14 [label = "[A10]"]
+  GW09 -> GW10 [label = "Hoofddorp-plein 
+ -weg 
+ Zeilstraat"]
+  GW10 -> HMM [label = "Amstelveenseweg"]
+  GW11 -> GW09 [label = "Henk Sneevletweg 
+ Aalsmeerweg"]
+  GW12 -> GW13 [label = "Julianaplein"]
+  GW13 -> ASA [label = "Overzichtweg"]
+  GW14 -> GW15 [label = "(12): Duivendrecht"]
+  GW15 -> GW12 [label = "Gooiseweg 
+ Prins Bernhardplein"]
+
+  labelloc="b"
+  label="*Gebruik bij terugkomst (5): De Baarsjes"
+  fontsize=6
+}

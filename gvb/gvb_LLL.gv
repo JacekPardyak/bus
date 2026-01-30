@@ -75,7 +75,7 @@ digraph G {
 Victorieplein 
 Vrijheidslaan 
 Mr. Treublaan 
- Prins Bernhardplein 
+ &nbsp; Prins Bernhardplein 
 Julianaplein"]
   6216 -> 6217 [label = "Over-
 -zichtweg"]

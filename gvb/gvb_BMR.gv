@@ -72,9 +72,15 @@ St. Gaasperplas)"]
   6608 -> 6609 [label = "Pampuslaan 
  (lijn 66)"]
   6609 -> 6610 [label = "IJburglaan"]
-  4905 -> 6607 [label = "A9 
- A1 
- Afrit 1a 
- (lijn 360)"]
+  4905 -> 6607 [label = "[A9] 
+ [A1]: Zaanstad 
+ (1a): IJburg 
+ (lijn 360)*"]
+  
+  labelloc="b"
+  label="*Gebruik bij terugkomst (1): Bijlmermeer"
+  fontsize=6
+  
+  
 }
 
