@@ -1,4 +1,4 @@
-digraph G {
+BMR <- 'digraph G {
   layout = neato
   node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7]
   edge [color = gray, fontsize = 7]
@@ -49,68 +49,43 @@ digraph G {
   4419 [pos = "8, 4!"]
   
   4408 -> 4416 [label = "Wilhelminaplantsoen", style = dashed, dir = "none"]
-  4405 -> 4416 [label = "Burgemeester
-Bickerstraat", style = dashed, dir = "none"]
+  4405 -> 4416 [label = "Burgemeester\nBickerstraat", style = dashed, dir = "none"]
   4409 -> 4417 [label = "Buytenweg", style = dashed, dir = "none"]
   4417 -> 4418 [label = "Oude Waelweg", style = dashed, dir = "none"]
-  4418 -> 4419 [label = "Meerkoet 
- Zeezigt", style = dashed, dir = "none"]
+  4418 -> 4419 [label = "Meerkoet \n Zeezigt", style = dashed, dir = "none"]
 
   4900 -> 4901 [label = "Hoogoorddreef"]
-  4901 -> 4902 [label = "Foppingadreef 
- (lijn 49, 360**)"]
+  4901 -> 4902 [label = "Foppingadreef \n (lijn 49, 360)"]
   4902 -> 4903 [label = "Karspeldreef"]
-  4903 -> 4904 [label = "Karspeldreef 
- (lijn 49)"]
+  4903 -> 4904 [label = "Karspeldreef \n (lijn 49)"]
   4904 -> 4905 [label = "Kromwijkdreef"]
-  4905 -> 4906 [label = "Loosdrechtdreef 
- (lijn 49)"]
-  4906 -> 4907 [label = "Provincialeweg 
- Gooilandseweg"]
-  4907 -> 4908 [label = "C.J. van Houtenlaan 
- Prinses Irenelaan 
- Casparuslaan"]
-  4908 -> 4909 [label = "Plataanlaan 
- Herensingel"]
-  4909 -> 4910 [label = "M. Nijfoffstraat 
- Herensingel"]
+  4905 -> 4906 [label = "Loosdrechtdreef \n (lijn 49)"]
+  4906 -> 4907 [label = "Provincialeweg \n Gooilandseweg"]
+  4907 -> 4908 [label = "C.J. van Houtenlaan \n Prinses Irenelaan \n Casparuslaan"]
+  4908 -> 4909 [label = "Plataanlaan \n Herensingel"]
+  4909 -> 4910 [label = "M. Nijfoffstraat \n Herensingel"]
 
-  4903 -> 36001 [label = "Gooiseweg 
- (lijn 360)"]
+  4903 -> 36001 [label = "Gooiseweg \n (lijn 360)"]
   36001 -> 36002 [label = "Langbroekdreef"]
-  36002 -> 4905 [dir = "both", label = "Langbroekdreef 
- (lijn 49 via
-St. Gaasperplas)"]
+  36002 -> 4905 [dir = "both", label = "Langbroekdreef \n (lijn 49 via\nSt. Gaasperplas)"]
 
-  4901 -> 6601 [label = "Foppingadreef 
- (lijn 44*, 66)"]
+  4901 -> 6601 [label = "Foppingadreef \n (lijn 44, 66)"]
   6601 -> 4401 [label = "Bijlmerdreef"]
-  4401 -> 6602 [label = "Bijlmerdreef 
- (lijn 66)"]
-  4401 -> 4402 [label = "Dolingadreef 
- (lijn 44)"]
+  4401 -> 6602 [label = "Bijlmerdreef \n (lijn 66)"]
+  4401 -> 4402 [label = "Dolingadreef \n (lijn 44)"]
   4402 -> 4403 [label = "Daalwijkdreef"]
-  4403 -> 4404 [label = "Bergwijkdreef 
- Boven Rijkersloot 
- Beneden R. 
- (via St. Diemen Zuid)"]
-  4404 -> 4405 [label = "Beneden R. 
- Boven R. 
- Beukenhorst"]
-  4405 -> 4406 [label = "Hartveldseweg 
- Muiderstraatweg"]
+  4403 -> 4404 [label = "Bergwijkdreef \n Boven Rijkersloot \n Beneden R. \n (via St. Diemen Zuid)"]
+  4404 -> 4405 [label = "Beneden R. \n Boven R. \n Beukenhorst"]
+  4405 -> 4406 [label = "Hartveldseweg \n Muiderstraatweg"]
   4406 -> 4407 [label = "Prins Bernhardlaan"]
   4407 -> 4408 [label = "Prinses Beatrixlaan"]
-  4408 -> 4409 [label = "Ouddiemerlaan
- (via St. Diemen)"]
+  4408 -> 4409 [label = "Ouddiemerlaan\n (via St. Diemen)"]
   4409 -> 4410 [label = "Diemerpolderweg"]
   4410 -> 4411 [label = "Vogelweg"]
   4411 -> 4412 [label = "Tureluurweg"]
   4412 -> 4413 [label = "Rietzangerweg"]
   4413 -> 4419
-  4419 -> 4415 [label = "Meerkoet 
- Fregat 
- Hermelijnvlinder"]
+  4419 -> 4415 [label = "Meerkoet \n Fregat \n Hermelijnvlinder "]
   
   6602 -> 6603 [label = "Elsrijkdreef"]
   6603 -> 6604 [label = "Provincialeweg"]
@@ -118,22 +93,16 @@ St. Gaasperplas)"]
   6605 -> 6606 [label = "Weteringweg"]
 
   6606 -> 6607 [label = "Diemerpolderweg"]
-  6607 -> 6608 [label = "Diemerpolderweg 
- Fortdiemerdamweg 
- Muiderlaan"]
-  6608 -> 36003 [label = "Pampuslaan 
- (lijn 360)"]
-  6608 -> 6609 [label = "Pampuslaan 
- (lijn 66)"]
+  6607 -> 6608 [label = "Diemerpolderweg \n Fortdiemerdamweg \n Muiderlaan"]
+  6608 -> 36003 [label = "Pampuslaan \n (lijn 360)"]
+  6608 -> 6609 [label = "Pampuslaan \n (lijn 66)"]
   6609 -> 6610 [label = "IJburglaan"]
-  4905 -> 6607 [label = "[A9] 
- [A1]: Zaanstad 
- (1a): IJburg 
- (lijn 360)"]
+  4905 -> 6607 [label = "[A9] \n [A1]: Zaanstad \n (1a): IJburg \n (lijn 360)*"]
   
   labelloc="b"
-  label="* Gebruik bij terugkomst de stippellijn wegen 
- ** Gebruik bij terugkomst afrit (1): Bijlmermeer"
+  label="*Gebruik bij terugkomst (1): Bijlmermeer"
   fontsize=6
 }
+'
+DiagrammeR::grViz(BMR)
 
