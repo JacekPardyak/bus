@@ -1,5 +1,6 @@
 ---
 title: "Getekend Lijnboek"
+subtitle: "Versie februari 2026"
 author: "JG Pardyak"
 format: 
   pdf:
