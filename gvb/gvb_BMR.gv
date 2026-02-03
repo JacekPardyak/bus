@@ -1,7 +1,7 @@
 digraph G {
   layout = neato
-  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7]
-  edge [color = gray, fontsize = 7]
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color = gray, fontsize = 7, fontname = "Arial"]
   4900 [pos = "0, 0!", label = "BMR"]
   4901 [pos = "1, 0!"]
   4902 [pos = "1,-1!"]
@@ -132,8 +132,8 @@ St. Gaasperplas)"]
  (lijn 360)"]
   
   labelloc="b"
-  label="* Gebruik bij terugkomst de stippellijnwegen 
- ** Gebruik bij terugkomst afrit (1): Bijlmermeer"
+  label="* Bij terugkomst gebruikt u stippellijnwegen 
+ ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
   fontsize=6
 }
 

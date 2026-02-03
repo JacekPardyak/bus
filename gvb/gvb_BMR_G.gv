@@ -1,7 +1,7 @@
 digraph G {
   layout = neato
-  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7]
-  edge [color = gray, fontsize = 7]
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color = gray, fontsize = 7, fontname = "Arial"]
   GZ   [pos = "-3, 1!", label = "GZ"]
   BMR  [pos = " 0, 0!", label = "BMR"]
   VPS  [pos = "-2, 4!", label = "VPS"]
@@ -26,9 +26,9 @@ digraph G {
   GZ04 -> GZ05 [label = "Spaklerweg"]
   GZ05 -> GZ06 [label = "Verlengde van 
  Marwijk Kooystraat 
- [A10] ri Hengelo"]
+ [A10]: Hengelo"]
   GZ06 -> GZ08 [label = "[A10]"]
-  GZ06 -> GZ09 [label = "Afslag naar [A1] ri Hengelo 
+  GZ06 -> GZ09 [label = "Afslag naar [A1]: Hengelo 
  Afrit (2): Diemen"] 
   GZ07 -> VPS  [label = "IJburglaan"]  
   GZ08 -> GZ07 [label = "Afrit (14): Zeeburg"]
