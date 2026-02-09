@@ -1,0 +1,789 @@
+---
+title: "Getekend Lijnenboek Bus"
+subtitle: "Versie februari 2026"
+author: "JG Pardyak"
+format: 
+  pdf:
+    toc: true
+    toc-depth: 3
+    toc-title: "Inhoud"
+    papersize: A4
+    margin: 2cm
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(tidygraph)
+library(ggraph)
+
+"label, from, to
+Bus15, Station Sloterdijk, Station Zuid
+Bus18, Centraal Station, Slotervaart
+Bus21, Centraal Station, Geuzenveld De Sav. Lohmanstraat
+Bus22, Station Sloterdijk, Centraal Station
+Bus34, Station Noord, Vogelbuurt Zuid
+Bus35, Station Noord, Molenwijk
+Bus36, Station Sloterdijk, Olof Palmeplein
+Bus37, Station Noord, Amstelstation
+Bus38, Olof Palmeplein, Buiksloterham
+Bus39, Olof Palmeplein, Molenwijk
+Bus40, Amstelstation, Muiderpoortstation
+Bus41, Station Holendrecht, Amstelstation
+Bus42, Centraal Station, Cruquius-eiland
+Bus43, Centraal Station, Borneo Eiland
+Bus44, Station Bijlmer ArenA, Diemen Noord
+Bus47, Station Holendrecht, Station Bijlmer ArenA
+Bus48, Centraal Station, Houthavens
+Bus49, Station Bijlmer ArenA, IJburg Strandeiland
+Bus61, Station Sloterdijk, Osdorpplein Noord
+Bus62, Station Lelylaan, Amstelstation
+Bus63, Station Lelylaan, Osdorp De Aker
+Bus65, Amstelstation, KNSM-laan
+Bus66, Station Bijlmer ArenA, IJburg
+Bus68, Henk Sneevlietweg, John M. Keynesplein
+Bus73, OLVG West, Slotermeerlaan
+Bus75, Station Zuid, A.J. Ernststraat
+BusN81, Centraal Station, Station Sloterdijk
+BusN82, Centraal Station, Geuzenveld
+BusN83, Centraal Station, Osdorp De Aker
+BusN84, Centraal Station, Amstelveen Busstation
+BusN85, Centraal Station, Gein
+BusN86, Centraal Station, Station Bijlmer ArenA
+BusN87, Centraal Station, Station Bijlmer ArenA
+BusN88, Centraal Station, Nieuw Sloten
+BusN89, Centraal Station, IJburg Strandeiland
+BusN91, Centraal Station, Nieuwendam
+BusN93, Centraal Station, Molenwijk
+Bus218, Schiphol Airport/Plaza, Nieuwe Meer
+Bus231, Station Sloterdijk, Abberdaan
+Bus233, Station Sloterdijk, Sicilieweg
+Bus245, Oostzanerdijk, Schiphol Airport/Plaza
+Bus246, Borneolaan, Schiphol Airport/Plaza
+Bus247, Bos en Lommerplein, Schiphol Airport/Plaza
+Bus267, Anderlechtlaan, Anderlechtlaan
+Bus360, Station Bijlmer ArenA, IJburg Strandeiland
+Bus369, Station Sloterdijk, Schiphol Airport/Plaza
+Bus461, Gelderlandplein, Zuidas
+Bus463, Gelderlandplein, Bolestein
+Bus464, Gelderlandplein, Vivaldi" %>% 
+  I() %>% 
+  read_csv() %>%
+  select(from, to, label) %>%
+  filter(!str_detect(label, "N")) %>%
+  mutate(label = label %>%
+           str_remove("Bus") %>%
+           as.numeric()) %>%
+  mutate(
+    zone = case_when(
+      label %in% c(18, 21, 34, 35, 37, 38, 43, 48, 245) ~ "Noord",
+      label %in% c(40, 41, 44, 47, 49, 65, 66, 246, 360)    ~ "Zuid",
+      label %in% c(15, 22, 36, 61, 62, 63, 231, 247, 369) ~ "West",
+      TRUE                 ~ NA_character_
+    )
+  ) -> edges
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(DiagrammeR)
+library(DiagrammeRsvg)
+NRD <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  4000 [pos = "0, 0!", label = "ASA"]
+  4001 [pos = "1, 0!"]
+  4002 [pos = "2, 0!"]
+  4003 [pos = "2,-1!"]
+  4004 [pos = "4,-1!"]
+  4005 [pos = "5,-1!"]
+  4006 [pos = "5,-2!"]
+  4007 [pos = "4,-2!"]
+  4008 [pos = "5, 2!", label = "MDS"]
+  
+  4100 [pos = "1,-1!"]
+  
+  6500 [pos = "3, 0!"]
+  6501 [pos = "3, 1!"]
+  6502 [pos = "4, 1!"]
+  6503 [pos = "5, 1!"]
+  6504 [pos = "6, 1!"]
+  6505 [pos = "6, 2!"]
+  6506 [pos = "7, 2!"]
+  6507 [pos = "7, 1!"]
+  6508 [pos = "8, 1!"]
+  6509 [pos = "8, 0!"]
+  6510 [pos = "7, 0!", label = "KNSM"]
+
+  4000 -> 4001 [label = "Over-\n-zichtweg"]
+  4001 -> 4002 [label = "Hugo de Vrieslaan"]
+  4002 -> 6500 [label = "Hugo de Vrieslaan \n Wethouder Franke-\n-weg \n Galileïplantsoen \n (lijn 65)"]
+  
+  4002 -> 4003 [label = "Maxwellstraat \n (lijn 40, 41)"]
+  4003 -> 4004 [label = "Kruislaan \n (lijn 40)"]
+  4003 -> 4100 [label = "Kruislaan \n (lijn 41)"]
+  4004 -> 4005 [label = "Science Park"]
+  4005 -> 4006 [label = "Science Park"]
+  4006 -> 4007 [label = "Science Park"]
+  4007 -> 4004 [label = "Carolina MacGillavrylaan"]
+  4004 -> 6502 [label = "Carolina \n MacGillavrylaan"]
+  
+  6500 -> 6501 [label = "Archimedesweg"]
+  6501 -> 6502 [label = "Molukkenstraat"]
+  6502 -> 6503 [label = "Molukkenstraat"]
+  6503 -> 6504 [label = "Molukkenstraat \n (lijn 65)"]
+  6504 -> 6505 [label = "Zeeburgerdijk"]
+  6505 -> 6506 [label = "Panamalaan"]
+  6506 -> 6507 [label = "Cruquiusweg"]
+  6507 -> 6508 [label = "C. van Eesterenlaan"]
+  6508 -> 6509 [label = "J.F. Van Hengelstraat \n Verbindingsdam"]
+  6509 -> 6510 [label = "KNSM-Laan"]
+  6503 -> 4008 [label = "Insulindeweg \n (lijn 40)"]
+}
+'
+
+NRD %>% writeLines("gvb_NRD.gv")
+
+NRD %>% grViz() %>% export_svg() %>% writeLines("gvb_NRD.svg")
+
+system2(
+  "inkscape",
+  args = c(
+    "gvb_NRD.svg",
+    "--export-type=pdf",
+    "--actions=select-all;transform-rotate:0;page-fit-to-selection;export-do"
+  ),
+  stdout = FALSE,
+  stderr = FALSE
+)
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+ASA <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  4000 [pos = "0, 0!", label = "ASA"]
+  4001 [pos = "1, 0!"]
+  4002 [pos = "2, 0!"]
+  4003 [pos = "2,-1!"]
+  4004 [pos = "4,-1!"]
+  4005 [pos = "5,-1!"]
+  4006 [pos = "5,-2!"]
+  4007 [pos = "4,-2!"]
+  4008 [pos = "5, 2!", label = "MDS"]
+  
+  4100 [pos = "1,-1!"]
+  
+  6500 [pos = "3, 0!"]
+  6501 [pos = "3, 1!"]
+  6502 [pos = "4, 1!"]
+  6503 [pos = "5, 1!"]
+  6504 [pos = "6, 1!"]
+  6505 [pos = "6, 2!"]
+  6506 [pos = "7, 2!"]
+  6507 [pos = "7, 1!"]
+  6508 [pos = "8, 1!"]
+  6509 [pos = "8, 0!"]
+  6510 [pos = "7, 0!", label = "KNSM"]
+
+  4000 -> 4001 [label = "Over-\n-zichtweg"]
+  4001 -> 4002 [label = "Hugo de Vrieslaan"]
+  4002 -> 6500 [label = "Hugo de Vrieslaan \n Wethouder Franke-\n-weg \n Galileïplantsoen \n (lijn 65)"]
+  
+  4002 -> 4003 [label = "Maxwellstraat \n (lijn 40, 41)"]
+  4003 -> 4004 [label = "Kruislaan \n (lijn 40)"]
+  4003 -> 4100 [label = "Kruislaan \n (lijn 41)"]
+  4004 -> 4005 [label = "Science Park"]
+  4005 -> 4006 [label = "Science Park"]
+  4006 -> 4007 [label = "Science Park"]
+  4007 -> 4004 [label = "Carolina MacGillavrylaan"]
+  4004 -> 6502 [label = "Carolina \n MacGillavrylaan"]
+  
+  6500 -> 6501 [label = "Archimedesweg"]
+  6501 -> 6502 [label = "Molukkenstraat"]
+  6502 -> 6503 [label = "Molukkenstraat"]
+  6503 -> 6504 [label = "Molukkenstraat \n (lijn 65)"]
+  6504 -> 6505 [label = "Zeeburgerdijk"]
+  6505 -> 6506 [label = "Panamalaan"]
+  6506 -> 6507 [label = "Cruquiusweg"]
+  6507 -> 6508 [label = "C. van Eesterenlaan"]
+  6508 -> 6509 [label = "J.F. Van Hengelstraat \n Verbindingsdam"]
+  6509 -> 6510 [label = "KNSM-Laan"]
+  6503 -> 4008 [label = "Insulindeweg \n (lijn 40)"]
+}
+'
+
+ASA %>% writeLines("gvb_ASA.gv")
+
+ASA %>% grViz() %>% export_svg() %>% writeLines("gvb_ASA.svg")
+
+system2(
+  "inkscape",
+  args = c(
+    "gvb_ASA.svg",
+    "--export-type=pdf",
+    "--actions=select-all;transform-rotate:90;page-fit-to-selection;export-do"
+  ),
+  stdout = FALSE,
+  stderr = FALSE
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+BMR <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color = gray, fontsize = 7, fontname = "Arial"]
+  4900 [pos = "0, 0!", label = "BMR"]
+  4901 [pos = "1, 0!"]
+  4902 [pos = "1,-1!"]
+  4903 [pos = "2,-1!"]
+  4904 [pos = "4,-1!"]
+  4905 [pos = "4,-2!"]
+  4906 [pos = "5,-3!"]
+  4907 [pos = "5,-4!", height=0.01]
+  4908 [pos = "6,-4!"]
+  4909 [pos = "6,-3!"]
+  4910 [pos = "7,-3!"]
+  4911 [pos = "7,-2!"]
+  4912 [pos = "8,-2!"]
+  4913 [pos = "8,-1!"]
+  4914 [pos = "7,-1!"]
+  4915 [pos = "7, 0!"]
+  4916 [pos = "8, 0!"]
+  4917 [pos = "4,-3!", height=0.01]
+
+  6601 [pos = "1, 1!"]
+  6602 [pos = "3, 1!"]
+  6603 [pos = "3, 2!"]
+  6604 [pos = "4, 2!"]
+  6605 [pos = "4, 1!"]
+  6606 [pos = "6, 1!"]
+  6607 [pos = "6, 0!"]
+  6608 [pos = " 8, 1!"]
+  6609 [pos = " 7, 1!"]
+  6610 [pos = " 7, 2!", label = "VPS"]
+
+  36001 [pos = "2,-2!"]
+  36002 [pos = "3,-2!"]
+  36003 [pos = " 9, 1!", label = "BEDL"]
+  
+  4401 [pos = "2, 1!"]
+  4402 [pos = "2, 3!"]
+  4403 [pos = "3, 3!"]
+  4404 [pos = "3, 5!"]
+  4405 [pos = "4, 5!"]
+  4406 [pos = "4, 3!"]
+  4407 [pos = "5, 3!"]
+  4408 [pos = "5, 4!"]
+  4409 [pos = "6, 4!"]
+  4410 [pos = "6, 3!"]
+  4411 [pos = "7, 3!"]
+  4412 [pos = "7, 4!"]
+  4413 [pos = "7.5, 4.5!", height=0.01]
+  4415 [pos = "8, 3!", label = "DMN"]
+  4416 [pos = "5, 5!"]
+  4417 [pos = "6, 5!"]
+  4418 [pos = "8, 5!"]
+  4419 [pos = "8, 4!"]
+  
+  4408 -> 4416 [label = "Wilhelminaplantsoen", style = dashed, dir = "none"]
+  4405 -> 4416 [label = "Burgemeester \n Bickerstraat", style = dashed, dir = "none"]
+  4409 -> 4417 [label = "Buytenweg", style = dashed, dir = "none"]
+  4417 -> 4418 [label = "Oude Waelweg", style = dashed, dir = "none"]
+  4418 -> 4419 [label = "Meerkoet \n Zeezigt", style = dashed, dir = "none"]
+
+  4900 -> 4901 [label = "Hoogoord- \n -dreef"]
+  4901 -> 4902 [label = "Foppingadreef \n (lijn 49, 360**)"]
+  4902 -> 4903 [label = "Karspeldreef"]
+  4903 -> 4904 [label = "Karspeldreef \n (lijn 49)"]
+  4904 -> 4905 [label = "Kromwijkdreef \n (via St. Kraaiennest)"]
+  4905 -> 4917 [label = "Loosdrechtdreef \n (lijn 49)"]
+  4917 -> 4906 [label = ""]
+  4906 -> 4907 [label = "Provincialeweg \n Weesperbrug \n Gooilandseweg"]
+  4907 -> 4908 [label = ""]
+  4908 -> 4909 [label = "C.J. van Houtenlaan \n Prinses Irenelaan \n Casparuslaan"]
+  4909 -> 4910 [label = "Plataanlaan \n Herensingel"]
+  4910 -> 4911 [label = "Jan Tooropstraat"]
+  4911 -> 4912 [label = "M. Nijfoffstraat \n Herensingel \n (via St. Weesp)"]
+  4912 -> 4913 [label = "Stationsweg \n Korte Muiderweg \n Weesperweg"]
+  4913 -> 4914 [label = "Maria- \n -hoeveweg \n Busbaan \n Maxisweg \n Muiderbrug"]
+  4914 -> 4915 [label = "Diemerpolderweg"]
+  4915 -> 4916 [label = "Fortdiemerdamweg"]
+  4916 -> 6608 [label = "Benno Premselabrug \n Muiderlaan"]
+  
+
+  4903 -> 36001 [label = "Gooiseweg \n (lijn 360)"]
+  36001 -> 36002 [label = "Langbroek- \n -dreef"]
+  36002 -> 4905 [dir = "both", label = "Langbroekdreef \n (lijn 49 via \n St. Gaasperplas)"]
+
+  4901 -> 6601 [label = "Foppingadreef \n (lijn 44*, 66)"]
+  6601 -> 4401 [label = "Bijlmerdreef"]
+  4401 -> 6602 [label = "Bijlmerdreef \n (lijn 66)"]
+  4401 -> 4402 [label = "Dolingadreef \n (lijn 44)"]
+  4402 -> 4403 [label = "Daalwijkdreef"]
+  4403 -> 4404 [label = "Bergwijkdreef \n Boven Rijkersloot \n Beneden R. \n (via St. Diemen Zuid)"]
+  4404 -> 4405 [label = "Beneden R. \n Boven R.\n Beukenhorst"]
+  4405 -> 4406 [label = "Hartveldseweg \n Muiderstraatweg"]
+  4406 -> 4407 [label = "Prins Bernhardlaan"]
+  4407 -> 4408 [label = "Prinses Beatrixlaan"]
+  4408 -> 4409 [label = "Ouddiemerlaan \n (via St. Diemen)"]
+  4409 -> 4410 [label = "Diemerpolderweg"]
+  4410 -> 4411 [label = "Vogelweg"]
+  4411 -> 4412 [label = "Tureluurweg"]
+  4412 -> 4413 [label = "Rietzangerweg"]
+  4413 -> 4419
+  4419 -> 4415 [label = "Meerkoet \n Fregat \n Hermelijnvlinder"]
+  
+  6602 -> 6603 [label = "Elsrijkdreef \n (via St. Ganzenhoef)"]
+  6603 -> 6604 [label = "Provincialeweg"]
+  6604 -> 6605 [label = "Muiderstraatweg"]
+  6605 -> 6606 [label = "Weteringweg"]
+
+  6606 -> 6607 [label = "Diemerpolderweg"]
+  6607 -> 4915 [label = "Diemerpolderweg \n (via Diemerknoop)"]
+  6608 -> 36003 [label = "Pampuslaan \n (lijn 49, 360)"]
+  6608 -> 6609 [label = "Pampuslaan \n (lijn 66)"]
+  6609 -> 6610 [label = "IJburglaan"]
+  4905 -> 6607 [label = "[A9] \n [A1]: Zaanstad \n (1a): IJburg \n (lijn 360)"]
+  
+  labelloc="b"
+  label="* Bij terugkomst gebruikt u de stippellijnsegmenten 
+ ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
+  fontsize=6
+}
+'
+
+BMR %>% writeLines("gvb_BMR.gv")
+
+BMR %>% grViz() %>% export_svg() %>% writeLines("gvb_BMR.svg")
+
+system2("inkscape",
+        args = c("gvb_BMR.svg", "--export-type=pdf"),
+        stdout = FALSE,
+        stderr = FALSE)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+HOL <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  4100 [pos = " 0, 0!", label = "ASA"]
+  4101 [pos = " 1, 0!"]
+  4102 [pos = " 2, 0!"]
+  4103 [pos = " 2,-1!"]
+  4104 [pos = " 1,-1!"]
+  4105 [pos = " 1,-2!"]
+  4106 [pos = " 0,-2!"]
+  4107 [pos = " 0,-3!"]
+  4108 [pos = "-1,-3!"]
+  4109 [pos = "-1,-5!"]
+  4110 [pos = " 0,-5!"]
+  4111 [pos = " 1,-5!"]
+  4112 [pos = " 1,-4!"]
+  4113 [pos = " 0,-4!"]
+  4114 [pos = " 0,-6!"]
+  4115 [pos = " 1,-6!"]
+  4116 [pos = " 1,-8!"]
+  4117 [pos = " 0,-8!"]
+  4118 [pos = " 0,-9!"]
+  4119 [pos = "-1,-9!", label = "HOL"]
+  
+  4701 [pos = " 0,-10!"]
+  4702 [pos = " 1,-10!"]
+  4703 [pos = " 1,-11!"]
+  4704 [pos = " 5,-11!"]
+  4705 [pos = " 5,-10!"]
+  4706 [pos = " 4,-10!"]
+  4707 [pos = " 4,-9!"]
+  4708 [pos = " 5,-9!"]
+  4709 [pos = " 5,-8!"]
+  4710 [pos = " 4,-8!"]
+  4711 [pos = " 4,-6!"]
+  4712 [pos = " 3,-6!"]
+  4713 [pos = " 3,-7!"]
+  4714 [pos = " 2,-7!", label = "BMR"]
+  
+  4101 -> 4100 [label = "Over-\n-zichtweg"]
+  4102 -> 4101 [label = "Hugo de Vrieslaan"]
+  4103 -> 4102 [label = "Maxwellstraat"]
+  4104 -> 4103 [label = "Kruislaan"]
+  4105 -> 4104 [label = "Rozenburglaan"]
+  4106 -> 4105 [label = "Randweg"]
+  4107 -> 4106 [label = "Rijksstraatweg"]
+  4108 -> 4107 [label = "Busbaan"]
+  4109 -> 4108 [label = "Stationsweg \n (via St. Duivendrecht) \n Pablo Nerudalaan"]
+  4110 -> 4109 [label = "Alexander \n Dumaslaan"]
+  4111 -> 4110 [label = "Charlotte \n Brontéstraat"]
+  4112 -> 4111 [label = "Dickenslaan"]
+  4113 -> 4112 [label = "Dalsteindreef"]
+  4110 -> 4113 [label = "Dolingadreef"]
+  4114 -> 4110 [label = "Dolingadreef"]
+  4115 -> 4114 [label = "Bijlmerdreef"]
+  4116 -> 4115 [label = "`s-Gravendijkdreef"]
+  4117 -> 4116 [label = "Karspeldreef"]
+  4118 -> 4117 [label = "Meerkerkdreef \n Huntumdreef \n (lijn 41)"]
+  4119 -> 4118 [label = "Meibergdreef \n Holendrechtdreef"]
+  4118 -> 4701 [label = "Meerkerkdreef \n (lijn 47)"]
+  
+  4701 -> 4702 [label = "Meerkerkdreef"]
+  4702 -> 4703 [label = "Reigersbosdreef"]
+  4703 -> 4704 [label = "Schoonhovendreef"]
+  4704 -> 4705 [label = "Wageningendreef"]
+  4705 -> 4706 [label = "Valburgdreef"]
+  4706 -> 4707 [label = "Langbroekdreef"]
+  4707 -> 4708 [label = "Langbroekdreef \n (via St. Gaasperplas)"]
+  4708 -> 4709 [label = "Kromwijkdreef"]
+  4709 -> 4710 [label = "Karspeldreef"]
+  4710 -> 4711 [label = "Groesbeekdreef"]
+  4711 -> 4712 [label = "Bijlmerdreef"]
+  4712 -> 4713 [label = "Foppingadreef"]
+  4713 -> 4714 [label = "Hoogoorddreef"]
+}
+'
+
+HOL %>% writeLines("gvb_HOL.gv")
+
+HOL %>% grViz() %>% export_svg() %>% writeLines("gvb_HOL.svg")
+
+system2("inkscape",
+        args = c("gvb_HOL.svg", "--export-type=pdf"),
+        stdout = FALSE,
+        stderr = FALSE)
+```
+
+```{r}
+#| echo: false
+LLL <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  # lijn 63
+  6300 [pos = " 0, 0!", label = "LLL"]
+  6301 [pos = "-1, 0!"]
+  6302 [pos = "-1, 1!"]
+  6303 [pos = "-2, 1!"]
+  6304 [pos = "-2, 0!"]
+  6305 [pos = "-3, 0!"]
+  6306 [pos = "-3, 1!"]
+  6307 [pos = "-4, 1!"]
+  6308 [pos = "-4, 2!"]
+  6309 [pos = "-5, 2!"]
+  6310 [pos = "-5, 1!", label = "MTH"]
+
+  6202 [pos = "-1,-1!"]
+  6203 [pos = " 2,-1!"]
+  6204 [pos = " 1,-1!"]
+  6205 [pos = " 1, 0!"]
+  6206 [pos = " 2, 0!"]
+  6207 [pos = " 2,-3!"]
+  6208 [pos = " 3,-3!"]
+  6209 [pos = " 3,-2!"]
+  6210 [pos = " 4,-2!"]
+  6211 [pos = " 4,-4!"]
+  6212 [pos = " 5,-4!"]
+  6213 [pos = " 5,-2!"]
+  6214 [pos = " 6,-2!"]
+  6215 [pos = " 6,-1!"]
+  6216 [pos = " 7,-1!"]
+  6217 [pos = " 7,-3!"]
+  6218 [pos = " 6,-3!", label = "ASA"]
+
+  6300 -> 6301 [label = "Pieter \n Calandlaan"]
+  6301 -> 6302 [label = "Johan Huizingalaan \n (lijn 63)"]
+  6302 -> 6303 [label = "Comeniusstraat"]
+  6303 -> 6304 [label = "Hemsterhuisstraat \n Luis Bouw-\n-meesterstraat"]
+  6304 -> 6305 [label = "Pieter Calandlaan"]
+  6305 -> 6306 [label = "Meer en Vaart"]
+  6306 -> 6307 [label = "Osdorper Ban"]
+  6307 -> 6308 [label = "Baden Powellweg"]
+  6308 -> 6309 [label = "Ookmeerweg"]
+  6309 -> 6310 [label = "Baldwinstraat"]
+
+  6301 -> 6202 [label = "Johan Huizingalaan \n (lijn 62)"]
+  6202 -> 6204 [label = "Aletta Jacobslaan \n Vlaardingenlaan \n (via St. Henk Sneevlietweg)"]
+  6204 -> 6205 [label = "Aalsmeer-plein \n -weg"]
+  6205 -> 6206 [label = "Hoofddorp-plein \n -weg \n Zeil-brug \n -straat"]
+  6206 -> 6203 [label = "Amstelveenseweg \n (via Haarlemmermeerstation)"]
+  6203 -> 6207 [label = "Stadionplein \n Amstelveenseweg \n (via St. Amstelveenseweg)"]
+  6207 -> 6208 [label = "De Boelelaan"]
+  6208 -> 6209 [label = "Parnassusweg"]
+  6209 -> 6210 [label = "Strawinskylaan \n (via St. Zuid)"]
+  6210 -> 6211 [label = "Beethovenstraat \n Van Leijenberghlaan"]
+  6211 -> 6212 [label = "Van Boshuizenstraat"]
+  6212 -> 6213 [label = "Europaboulevard \n (via St. RAI) \n Europaplein"]
+  6213 -> 6214 [label = "President \n Kennedylaan"]
+  6214 -> 6215 [label = "Waalstraat"]
+  6215 -> 6216 [label = "Rooseveltlaan \n Victorieplein \n Vrijheidslaan \n Berlagebrug \n Mr. Treublaan \n Prins Bernhard-\n-plein"]
+  6216 -> 6217 [label = "Julianaplein"]
+  6217 -> 6218 [label = "Over-\n-zichtweg"]
+  }
+'
+
+LLL |> writeLines("gvb_LLL.gv")
+
+LLL |> grViz() |> export_svg() |> writeLines("gvb_LLL.svg")
+
+system2(
+  "inkscape",
+  args = c(
+    "gvb_LLL.svg",
+    "--export-type=pdf",
+    "--actions=select-all;transform-rotate:90;page-fit-to-selection;export-do"
+  ),
+  stdout = FALSE,
+  stderr = FALSE
+)
+
+```
+
+
+```{r}
+#| echo: false
+LLL_G <-'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  GW [pos = " 0, 2!", label = "GW"]
+  LLL [pos = "0, 0!", label = "LLL"]
+  MTH  [pos = "-1, 2!", label = "MTH"]
+  HMM [pos = " 4, 1!", label = "HMS"]
+  ASA [pos = " 2,-1!", label = "ASA"]
+  GW01 [pos = " 0, 1!"]
+  GW02 [pos = "-1, 1!"]
+  GW03 [pos = "-2, 3!"]
+  GW04 [pos = "-1, 0!"]
+  GW05 [pos = " 0, 3!"]
+  GW06 [pos = "-2, 2!"]
+  GW07 [pos = " 1, 3!"]
+  GW08 [pos = " 1, 1!"]
+  GW09 [pos = " 3, 2!"]
+  GW10 [pos = " 4, 2!"]
+  GW13 [pos = " 3,-1!"]
+  GW14 [pos = " 4,-2!"]
+  GW15 [pos = " 4, 0!"]
+  GW12 [pos = " 3, 0!"]
+  GW16 [pos = " 1, -2!"]
+
+  GW -> GW01 [label = "Jan Tooropstraat"]
+  GW -> GW05 [label = "Jan Tooropstraat"]
+  GW01 -> GW02 [label = "Jan Evertsenstraat"]
+  GW02 -> GW04 [label = "Oostoever \n Johan Huizingalaan"]
+  GW03 -> GW06 [label = "President Allendelaan \n Ookmeerweg"]
+  GW04 -> LLL [label = "Pieter \n Calandlaan"]
+  GW05 -> GW03 [label = "Jan van Galenstraat \n Burgemeester Röellstraat"]
+  GW05 -> GW07 [label = "Jan van Galenstraat"]
+  GW06 -> MTH [label = "Baldwinstraat"]
+  GW07 -> GW08 [label = "[A10]*"]
+  GW08 -> GW16 [label = "[A10]"]
+  GW16 -> GW14 [label = "[A10]"]
+  GW09 -> GW10 [label = "Hoofddorp-plein \n -weg \n Zeilstraat"]
+  GW10 -> HMM [label = "Amstelveenseweg"]
+  GW08 -> GW09 [label = "(7): Slotervaart \n Henk Sneevletweg \n Aalsmeerweg"]
+  GW12 -> GW13 [label = "Julianaplein"]
+  GW13 -> ASA [label = "Overzichtweg"]
+  GW14 -> GW15 [label = "[A10]"]
+  GW15 -> GW12 [label = "(12): Duivendrecht \n Gooiseweg \n Prins Bernhardplein"]
+
+  labelloc="b"
+  label="* Bij terugkomst gebruikt u afrit (5): De Baarsjes"
+  fontsize=6
+}'
+
+LLL_G %>% writeLines("gvb_LLL_G.gv")
+
+LLL_G %>% grViz() %>% export_svg() %>% writeLines("gvb_LLL_G.svg")
+
+system2("inkscape",
+        args = c("gvb_LLL_G.svg", "--export-type=pdf"),
+        stdout = FALSE,
+        stderr = FALSE)
+
+```
+
+```{r}
+#| echo: false
+BMR_G <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color = gray, fontsize = 7, fontname = "Arial"]
+  GZ   [pos = "-3, 1!", label = "GZ"]
+  BMR  [pos = " 0, 0!", label = "BMR"]
+  VPS  [pos = "-2, 4!", label = "VPS"]
+  BEDL [pos = " 0, 3!", label = "BEDL"]  
+  GZ01 [pos = "-1, 0!"]
+  GZ02 [pos = "-1, 1!"]
+  GZ03 [pos = "-2, 1!"]
+  GZ04 [pos = "-2, 2!"]
+  GZ05 [pos = "-3, 2!"]
+  GZ06 [pos = "-3, 3!"]
+  GZ07 [pos = "-2, 5!"]  
+  GZ08 [pos = "-3, 5!"]
+  GZ09 [pos = "-1, 3!"]
+  GZ10 [pos = "-1, 4!"]
+  GZ11 [pos = " 0, 4!"]
+
+  GZ -> GZ03   [label = "Joan Muyskenweg"]
+  GZ01 -> BMR  [label = "Hoogoorddreef"]
+  GZ02 -> GZ01 [label = "Holterbergweg"]
+  GZ03 -> GZ04 [label = "Van der Madeweg"]
+  GZ03 -> GZ02 [label = "Joan Muyskenweg"]
+  GZ04 -> GZ05 [label = "Spaklerweg"]
+  GZ05 -> GZ06 [label = "Verlengde van \n Marwijk Kooystraat \n [A10]: Hengelo"]
+  GZ06 -> GZ08 [label = "[A10]"]
+  GZ06 -> GZ09 [label = "Afslag naar [A1]: Hengelo \n Afrit (2): Diemen"] 
+  GZ07 -> VPS  [label = "IJburglaan"]  
+  GZ08 -> GZ07 [label = "Afrit (14): Zeeburg"]
+  GZ09 -> GZ10 [label = "Weteringweg"] 
+  GZ10 -> GZ11 [label = "Diemerpolderweg \n Fortdiemerdamweg \n Muiderlaan"]
+  GZ11 -> BEDL [label = "Pampuslaan"]
+}
+
+'
+BMR_G %>% writeLines("gvb_BMR_G.gv")
+
+BMR_G %>% grViz() %>% export_svg() %>% writeLines("gvb_BMR_G.svg")
+
+system2("inkscape",
+        args = c("gvb_BMR_G.svg", "--export-type=pdf"),
+        stdout = FALSE,
+        stderr = FALSE)
+
+
+```
+
+# Noord 
+
+```{r}
+#| echo: false
+
+set.seed(42)
+
+edges %>% filter(zone == "Noord") %>% 
+  tbl_graph(edges = .) %>%
+  ggraph(layout = "fr") +   # Fruchterman–Reingold
+  geom_edge_arc(
+    aes(label = label),
+    strength = 0.3,
+    angle_calc = "along",
+    label_dodge = unit(2, "mm"), 
+    color = "grey70"
+  ) +
+  geom_node_point(size = 4, color = "grey40", fill = "grey70", shape = 21) +
+  geom_node_text(aes(label = name), repel = TRUE) +
+  theme_void()
+```
+
+## Station Noord
+
+![](gvb_NRD.pdf)
+
+# Zuid
+
+```{r}
+#| echo: false
+
+set.seed(42)
+
+tmp <- edges %>% filter(zone == "Zuid") 
+
+x <- tmp %>% filter(label != 49)
+tmp <- tmp %>% filter(label == 49) %>%
+  rename(
+    from = to,
+    to = from
+  )
+
+x %>% bind_rows(tmp) %>%
+  tbl_graph(edges = .) %>% 
+  ggraph(layout = "fr") +   # Fruchterman–Reingold
+  geom_edge_arc(
+    aes(label = label),
+    strength = 0.3,
+    angle_calc = "along",
+    label_dodge = unit(2, "mm"), 
+    color = "grey70"
+  ) +
+  geom_node_point(size = 4, color = "grey40", fill = "grey70", shape = 21) +
+  geom_node_text(aes(label = name), repel = TRUE) +
+  theme_void()
+  
+```
+
+
+## Amstelstation
+
+![](gvb_ASA.pdf){width=4.0in}
+
+## Station Bijlmer ArenA
+
+![](gvb_BMR.pdf)
+
+## Station Bijlmer ArenA - Garageroutes
+
+![](gvb_BMR_G.pdf)
+
+## Station Holendrecht
+
+![](gvb_HOL.pdf){width=5.0in}
+
+## Station Holendrecht - Garageroutes
+
+# West
+
+```{r}
+#| echo: false
+
+set.seed(42)
+
+edges %>% filter(zone == "West") %>% 
+  tbl_graph(edges = .) %>%
+  ggraph(layout = "fr") +   # Fruchterman–Reingold
+  geom_edge_arc(
+    aes(label = label),
+    strength = 0.3,
+    angle_calc = "along",
+    label_dodge = unit(2, "mm"), 
+    color = "grey70"
+  ) +
+  geom_node_point(size = 4, color = "grey40", fill = "grey70", shape = 21) +
+  geom_node_text(aes(label = name), repel = TRUE) +
+  theme_void()
+```
+
+## Station Lelylaan
+
+![](gvb_LLL.pdf){width=4.0in}
+
+
+## Station Lelylaan - Garageroutes
+
+![](gvb_LLL_G.pdf)

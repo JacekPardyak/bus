@@ -4,36 +4,38 @@ digraph G {
   edge [color=gray, fontsize = 7, fontname = "Arial"]
 
   # lijn 63
-  6300 [pos = "0, 0!", label = "LLL"]
-  6301 [pos = "1, 0!"]
-  6302 [pos = "1,-1!"]
-  6303 [pos = "2,-1!"]
-  6304 [pos = "2, 0!"]
-  6305 [pos = "3, 0!"]
-  6306 [pos = "3,-1!"]
-  6307 [pos = "4,-1!"]
-  6308 [pos = "4,-2!"]
-  6309 [pos = "5,-2!"]
-  6310 [pos = "5,-1!", label = "MTH"]
+  6300 [pos = " 0, 0!", label = "LLL"]
+  6301 [pos = "-1, 0!"]
+  6302 [pos = "-1, 1!"]
+  6303 [pos = "-2, 1!"]
+  6304 [pos = "-2, 0!"]
+  6305 [pos = "-3, 0!"]
+  6306 [pos = "-3, 1!"]
+  6307 [pos = "-4, 1!"]
+  6308 [pos = "-4, 2!"]
+  6309 [pos = "-5, 2!"]
+  6310 [pos = "-5, 1!", label = "MTH"]
 
-  6202 [pos = " 1, 2!"]
-  6203 [pos = " 0, 2!"]
-  6204 [pos = " 0, 1!"]
-  6205 [pos = "-1, 1!"]
-  6206 [pos = "-1, 3!"]
-  6207 [pos = " 1, 3!"]
-  6208 [pos = " 1, 4!"]
-  6209 [pos = " 0, 4!"]
-  6210 [pos = " 0, 5!"]
-  6211 [pos = " 1, 5!"]
-  6212 [pos = " 1, 6!"]
-  6213 [pos = " 0, 6!"]
-  6214 [pos = " 0, 7!"]
-  6215 [pos = "-1, 7!"]
-  6216 [pos = "-1, 8!"]
-  6217 [pos = " 0, 8!", label = "ASA"]
+  6202 [pos = "-1,-1!"]
+  6203 [pos = " 2,-1!"]
+  6204 [pos = " 1,-1!"]
+  6205 [pos = " 1, 0!"]
+  6206 [pos = " 2, 0!"]
+  6207 [pos = " 2,-3!"]
+  6208 [pos = " 3,-3!"]
+  6209 [pos = " 3,-2!"]
+  6210 [pos = " 4,-2!"]
+  6211 [pos = " 4,-4!"]
+  6212 [pos = " 5,-4!"]
+  6213 [pos = " 5,-2!"]
+  6214 [pos = " 6,-2!"]
+  6215 [pos = " 6,-1!"]
+  6216 [pos = " 7,-1!"]
+  6217 [pos = " 7,-3!"]
+  6218 [pos = " 6,-3!", label = "ASA"]
 
-  6300 -> 6301 [label = "Pieter Calandlaan"]
+  6300 -> 6301 [label = "Pieter 
+ Calandlaan"]
   6301 -> 6302 [label = "Johan Huizingalaan 
  (lijn 63)"]
   6302 -> 6303 [label = "Comeniusstraat"]
@@ -49,17 +51,21 @@ digraph G {
 
   6301 -> 6202 [label = "Johan Huizingalaan 
  (lijn 62)"]
-  6202 -> 6203 [label = "Aletta Jacobslaan"]
-  6203 -> 6204 [label = "Vlaardingenlaan"]
+  6202 -> 6204 [label = "Aletta Jacobslaan 
+ Vlaardingenlaan 
+ (via St. Henk Sneevlietweg)"]
   6204 -> 6205 [label = "Aalsmeer-plein 
  -weg"]
   6205 -> 6206 [label = "Hoofddorp-plein 
  -weg 
- Zeilstraat"]
-  6206 -> 6207 [label = "Amstelveenseweg 
- (via Haarlemmermeer & Stadionplein)"]
-  6207 -> 6208 [label = "De Boelelaan 
- Buitenveldertselaan"]
+ Zeil-brug 
+ -straat"]
+  6206 -> 6203 [label = "Amstelveenseweg 
+ (via Haarlemmermeerstation)"]
+  6203 -> 6207 [label = "Stadionplein 
+ Amstelveenseweg 
+ (via St. Amstelveenseweg)"]
+  6207 -> 6208 [label = "De Boelelaan"]
   6208 -> 6209 [label = "Parnassusweg"]
   6209 -> 6210 [label = "Strawinskylaan 
  (via St. Zuid)"]
@@ -69,15 +75,18 @@ digraph G {
   6212 -> 6213 [label = "Europaboulevard 
  (via St. RAI) 
  Europaplein"]
-  6213 -> 6214 [label = "President Kennedylaan"]
+  6213 -> 6214 [label = "President 
+ Kennedylaan"]
   6214 -> 6215 [label = "Waalstraat"]
   6215 -> 6216 [label = "Rooseveltlaan 
-Victorieplein 
-Vrijheidslaan 
-Mr. Treublaan 
- &nbsp; Prins Bernhardplein 
-Julianaplein"]
-  6216 -> 6217 [label = "Over-
+ Victorieplein 
+ Vrijheidslaan 
+ Berlagebrug 
+ Mr. Treublaan 
+ Prins Bernhard-
+-plein"]
+  6216 -> 6217 [label = "Julianaplein"]
+  6217 -> 6218 [label = "Over-
 -zichtweg"]
-}
+  }
 

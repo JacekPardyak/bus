@@ -8,11 +8,18 @@ digraph G {
   4903 [pos = "2,-1!"]
   4904 [pos = "4,-1!"]
   4905 [pos = "4,-2!"]
-  4906 [pos = "4,-3!"]
-  4907 [pos = "3,-3!"]
-  4908 [pos = "3,-4!"]
-  4909 [pos = "2,-4!"]
-  4910 [pos = "2,-3!", label = "SWP"]
+  4906 [pos = "5,-3!"]
+  4907 [pos = "5,-4!", height=0.01]
+  4908 [pos = "6,-4!"]
+  4909 [pos = "6,-3!"]
+  4910 [pos = "7,-3!"]
+  4911 [pos = "7,-2!"]
+  4912 [pos = "8,-2!"]
+  4913 [pos = "8,-1!"]
+  4914 [pos = "7,-1!"]
+  4915 [pos = "7, 0!"]
+  4916 [pos = "8, 0!"]
+  4917 [pos = "4,-3!", height=0.01]
 
   6601 [pos = "1, 1!"]
   6602 [pos = "3, 1!"]
@@ -20,14 +27,14 @@ digraph G {
   6604 [pos = "4, 2!"]
   6605 [pos = "4, 1!"]
   6606 [pos = "6, 1!"]
-  6607 [pos = "6,-2!"]
-  6608 [pos = "6,-4!"]
-  6609 [pos = "7,-4!"]
-  6610 [pos = "8,-4!", label = "VPS"]
+  6607 [pos = "6, 0!"]
+  6608 [pos = " 8, 1!"]
+  6609 [pos = " 7, 1!"]
+  6610 [pos = " 7, 2!", label = "VPS"]
 
   36001 [pos = "2,-2!"]
   36002 [pos = "3,-2!"]
-  36003 [pos = "5,-4!", label = "BEDL"]
+  36003 [pos = " 9, 1!", label = "BEDL"]
   
   4401 [pos = "2, 1!"]
   4402 [pos = "2, 3!"]
@@ -41,7 +48,7 @@ digraph G {
   4410 [pos = "6, 3!"]
   4411 [pos = "7, 3!"]
   4412 [pos = "7, 4!"]
-  4413 [pos = "7.5, 4.5!"]
+  4413 [pos = "7.5, 4.5!", height=0.01]
   4415 [pos = "8, 3!", label = "DMN"]
   4416 [pos = "5, 5!"]
   4417 [pos = "6, 5!"]
@@ -49,38 +56,59 @@ digraph G {
   4419 [pos = "8, 4!"]
   
   4408 -> 4416 [label = "Wilhelminaplantsoen", style = dashed, dir = "none"]
-  4405 -> 4416 [label = "Burgemeester
-Bickerstraat", style = dashed, dir = "none"]
+  4405 -> 4416 [label = "Burgemeester 
+ Bickerstraat", style = dashed, dir = "none"]
   4409 -> 4417 [label = "Buytenweg", style = dashed, dir = "none"]
   4417 -> 4418 [label = "Oude Waelweg", style = dashed, dir = "none"]
   4418 -> 4419 [label = "Meerkoet 
  Zeezigt", style = dashed, dir = "none"]
 
-  4900 -> 4901 [label = "Hoogoorddreef"]
+  4900 -> 4901 [label = "Hoogoord- 
+ -dreef"]
   4901 -> 4902 [label = "Foppingadreef 
  (lijn 49, 360**)"]
   4902 -> 4903 [label = "Karspeldreef"]
   4903 -> 4904 [label = "Karspeldreef 
  (lijn 49)"]
-  4904 -> 4905 [label = "Kromwijkdreef"]
-  4905 -> 4906 [label = "Loosdrechtdreef 
+  4904 -> 4905 [label = "Kromwijkdreef 
+ (via St. Kraaiennest)"]
+  4905 -> 4917 [label = "Loosdrechtdreef 
  (lijn 49)"]
+  4917 -> 4906 [label = ""]
   4906 -> 4907 [label = "Provincialeweg 
+ Weesperbrug 
  Gooilandseweg"]
-  4907 -> 4908 [label = "C.J. van Houtenlaan 
+  4907 -> 4908 [label = ""]
+  4908 -> 4909 [label = "C.J. van Houtenlaan 
  Prinses Irenelaan 
  Casparuslaan"]
-  4908 -> 4909 [label = "Plataanlaan 
+  4909 -> 4910 [label = "Plataanlaan 
  Herensingel"]
-  4909 -> 4910 [label = "M. Nijfoffstraat 
- Herensingel"]
+  4910 -> 4911 [label = "Jan Tooropstraat"]
+  4911 -> 4912 [label = "M. Nijfoffstraat 
+ Herensingel 
+ (via St. Weesp)"]
+  4912 -> 4913 [label = "Stationsweg 
+ Korte Muiderweg 
+ Weesperweg"]
+  4913 -> 4914 [label = "Maria- 
+ -hoeveweg 
+ Busbaan 
+ Maxisweg 
+ Muiderbrug"]
+  4914 -> 4915 [label = "Diemerpolderweg"]
+  4915 -> 4916 [label = "Fortdiemerdamweg"]
+  4916 -> 6608 [label = "Benno Premselabrug 
+ Muiderlaan"]
+  
 
   4903 -> 36001 [label = "Gooiseweg 
  (lijn 360)"]
-  36001 -> 36002 [label = "Langbroekdreef"]
+  36001 -> 36002 [label = "Langbroek- 
+ -dreef"]
   36002 -> 4905 [dir = "both", label = "Langbroekdreef 
- (lijn 49 via
-St. Gaasperplas)"]
+ (lijn 49 via 
+ St. Gaasperplas)"]
 
   4901 -> 6601 [label = "Foppingadreef 
  (lijn 44*, 66)"]
@@ -95,13 +123,13 @@ St. Gaasperplas)"]
  Beneden R. 
  (via St. Diemen Zuid)"]
   4404 -> 4405 [label = "Beneden R. 
- Boven R. 
+ Boven R.
  Beukenhorst"]
   4405 -> 4406 [label = "Hartveldseweg 
  Muiderstraatweg"]
   4406 -> 4407 [label = "Prins Bernhardlaan"]
   4407 -> 4408 [label = "Prinses Beatrixlaan"]
-  4408 -> 4409 [label = "Ouddiemerlaan
+  4408 -> 4409 [label = "Ouddiemerlaan 
  (via St. Diemen)"]
   4409 -> 4410 [label = "Diemerpolderweg"]
   4410 -> 4411 [label = "Vogelweg"]
@@ -112,17 +140,17 @@ St. Gaasperplas)"]
  Fregat 
  Hermelijnvlinder"]
   
-  6602 -> 6603 [label = "Elsrijkdreef"]
+  6602 -> 6603 [label = "Elsrijkdreef 
+ (via St. Ganzenhoef)"]
   6603 -> 6604 [label = "Provincialeweg"]
   6604 -> 6605 [label = "Muiderstraatweg"]
   6605 -> 6606 [label = "Weteringweg"]
 
   6606 -> 6607 [label = "Diemerpolderweg"]
-  6607 -> 6608 [label = "Diemerpolderweg 
- Fortdiemerdamweg 
- Muiderlaan"]
+  6607 -> 4915 [label = "Diemerpolderweg 
+ (via Diemerknoop)"]
   6608 -> 36003 [label = "Pampuslaan 
- (lijn 360)"]
+ (lijn 49, 360)"]
   6608 -> 6609 [label = "Pampuslaan 
  (lijn 66)"]
   6609 -> 6610 [label = "IJburglaan"]
@@ -132,7 +160,7 @@ St. Gaasperplas)"]
  (lijn 360)"]
   
   labelloc="b"
-  label="* Bij terugkomst gebruikt u stippellijnwegen 
+  label="* Bij terugkomst gebruikt u de stippellijnsegmenten 
  ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
   fontsize=6
 }
