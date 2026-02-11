@@ -1,0 +1,171 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
+  edge [color=gray, fontsize = 7, fontname = "Arial"]
+
+  3400 [pos = " 0, 0!", label = "NRD"]
+  3401 [pos = "-1, 0!"]
+  3402 [pos = "-1, 1!", height=0.01]
+  3403 [pos = "-2, 1!", height=0.01]
+  3404 [pos = "-2,-1!", height=0.01]
+  3405 [pos = "-1,-1!"]
+  3406 [pos = "-1,-3!"]
+  3407 [pos = " 1,-3!"]
+  3408 [pos = " 1,-4!"]
+  3409 [pos = " 0,-4!"]
+  3410 [pos = " 1,-5!", label = "VLK"]
+
+  3501 [pos = " 2,-1!", label = "OLO"]
+  3502 [pos = " 3,-1!"]
+  3503 [pos = " 4,-1!"]
+  3504 [pos = " 4,-2!"]
+  3505 [pos = " 1,-2!"]
+  3506 [pos = "-2,-2!", height=0.01]
+  3507 [pos = "-3,-2!"]
+  3508 [pos = "-5,-2!"]
+  3509 [pos = "-5,-1!"]
+  3510 [pos = "-6,-1!"]
+  3511 [pos = "-6, 0!", height=0.01]
+  3512 [pos = "-7, 0!"]
+  3513 [pos = "-8, 1!"]
+  3514 [pos = "-8, 2!"]
+  3515 [pos = "-9, 3!"]
+  3516 [pos = "-7, 3!"]
+  3517 [pos = "-7, 2!", height=0.01]
+  3518 [pos = "-6, 2!"]
+  3519 [pos = "-6, 3!", label = "MOL"]
+  
+  3700 [pos = " 3, 0!"]
+  3701 [pos = " 4, 0!", height=0.01]
+  3702 [pos = " 5,-1!"]
+  3703 [pos = " 6,-1!"]
+  3704 [pos = " 6,-2!", height=0.01]
+  
+  3706 [pos = " 3, -5!", height=0.01]
+  3707 [pos = " 2, -5!"]
+  3708 [pos = " 2, -7!"]
+  3710 [pos = " 0, -7!", label = "ASA"]  
+  
+  
+  3801 [pos = " 1, 0!"]
+  3802 [pos = " 1, 1!"]
+  3803 [pos = " 2, 1!"]
+  3804 [pos = " 2, 0!"]
+  3805 [pos = " 1,-1!"]
+  3806 [pos = "-1,-4!"]
+  3807 [pos = "-2,-5!"]
+  3808 [pos = "-2,-6!"]
+  3809 [pos = "-3,-4!"]
+  3810 [pos = "-3,-1!"]
+  3811 [pos = "-4,-1!"]
+  3812 [pos = "-4, 0!"]
+  3813 [pos = "-5, 0!", label = "MET"]
+  
+  3400 -> 3401 [label = "IJdoornlaan 
+ (lijn 34)"]
+  3401 -> 3402 [label = "Oosterlengte"]
+  3402 -> 3403 [label = "Noorderbreedte"]
+  3403 -> 3404 [label = "Westerlengte 
+ Banne Buikslootlaan"]
+  3404 -> 3405 [label = ""]
+  3405 -> 3406 [label = "Kamperfoelieweg"]
+  3406 -> 3407 [dir = "both", label = "Johan van Hasseltweg 
+ (via St. Noorderpark)"]
+  3407 -> 3408 [label = "Meeuwenlaan 
+ (lijn 34, 38)"]
+  3408 -> 3409 [label = "Havikslaan 
+ Kraaienplein 
+ (lijn 34)"]
+  3409 -> 3410 [dir = "both", label = "Sperwerlaan 
+ Spreeuwenpark 
+ Valkenweg"]
+  3409 -> 3806 [label = "Hagedoornplein 
+ (lijn 38)"]
+  3408 -> 3410 [label = "Meeuwenlaan  
+ (lijn 38)"]
+  
+  3400 -> 3801 [label = "IJdoornlaan 
+ (lijn 37, 38)"]
+  3700 -> 3502 [label = "Th. Weeversweg 
+ (lijn 38)"]
+  3502 -> 3503 [label = "Werengouw 
+ (lijn 35)"]
+  3503 -> 3504 [label = "Volendammerweg"]
+  3504 -> 3505 [label = "(Nieuwe) Purmerweg"]
+  
+  3505 -> 3407 [label = "Waddenweg 
+ Meeuwenlaan"]
+  3406 -> 3506 [label = "Klaprozenweg 
+ (lijn 35)"]
+  3506 -> 3507 [label = ""]
+  3507 -> 3508 [label = "Klaprozenweg 
+ (lijn 35)"]
+  3508 -> 3509 [label = "Atatürk"]
+  3509 -> 3510 [label = "Strekkerweg"]
+  3510 -> 3511 [label = "Scheepsbouwweg"]
+  3511 -> 3512 [label = "Werktuigstraat"]
+  3512 -> 3513 [label = "Meteorenweg"]
+  3513 -> 3514 [label = "Kometensingel"]
+  3514 -> 3515 [label = "Kometensingel 
+ Oostzanerdijk"]
+  3515 -> 3516 [label = "Molenaarsweg"]
+  3516 -> 3517 [label = "Stellingweg"]
+  3517 -> 3518 [label = ""]
+  3518 -> 3519 [label = "Stellingweg"]
+  
+  3700 -> 3701 [label = "IJdoornlaan 
+ (lijn 37)"]
+  3701 -> 3702 [label = ""]
+  3702 -> 3703 [label = "Zuiderzeeweg"]
+  3703 -> 3704 [label = ""]
+  
+  3704 -> 3706 [label = "Zuiderzeeweg 
+ (via Schellingwouderbrug 
+ en Amsterdamsebrug) 
+ Insulindeweg 
+ (via Muiderpoortstation) 
+ Wijttenbachweg 
+ Oosterpark"]
+  3706 -> 3707 [label = ""]
+  3707 -> 3708 [label = "Beukenweg 
+ Maritzstraat 
+ Krugerplein 
+ Schalk Burgerstraat 
+ Nobelweg"]
+  3708 -> 3710 [label = "Hugo de Vrieslaan 
+ Overzichtweg"]
+
+  
+  
+  3801 -> 3804 [label = "IJdoornlaan 
+ (lijn 37)"]
+  3801 -> 3802 [label = "H. Cleyndertweg 
+ (lijn 38)"]
+  3802 -> 3803 [label = "J.H. van Heekweg"]
+  3803 -> 3804 [label = "J. Drijverweg"]
+  3804 -> 3700 [label = "IJdoornlaan"]
+  3501 -> 3805 [label = "Buik- 
+ -sloter- 
+ -meer- 
+ -plein 
+ (lijn 38)"]
+  3501 -> 3502 [dir = "both", label = "Buik- 
+ -sloter- 
+ -meer- 
+ -plein"]
+  3805 -> 3505 [label = "Waddenweg"]
+  3806 -> 3807 [label = "Meidoornweg"]
+  3807 -> 3808 [dir = "both", label = "Ranonkelkade"]
+  3807 -> 3809 [label = "Van der Pekbrug 
+ Docklandsweg 
+ Asterweg"]
+  3809 -> 3507 [label = "Ridderspoorweg"]
+  3507 -> 3810 [label = "Floraweg 
+ (lijn 38)"]
+  3810 -> 3811 [label = "Slijperweg"]
+  3811 -> 3812 [label = "Vuurwerkerweg"]
+  3812 -> 3813 [label = "Metaal- 
+ -bewerker- 
+ -weg"]
+}
+
