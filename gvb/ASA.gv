@@ -8,12 +8,10 @@ digraph G {
   4002 [pos = "2, 0!"]
   4003 [pos = "2,-1!"]
   4004 [pos = "4,-1!"]
-  4005 [pos = "5,-1!"]
-  4006 [pos = "5,-2!"]
+  4005 [pos = "5,-1!", height=0.01]
+  4006 [pos = "5,-2!", height=0.01]
   4007 [pos = "4,-2!"]
   4008 [pos = "5, 2!", label = "MDS"]
-  
-  4100 [pos = "1,-1!"]
   
   6500 [pos = "3, 0!"]
   6501 [pos = "3, 1!"]
@@ -37,11 +35,8 @@ digraph G {
  (lijn 65)"]
   
   4002 -> 4003 [label = "Maxwellstraat 
- (lijn 40, 41)"]
-  4003 -> 4004 [label = "Kruislaan 
  (lijn 40)"]
-  4003 -> 4100 [label = "Kruislaan 
- (lijn 41)"]
+  4003 -> 4004 [label = "Kruislaan"]
   4004 -> 4005 [label = "Science Park"]
   4005 -> 4006 [label = "Science Park"]
   4006 -> 4007 [label = "Science Park"]

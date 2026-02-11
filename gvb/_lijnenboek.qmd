@@ -256,12 +256,10 @@ ASA <- 'digraph G {
   4002 [pos = "2, 0!"]
   4003 [pos = "2,-1!"]
   4004 [pos = "4,-1!"]
-  4005 [pos = "5,-1!"]
-  4006 [pos = "5,-2!"]
+  4005 [pos = "5,-1!", height=0.01]
+  4006 [pos = "5,-2!", height=0.01]
   4007 [pos = "4,-2!"]
   4008 [pos = "5, 2!", label = "MDS"]
-  
-  4100 [pos = "1,-1!"]
   
   6500 [pos = "3, 0!"]
   6501 [pos = "3, 1!"]
@@ -279,9 +277,8 @@ ASA <- 'digraph G {
   4001 -> 4002 [label = "Hugo de Vrieslaan"]
   4002 -> 6500 [label = "Hugo de Vrieslaan \n Wethouder Franke-\n-weg \n Galileïplantsoen \n (lijn 65)"]
   
-  4002 -> 4003 [label = "Maxwellstraat \n (lijn 40, 41)"]
-  4003 -> 4004 [label = "Kruislaan \n (lijn 40)"]
-  4003 -> 4100 [label = "Kruislaan \n (lijn 41)"]
+  4002 -> 4003 [label = "Maxwellstraat \n (lijn 40)"]
+  4003 -> 4004 [label = "Kruislaan"]
   4004 -> 4005 [label = "Science Park"]
   4005 -> 4006 [label = "Science Park"]
   4006 -> 4007 [label = "Science Park"]
@@ -775,7 +772,7 @@ edges %>% filter(zone == "Noord") %>%
   theme_void()
 ```
 
-## Station Noord
+## Station Noord (lijnen 34, 35, 37, 38)
 
 ![](NRD.pdf){height=20cm}
 
@@ -812,11 +809,11 @@ x %>% bind_rows(tmp) %>%
 ```
 
 
-## Amstelstation
+## Amstelstation (lijnen 40, 65)
 
 ![](ASA.pdf){height=20cm}
 
-## Station Bijlmer ArenA
+## Station Bijlmer ArenA (lijnen 44, 49, 66, 360)
 
 ![](BMR.pdf){height=20cm}
 
@@ -824,7 +821,7 @@ x %>% bind_rows(tmp) %>%
 
 ![](BMR_G.pdf){height=20cm}
 
-## Station Holendrecht
+## Station Holendrecht (lijnen 41, 47)
 
 ![](HOL.pdf){height=20cm}
 
@@ -852,7 +849,7 @@ edges %>% filter(zone == "West") %>%
   theme_void()
 ```
 
-## Station Lelylaan
+## Station Lelylaan (lijnen 62, 63)
 
 ![](LLL.pdf){height=20cm}
 
