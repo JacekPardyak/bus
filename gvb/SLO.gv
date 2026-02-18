@@ -1,0 +1,40 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  1500 [pos = " 0, 0!", label = "SLO"]
+  1501 [pos = " 1, 0!"]
+  1502 [pos = " 1,-1!"]
+  1503 [pos = " 2,-1!"]
+  1504 [pos = " 2,-2!"]
+  1505 [pos = " 3,-2!"]
+  1506 [pos = " 3,-3!"]
+  1507 [pos = " 2,-3!"]
+  1508 [pos = " 2,-4!"]
+  1509 [pos = " 3,-4!"]
+  1510 [pos = " 3,-5!"]
+  1511 [pos = " 4,-5!"]
+  1512 [pos = " 4,-6!"]
+  1513 [pos = " 5,-6!", label = "ZUI"]
+  
+  2201 [pos = "-1, 0!"]
+
+  1500 -> 1501 [label = "Arlandaweg \n (lijn 15)"]
+  1501 -> 1502 [label = "Kimpoweg"]
+  1502 -> 1503 [label = "Haarlemmerweg"]
+  1503 -> 1504 [label = "Einsteinweg"]
+  1504 -> 1505 [label = "Bos en Lommerplein"]
+  1505 -> 1506 [label = "Hoofdweg"]
+  1506 -> 1507 [label = "Surinameplein"]
+  1507 -> 1508 [label = "Haarlemmermeerstraat"]
+  1508 -> 1509 [label = "Hoofddorp-plein \n -weg \n Zeil-brug \n -straat"]
+  1509 -> 1510 [label = "Amstelveenseweg \n (via Haarlemmermeerstation)"]
+  1510 -> 1511 [label = "Stadion-plein \n -weg \n Olympiaplein"]
+  1511 -> 1512 [label = "Parnassusweg"]
+  1512 -> 1513 [label = "Strawinskylaan"]
+  
+  1500 -> 2201 [label = "Arlandaweg \n (lijn 22, 36)"]
+   
+}
+

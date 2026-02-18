@@ -1,7 +1,7 @@
 digraph G {
   layout = neato
-  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
-  edge [color=gray, fontsize = 7, fontname = "Arial"]
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   3400 [pos = " 0, 0!", label = "NRD"]
   3401 [pos = "-1, 0!"]
@@ -64,7 +64,8 @@ digraph G {
   3400 -> 3401 [label = "IJdoornlaan 
  (lijn 34)"]
   3401 -> 3402 [label = "Oosterlengte"]
-  3402 -> 3403 [label = "Noorderbreedte"]
+  3402 -> 3403 [label = "Noorder- 
+ -breedte"]
   3403 -> 3404 [label = "Westerlengte 
  Banne Buikslootlaan"]
   3404 -> 3405 [label = ""]
@@ -103,7 +104,8 @@ digraph G {
   3508 -> 3509 [label = "Atatürk"]
   3509 -> 3510 [label = "Strekkerweg"]
   3510 -> 3511 [label = "Scheepsbouwweg"]
-  3511 -> 3512 [label = "Werktuigstraat"]
+  3511 -> 3512 [label = "Werktuig- 
+ -straat"]
   3512 -> 3513 [label = "Meteorenweg"]
   3513 -> 3514 [label = "Kometensingel"]
   3514 -> 3515 [label = "Kometensingel 
