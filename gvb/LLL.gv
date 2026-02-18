@@ -1,7 +1,7 @@
 digraph G {
   layout = neato
-  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
-  edge [color=gray, fontsize = 7, fontname = "Arial"]
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   # lijn 63
   6300 [pos = " 0, 0!", label = "LLL"]
