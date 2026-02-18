@@ -1,0 +1,121 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  1800 [pos = " 1, 0!", label = "CEN"]
+  1801 [pos = "-1, 0!"]
+  1802 [pos = "-1,-1!"]
+  1803 [pos = "-2,-1!"]
+  1804 [pos = "-2,-2!"]
+  1805 [pos = "-3,-2!"]
+  1806 [pos = "-3,-3!"]
+  1807 [pos = "-4,-3!"]
+  1808 [pos = "-4,-4!"]
+  1809 [pos = "-5,-4!"]
+  1810 [pos = "-5,-5!"]
+  1811 [pos = "-6,-5!"]
+  1812 [pos = "-6,-6!"]
+  1813 [pos = "-7,-6!", label = "SLO"]
+  
+  2101 [pos = "-4,-2!", height=0.01]
+  2102 [pos = "-4,-1!"]
+  2103 [pos = "-5,-1!"]
+  2104 [pos = "-5,-2!", height=0.01]
+  2105 [pos = "-7,-2!", height=0.01]
+  2106 [pos = "-7,-1.5!"]
+  2107 [pos = "-8,-1.5!", height=0.01]
+  2108 [pos = "-8,-3.5!"]
+  2109 [pos = "-7,-3.5!", label = "GEU"]
+  
+  4301 [pos = " 3, 0!"]
+  4302 [pos = " 3, 1!"]
+  4303 [pos = " 5, 1!", height=0.01]
+  4304 [pos = " 5, 0!", height=0.01]
+  4305 [pos = " 4, 0!"]
+  4306 [pos = " 4,-1!"]
+  4307 [pos = " 5,-1!"]
+  4308 [pos = " 5,-2!"]
+  4309 [pos = " 6,-2!"]
+  4310 [pos = " 6,-1!"]
+  4311 [pos = " 7,-1!", label = "BOR"]
+   
+  4801 [pos = "-2, 0!"]
+  4802 [pos = "-2, 1!", height=0.01]
+  4803 [pos = "-3, 1!"]
+  4804 [pos = "-3, 2!"]
+  4805 [pos = "-2, 2!"]
+  4806 [pos = "-2, 3!"]
+  4807 [pos = "-3, 3!", label = "HOU"]
+
+  1800 -> 1801 [label = "De Ruijterkade 
+ (lijn 18, 21, 48)"]
+  1801 -> 1802 [label = "Droogbak 
+ (lijn 18, 21)"]
+  1802 -> 1803 [label = "Nieuwe Westerdokstraat 
+ Haarlemmer Houttuinen 
+ Tussen de Bogen"]
+  1803 -> 1804 [label = "Planciusstraat 
+ Haarlemmerplein 
+ (Korte) Marnixstraat"]
+  1804 -> 1805 [label = "Marnixplein 
+ Frederik Hendrikplantsoen"]
+  1805 -> 1806 [label = "Frederik Hendrikstraat 
+ (lijn 18)"]
+  1806 -> 1807 [label = "Tweede Hugo de Grootstraat 
+ Jan van Galenstraat"]
+  1807 -> 1808 [label = "Admiraal de Ruijterweg"]
+  1808 -> 1809 [label = "Jan Evertsenstraat"]
+  1809 -> 1810 [label = "Jan Tooropstraat"]
+  1810 -> 1811 [label = "Postjesweg 
+ Robert Fruinlaan"]
+  1811 -> 1812 [label = "Johan Huizingalaan"]
+  1812 -> 1813 [label = "Louwesweg"]
+  
+  1805 -> 2101 [label = "Kostverlorenstraat 
+ Van Hallstraat 
+ (lijn 21)"]
+  2101 -> 2102 [label = ""]
+  2102 -> 2103 [label = "Haarlemmerweg"]
+  2103 -> 2104 [label = "Bos en Lommerweg 
+ Burgemeester de Vlugtlaan"]
+  2104 -> 2105 [label = ""]
+  2105 -> 2106 [label = ""]
+  2106 -> 2107 [label = "Ruys de Beerenbrouckstraat 
+ Antony Moddermanstraat"]
+  2107 -> 2108 [label = "Aalbersestraat"]
+  2108 -> 2109 [label = "De Savornin Lohmanlaan"]
+  
+  1800 -> 4301 [label = "De Ruijterkade 
+ Piet Heinkade  
+ (lijn 43)"]
+  4301 -> 4302 [label = "Vemenplein 
+ Jan Schaeferbrug 
+ Tosaristraat"]
+  4302 -> 4303 [label = "Sumatrakade"]
+  4303 -> 4304 [label = "Azartplein 
+ Verbindingsdam"]
+  4304 -> 4305 [label = "J.F. Van Hengelstraat"]
+  4305 -> 4306 [label = "Oostelijke Handelskade 
+ C. van Eesterenlaan"]
+  4306 -> 4307 [label = "Borneolaan"]
+  4307 -> 4308 [label = "Borneolaan"]
+  4308 -> 4309 [label = "Feike de Boerlaan"]
+  4309 -> 4310 [label = "R.J.H. Fortuynstraat"]
+  4310 -> 4311 [label = "Stuurmankade"]
+  
+  1801 -> 4801 [label = "De Ruijterkade 
+ (lijn 48)"]
+  4801 -> 4802 [label = "Westerdoksdijk"]
+  4802 -> 4803 [label = "Barentszplein 
+ Van Diemenstraat 
+ Tasmanstraat 
+ Spaarndammerdijk"]
+  4803 -> 4804 [label = "Houthavenweg"]
+  4804 -> 4805 [label = "Haparandaweg"]
+  4805 -> 4806 [label = "Danzigerkade"]
+  4806 -> 4807 [label = "Minervahavenweg 
+ Koivistokade"]
+   
+}
+

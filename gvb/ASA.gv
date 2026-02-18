@@ -1,10 +1,9 @@
 digraph G {
   layout = neato
-  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 7, fontname = "Arial"]
-  edge [color=gray, fontsize = 7, fontname = "Arial"]
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   4000 [pos = "0, 0!", label = "ASA"]
-  4001 [pos = "1, 0!"]
   4002 [pos = "2, 0!"]
   4003 [pos = "2,-1!"]
   4004 [pos = "4,-1!"]
@@ -25,12 +24,10 @@ digraph G {
   6509 [pos = "8, 0!"]
   6510 [pos = "7, 0!", label = "KNSM"]
 
-  4000 -> 4001 [label = "Over-
--zichtweg"]
-  4001 -> 4002 [label = "Hugo de Vrieslaan"]
+  4000 -> 4002 [label = "Overzichtweg 
+ Hugo de Vrieslaan"]
   4002 -> 6500 [label = "Hugo de Vrieslaan 
- Wethouder Franke-
--weg 
+ Wethouder Frankeweg 
  Galileïplantsoen 
  (lijn 65)"]
   
@@ -45,7 +42,7 @@ digraph G {
  MacGillavrylaan"]
   
   6500 -> 6501 [label = "Archimedesweg"]
-  6501 -> 6502 [label = "Molukkenstraat"]
+  6501 -> 6502 [label = ""]
   6502 -> 6503 [label = "Molukkenstraat"]
   6503 -> 6504 [label = "Molukkenstraat 
  (lijn 65)"]
