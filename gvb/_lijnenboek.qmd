@@ -82,8 +82,8 @@ Bus464, Gelderlandplein, Vivaldi" %>%
     zone = case_when(
       label %in% c(18, 21, 34, 35, 37, 38, 43, 48) ~ "Noord",
       label %in% c(40, 41, 44, 47, 49, 65, 66, 360)    ~ "Zuid",
-      label %in% c(15, 22, 36, 61, 62, 63, 231, 369) ~ "West",
-      label %in% c(245, 246, 247) ~ "Extra",
+      label %in% c(15, 22, 36, 61, 62, 63, 369) ~ "West",
+      label %in% c(231, 245, 246, 247) ~ "Spits",
       TRUE                 ~ NA_character_
     )
   ) -> edges
@@ -972,14 +972,13 @@ edges %>% filter(zone == "West") %>%
 
 ## Station Sloterdijk
 
-# Extra
-
+# Spitslijnen
 ```{r}
 #| echo: false
 
 set.seed(42)
 
-edges %>% filter(zone == "Extra") %>% 
+edges %>% filter(zone == "Spits") %>% 
   tbl_graph(edges = .) %>%
   ggraph(layout = "fr") +   # Fruchterman–Reingold
   geom_edge_arc(
@@ -996,6 +995,7 @@ edges %>% filter(zone == "Extra") %>%
 
 ## Schiphol Airport/Plaza (lijnen 245, 246, 247)
 
+## Station Sloterdijk (lijnen 231)
 
 # Garageroutes
 
