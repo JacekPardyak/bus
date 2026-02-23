@@ -1,0 +1,57 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  36901 [pos = " 0, 0!", label = "SLO"]
+  36902 [pos = "-2, 0!"]
+  36903 [pos = "-2,-1!"]
+  36904 [pos = "-3,-1!"]
+  36905 [pos = "-3,-2!"]
+  36906 [pos = "-4,-3!"]
+  36907 [pos = "-4,-4!"]
+  36908 [pos = "-5,-4!"]
+  36909 [pos = "-5,-5!"]
+  36910 [pos = "-4,-5!"]
+  36911 [pos = "-4,-6!", height=0.01]
+  36912 [pos = "-5,-6!"]
+  36913 [pos = "-5,-7!"]
+  36914 [pos = "-6,-7!"]
+  36915 [pos = "-6,-8!"]
+  36916 [pos = "-7,-8!"]
+  36917 [pos = "-7,-7!"]
+  36918 [pos = "-9,-7!"]
+  36919 [pos = "-9,-6!"]
+  36920 [pos = "-11,-8!"]
+  36921 [pos = "-9,-8!", label = "SCH"]
+  
+  36901 -> 36902 [label = "Arlandaweg 
+ (lijn 369)"]
+  36902 -> 36903 [label = "Radarweg"]
+  36903 -> 36904 [label = "Haarlemmerweg"]
+  36904 -> 36905 [label = "Burgemeester de Vlugtlaan"]
+  36905 -> 36906 [label = "Slotermeerlaan 
+ President Allendelaan"]
+  36906 -> 36907 [label = "Meer en Vaart"]
+  36907 -> 36908 [label = "Pieter Calandlaan"]
+  36908 -> 36909 [label = "Louis Davidsstraat"]
+  36909 -> 36910 [label = "Plesmanlaan"]
+  36910 -> 36911 [label = "Laan van Vlaanderen"]
+  36911 -> 36912 [label = ""]
+  36912 -> 36913 [label = "Anderlechtlaan"]
+  36913 -> 36914 [label = "Oude Haagseweg 
+ Zuidtangent"]
+  36914 -> 36915 [label = ""]
+  36915 -> 36916 [label = "Zuidtangent"]
+  36916 -> 36917 [label = "Cateringweg"]
+  36917 -> 36918 [label = "Schipholweg 
+ Zuidtangent 
+ (via Knooppunt 
+ Schiphol-Noord)"]
+  36918 -> 36919 [label = "Koetsierstraat"]
+  36919 -> 36920 [label = "Loevesteinse Randweg 
+ (via Buitenvelderttunnel) 
+ Westelijke Randweg"]
+  36920 -> 36921 [label = "Handelskade"]
+}
+

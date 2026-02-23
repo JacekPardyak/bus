@@ -752,6 +752,250 @@ system2(
 
 ```
 
+```{r}
+#| echo: false
+SLO <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  1500 [pos = " 0, 0!", label = "SLO"]
+  1501 [pos = " 1, 0!"]
+  1502 [pos = " 1,-1!"]
+  1503 [pos = " 2,-1!"]
+  1504 [pos = " 2,-2!"]
+  1505 [pos = " 3,-2!"]
+  1506 [pos = " 3,-3!"]
+  1507 [pos = " 2,-3!"]
+  1508 [pos = " 2,-4!"]
+  1509 [pos = " 4,-4!"]
+  1510 [pos = " 4,-5!"]
+  1511 [pos = " 5,-5!"]
+  1512 [pos = " 5,-6!"]
+  1513 [pos = " 7,-6!", label = "ZUI"]
+  
+  2200 [pos = " 2, 1!"]
+  2201 [pos = "-2, 0!"]
+  2202 [pos = "-2, 1!"]
+  2203 [pos = " 3, 1!"]
+  2204 [pos = " 3, 0!"]
+  2205 [pos = " 4, 0!"]
+  2206 [pos = " 4,-1!"]
+  2207 [pos = " 5,-1!"]
+  2208 [pos = " 5, 0!"]
+  2209 [pos = " 8, 0!"]
+  2210 [pos = " 8, 1!"]
+  2211 [pos = "10, 1!"]
+  2212 [pos = "10, 0!"]
+  2213 [pos = "11, 0!"]
+  2214 [pos = "11, 1!"]
+  2215 [pos = "13, 1!"]
+  2216 [pos = "13, 0!"]
+  2217 [pos = "14, 0!"]
+  2218 [pos = "14,-1!"]
+  2219 [pos = "12,-1!", label = "MUI"]
+  
+  3602 [pos = " 2, 6!"]
+  3603 [pos = " 4, 7!"]
+  3604 [pos = " 4, 6!"]
+  3605 [pos = " 3, 6!"]
+  3606 [pos = " 4, 5!", height=0.01]
+  3607 [pos = " 5, 5!"]
+  3608 [pos = " 5, 6!"]
+  3609 [pos = " 5, 4!"]
+  3610 [pos = " 6, 4!"]
+  3611 [pos = " 6, 3!"]
+  3612 [pos = " 7, 3!"]
+  3613 [pos = " 7, 2!"]
+  3614 [pos = " 8, 2!"]
+  3615 [pos = " 8, 2.5!"]
+  3616 [pos = " 9, 3!"]
+  3617 [pos = " 8, 4!"]
+  3618 [pos = " 7, 4!", height=0.01]
+  3619 [pos = " 7, 5!"]
+  3620 [pos = " 9, 5!", label = "NRD"]
+  
+  6101 [pos = "-3, 0!"]
+  6102 [pos = "-3, 1!"]
+  6103 [pos = "-4, 1!"]
+  6104 [pos = "-7,-2!"]
+  6105 [pos = "-7,-3!"]  
+  6106 [pos = "-6,-3!"]  
+  6107 [pos = "-6,-4!"]  
+  6108 [pos = "-5,-4!"]  
+  6109 [pos = "-5,-5!"]  
+  6110 [pos = "-7,-5!", label = "OSD"]
+  
+  36901 [pos = "-2,-1!"]
+  36902 [pos = "-4,-1!"] 
+  36903 [pos = "-4,-2!"] 
+  36904 [pos = "-4,-3!"]
+  36905 [pos = "-5,-6!"]
+  
+  
+  1500 -> 1501 [label = "Arlandaweg \n (lijn 15)"]
+  1501 -> 1502 [label = "Kimpoweg"]
+  1502 -> 1503 [label = "Haarlemmer-\n-weg"]
+  1503 -> 1504 [label = "Einsteinweg"]
+  1504 -> 1505 [label = "Bos en Lommerplein"]
+  1505 -> 1506 [label = "Hoofdweg"]
+  1506 -> 1507 [label = "Surinameplein"]
+  1507 -> 1508 [label = "Haarlemmermeerstraat"]
+  1508 -> 1509 [label = "Hoofddorp-plein \n -weg \n Zeil-brug \n -straat"]
+  1509 -> 1510 [label = "Amstelveenseweg \n (via Haarlemmermeer-\n-station)"]
+  1510 -> 1511 [label = "Stadion-plein \n -weg \n Olympiaplein"]
+  1511 -> 1512 [label = "Parnassusweg"]
+  1512 -> 1513 [label = "Strawinskylaan"]
+  
+  1500 -> 2201 [label = "Arlandaweg \n (lijn 22, 36, 61, 369)"]
+  2201 -> 2202 [label = "Radarweg \n (lijn 22, 36)"]
+  2202 -> 2200 [label = "Basisweg \n Transformatorweg"]
+  2203 -> 2204 [label = "Nieuwe Hemweg"]
+  2204 -> 2205 [label = "Spaarndammerdijk"]
+  2205 -> 2206 [label = "Spaarndammerstraat \n Westerpark \n (via Mirakelbrug)"]
+  2206 -> 2207 [label = "Willemsbrug"]
+  2207 -> 2208 [label = "Haarlemmerplein"]
+  2208 -> 2209 [label = "Tussen de Bogen \n Haarlemmer Houttuinen \n Nieuwe Westerdokstraat"]
+  2209 -> 2210 [label = "Droogbak"]
+  2210 -> 2211 [label = "De Ruijterkade \n (via Centraal St.)"]
+  2211 -> 2212 [label = "Kamperbrug"]
+  2212 -> 2213 [label = "Prins Hendrik-\n-kade"]
+  2213 -> 2214 [label = ""]
+  2214 -> 2215 [label = "Kattenburger-plein \n - gracht \n Wittenburgergracht \n Oostenburgergracht \n Cruquiuskade"]
+  2215 -> 2216 [label = "Panamalaan"]
+  2216 -> 2217 [label = "Zeeburgerdijk"]
+  2217 -> 2218 [label = "Molukkenstraat"]
+  2218 -> 2219 [label = "Insulindeweg"]
+  
+  2200 -> 3602 [label = "Einsteinweg \n (aka [A10])\n (lijn 36)"]
+  2200 -> 2203 [label = "Transformator-\n-weg \n (lijn 22)"]
+  3602 -> 3603 [label = "[A10] \n Afrit (18): Tuindorp"]
+  3603 -> 3604 [label = "Verlengde Stellingweg"]
+  3604 -> 3605 [dir = "both", label = "Molenaarsweg"]
+  3604 -> 3606 [label = "Stellingweg"]
+  3606 -> 3607 [label = ""]
+  3607 -> 3608 [dir = "both", label = "Stellingweg"]
+  3607 -> 3609 [label = "Appelweg \n Pomonastraat"]
+  3609 -> 3610 [label = "Werktuigstraat"]
+  3610 -> 3611 [label = "Scheepsbouwweg"]
+  3611 -> 3612 [label = "Strekkerweg"]
+  3612 -> 3613 [label = "Atatürk"]
+  3613 -> 3614 [label = "Klaprozenweg"]
+  3614 -> 3615 [label = "Floraweg"]
+  3615 -> 3616 [label = "Floraweg"]
+  3616 -> 3617 [label = "Kamperfoelieweg"]
+  3617 -> 3618 [label = "Banne Buikslootlaan"]
+  3618 -> 3619 [label = ""]
+  3619 -> 3620 [label = "IJdoornlaan"]
+  
+  2201 -> 6101 [label = "Arlandaweg \n (lijn 61)"]
+  6101 -> 6102 [label = "Barajasweg"]
+  6102 -> 6103 [label = "Naritaweg"]
+  6103 -> 36902 [label = "Seineweg"]
+  6104 -> 6105 [label = "Aalbersestraat"]  
+  6105 -> 6106 [label = "De Savornin Lohmanlaan"]  
+  6106 -> 6107 [label = "Troelstralaan"]  
+  6107 -> 6108 [label = "Ookmeerweg"]  
+  6108 -> 6109 [label = "Meer en Vaart"]  
+  6109 -> 6110 [label = "Osdorpplein \n (lijn 61)"]  
+  
+  2201 -> 36901 [label = "Radarweg \n (lijn 369)"]
+  36901 -> 36902 [label = "Haarlemmerweg"]
+  36902 -> 36903 [label = "Burgemeester de Vlugtlaan"]
+  36903 -> 6104 [label = "Antony Moddermanstraat \n Ruys de Beerenbrouckstraat \n (lijn 61)"]
+  36903 -> 36904 [label = "Burgemeester de Vlugtlaan \n (lijn 369)"]
+  36904 -> 6108 [label = "Slotermeerlaan \n President Allendelaan"]
+  6109 -> 36905 [label = "Meer en Vaart \n (lijn 369)", style=dotted ] 
+  
+}
+
+'
+
+SLO |> writeLines("SLO.gv")
+
+SLO |> grViz() |> export_svg() |> writeLines("SLO.svg")
+
+system2(
+  "inkscape",
+  args = c(
+    "SLO.svg",
+    "--export-type=pdf",
+    "--actions=select-all;transform-rotate:90;page-fit-to-selection;export-do"
+  ),
+  stdout = FALSE,
+  stderr = FALSE
+)
+
+```
+
+```{r}
+#| echo: false
+SLO_369 <- 'digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  36901 [pos = " 0, 0!", label = "SLO"]
+  36902 [pos = "-2, 0!"]
+  36903 [pos = "-2,-1!"]
+  36904 [pos = "-3,-1!"]
+  36905 [pos = "-3,-2!"]
+  36906 [pos = "-4,-3!"]
+  36907 [pos = "-4,-4!"]
+  36908 [pos = "-5,-4!"]
+  36909 [pos = "-5,-5!"]
+  36910 [pos = "-4,-5!"]
+  36911 [pos = "-4,-6!", height=0.01]
+  36912 [pos = "-5,-6!"]
+  36913 [pos = "-5,-7!"]
+  36914 [pos = "-6,-7!"]
+  36915 [pos = "-6,-8!"]
+  36916 [pos = "-7,-8!"]
+  36917 [pos = "-7,-7!"]
+  36918 [pos = "-9,-7!"]
+  36919 [pos = "-9,-6!"]
+  36920 [pos = "-11,-8!"]
+  36921 [pos = "-9,-8!", label = "SCH"]
+  
+  36901 -> 36902 [label = "Arlandaweg \n (lijn 369)"]
+  36902 -> 36903 [label = "Radarweg"]
+  36903 -> 36904 [label = "Haarlemmerweg"]
+  36904 -> 36905 [label = "Burgemeester de Vlugtlaan"]
+  36905 -> 36906 [label = "Slotermeerlaan \n President Allendelaan"]
+  36906 -> 36907 [label = "Meer en Vaart"]
+  36907 -> 36908 [label = "Pieter Calandlaan"]
+  36908 -> 36909 [label = "Louis Davidsstraat"]
+  36909 -> 36910 [label = "Plesmanlaan"]
+  36910 -> 36911 [label = "Laan van Vlaanderen"]
+  36911 -> 36912 [label = ""]
+  36912 -> 36913 [label = "Anderlechtlaan"]
+  36913 -> 36914 [label = "Oude Haagseweg \n Zuidtangent"]
+  36914 -> 36915 [label = ""]
+  36915 -> 36916 [label = "Zuidtangent"]
+  36916 -> 36917 [label = "Cateringweg"]
+  36917 -> 36918 [label = "Schipholweg \n Zuidtangent \n (via Knooppunt \n Schiphol-Noord)"]
+  36918 -> 36919 [label = "Koetsierstraat"]
+  36919 -> 36920 [label = "Loevesteinse Randweg \n (via Buitenvelderttunnel) \n Westelijke Randweg"]
+  36920 -> 36921 [label = "Handelskade"]
+}
+'
+
+SLO_369 |> writeLines("SLO_369.gv")
+
+SLO_369 |> grViz() |> export_svg() |> writeLines("SLO_369.svg")
+
+system2(
+  "inkscape",
+  args = c(
+    "SLO_369.svg",
+    "--export-type=pdf",
+    "--actions=select-all;transform-rotate:0;page-fit-to-selection;export-do"
+  ),
+  stdout = FALSE,
+  stderr = FALSE
+)
+
+```
 
 ```{r}
 #| echo: false
@@ -970,7 +1214,13 @@ edges %>% filter(zone == "West") %>%
 
 ![](LLL.pdf){height=20.8cm}
 
-## Station Sloterdijk
+## Station Sloterdijk (lijnen 15, 22, 36, 61)
+
+![](SLO.pdf){height=20.8cm}
+
+## Station Sloterdijk (lijn 369)
+
+![](SLO_369.pdf){height=20.8cm}
 
 # Spitslijnen
 ```{r}
