@@ -52,6 +52,7 @@ digraph G {
   36919 -> 36920 [label = "Loevesteinse Randweg 
  (via Buitenvelderttunnel) 
  Westelijke Randweg"]
-  36920 -> 36921 [label = "Handelskade"]
+  36920 -> 36921 [label = "Handelskade 
+ Koepelstraat"]
 }
 

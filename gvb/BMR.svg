@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 689.9)">
 <title>G</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-689.9 708.804,-689.9 708.804,4 -4,4"/>
-<text text-anchor="middle" x="352.402" y="-13" font-family="Times,serif" font-size="6.00" fill="#000000">* Bij terugkomst gebruikt u de stippellijnsegmenten </text>
+<text text-anchor="middle" x="352.402" y="-13" font-family="Times,serif" font-size="6.00" fill="#000000">* Bij terugkomst volgt u de stippellijn </text>
 <text text-anchor="middle" x="352.402" y="-5.8" font-family="Times,serif" font-size="6.00" fill="#000000"> ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer</text>
 <!-- 4900 -->
 <g id="node1" class="node">
@@ -270,7 +270,8 @@
 <title>4915&#45;&gt;4916</title>
 <path fill="none" stroke="#c0c0c0" d="M534.8945,-313.9C544.9498,-313.9 572.2827,-313.9 589.1139,-313.9"/>
 <polygon fill="#c0c0c0" stroke="#c0c0c0" points="589.4776,-317.4001 599.4776,-313.9 589.4776,-310.4001 589.4776,-317.4001"/>
-<text text-anchor="middle" x="518.9472" y="-316.9" font-family="Arial" font-size="10.00" fill="#000000">Fortdiemerdamweg</text>
+<text text-anchor="middle" x="536.1747" y="-328.9" font-family="Arial" font-size="10.00" fill="#000000">Fortdiemer&#45;</text>
+<text text-anchor="middle" x="536.1747" y="-316.9" font-family="Arial" font-size="10.00" fill="#000000">&#45;damweg</text>
 </g>
 <!-- 6608 -->
 <g id="node26" class="node">
@@ -369,8 +370,8 @@
 <title>6607&#45;&gt;4915</title>
 <path fill="none" stroke="#c0c0c0" d="M462.8945,-313.9C472.9498,-313.9 500.2827,-313.9 517.1139,-313.9"/>
 <polygon fill="#c0c0c0" stroke="#c0c0c0" points="517.4776,-317.4001 527.4776,-313.9 517.4776,-310.4001 517.4776,-317.4001"/>
-<text text-anchor="middle" x="447.7822" y="-304.9" font-family="Arial" font-size="10.00" fill="#000000">Diemerpolderweg </text>
-<text text-anchor="middle" x="447.7822" y="-292.9" font-family="Arial" font-size="10.00" fill="#000000"> (via Diemerknoop)</text>
+<text text-anchor="middle" x="447.7822" y="-328.9" font-family="Arial" font-size="10.00" fill="#000000">Diemerpolderweg </text>
+<text text-anchor="middle" x="447.7822" y="-316.9" font-family="Arial" font-size="10.00" fill="#000000"> (via Diemerknoop)</text>
 </g>
 <!-- 6609 -->
 <g id="node27" class="node">

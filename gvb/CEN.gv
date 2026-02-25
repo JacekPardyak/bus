@@ -96,8 +96,7 @@ digraph G {
   4303 -> 4304 [label = "Azartplein 
  Verbindingsdam"]
   4304 -> 4305 [label = "J.F. Van Hengelstraat"]
-  4305 -> 4306 [label = "Oostelijke Handelskade 
- C. van Eesterenlaan"]
+  4305 -> 4306 [label = "C. van Eesterenlaan"]
   4306 -> 4307 [label = "Borneolaan"]
   4307 -> 4308 [label = "Borneolaan"]
   4308 -> 4309 [label = "Feike de Boerlaan"]

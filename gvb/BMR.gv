@@ -97,7 +97,8 @@ digraph G {
  Maxisweg 
  Muiderbrug"]
   4914 -> 4915 [label = "Diemerpolderweg"]
-  4915 -> 4916 [label = "Fortdiemerdamweg"]
+  4915 -> 4916 [label = "Fortdiemer-
+-damweg"]
   4916 -> 6608 [label = "Benno Premselabrug 
  Muiderlaan"]
   
@@ -160,7 +161,7 @@ digraph G {
  (lijn 360)"]
   
   labelloc="b"
-  label="* Bij terugkomst gebruikt u de stippellijnsegmenten 
+  label="* Bij terugkomst volgt u de stippellijn 
  ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
   fontsize=6
 }

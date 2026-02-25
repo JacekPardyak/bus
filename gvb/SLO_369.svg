@@ -260,7 +260,8 @@
 <title>36920&#45;&gt;36921</title>
 <path fill="none" stroke="#c0c0c0" d="M41.3272,-26.2386C55.4393,-26.2386 108.4683,-26.2386 145.1655,-26.2386"/>
 <polygon fill="#c0c0c0" stroke="#c0c0c0" points="145.5024,-29.7387 155.5024,-26.2386 145.5024,-22.7387 145.5024,-29.7387"/>
-<text text-anchor="middle" x="122.4219" y="-29.2386" font-family="Arial" font-size="10.00" fill="#000000">Handelskade</text>
+<text text-anchor="middle" x="123.8114" y="-41.2386" font-family="Arial" font-size="10.00" fill="#000000">Handelskade </text>
+<text text-anchor="middle" x="123.8114" y="-29.2386" font-family="Arial" font-size="10.00" fill="#000000"> Koepelstraat</text>
 </g>
 </g>
 </svg>

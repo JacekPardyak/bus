@@ -1,0 +1,83 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  24501 [pos = " 0, 0!", label = "OOS"]
+  24502 [pos = " 2, 0!"]
+  24503 [pos = " 3,-1!", height=0.01]
+  24504 [pos = " 4,-1!", height=0.01]
+  24505 [pos = " 5,-2!"]
+  24506 [pos = " 6,-2!"]
+  24507 [pos = " 6,-3!", height=0.01]
+  24508 [pos = " 4,-5!", height=0.01]
+  24509 [pos = " 3,-5!"]
+  24510 [pos = " 3,-7!"]
+  24511 [pos = " 2,-7!"]
+  24512 [pos = " 2,-6!"]
+  24513 [pos = " 0,-6!"]
+  24514 [pos = " 0,-7!"]
+  24515 [pos = "-3,-7!"]
+  24516 [pos = "-3,-8!"]
+  24517 [pos = "-4,-8!"]
+  24518 [pos = "-4,-9!"]
+  24519 [pos = "-5,-9!"]
+  24520 [pos = "-5,-8!"]
+  24521 [pos = "-6,-8!", height=0.01]
+  24522 [pos = "-7,-9!", height=0.01]
+  24523 [pos = "-6,-9!", label = "SCH"]
+  
+  24501 -> 24502 [label = "Molenaarsweg 
+ Lange Vonder 
+ Vorticellaweg 
+ (lijn 245)"]
+  24502 -> 24503 [label = ""]
+  24503 -> 24504 [label = "IJdoornlaan 
+ (via St. Noord)"]
+  24504 -> 24505 [label = ""]
+  24505 -> 24506 [label = "Zuiderzeeweg"]
+  24506 -> 24507 [label = ""]
+  24507 -> 24508 [label = "Zuiderzeeweg 
+ (via Schellingwouderbrug 
+ en Amsterdamsebrug) 
+ Insulindeweg 
+ (via Muiderpoortstation) 
+ Wijttenbachweg 
+ Oosterpark"]
+  24508 -> 24509 [label = ""]
+  24509 -> 24510 [label = "Beukenweg 
+ Maritzstraat 
+ Krugerplein 
+ Schalk Burgerstraat 
+ Nobelweg"]
+  24510 -> 24511 [label = "Hugo de Vrieslaan"]
+  
+  24511 -> 24512 [label = "Julianaplein 
+ (via Amstelstation)"]
+  24512 -> 24513 [label = "Prins Bernhardplein 
+ Mr. Treublaan 
+ Berlagebrug 
+ Vrijheidslaan 
+ Victorieplein  
+ Rooseveltlaan"]    
+  24513 -> 24514 [label = "Europaplein 
+ Europaboulevard"] 
+
+  24514 -> 24515 [label = "[A10] 
+ [A4]: Den Haag 
+ (1): Sloten"]
+  24515 -> 24516 [label = "Anderlechtlaan"]
+  24516 -> 24517 [label = "Oude Haagseweg 
+ Zuidtangent"]
+  24517 -> 24518 [label = ""]
+  24518 -> 24519 [label = "Zuidtangent"]
+  24519 -> 24520 [label = "Cateringweg"]
+  24520 -> 24521 [label = "Schipholweg 
+ Zuidtangent 
+ (via Knooppunt 
+ Schiphol-Noord)"]
+  24521 -> 24522 [label = ""]
+  24522 -> 24523 [label = ""]
+}
+
+

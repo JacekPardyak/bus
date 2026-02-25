@@ -3,7 +3,7 @@ digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  1500 [pos = " 0, 0!", label = "SLO"]
+  1500 [pos = "-0.5, 0!", label = "SLO"]
   1501 [pos = " 1, 0!"]
   1502 [pos = " 1,-1!"]
   1503 [pos = " 2,-1!"]
@@ -16,7 +16,7 @@ digraph G {
   1510 [pos = " 4,-5!"]
   1511 [pos = " 5,-5!"]
   1512 [pos = " 5,-6!"]
-  1513 [pos = " 7,-6!", label = "ZUI"]
+  1513 [pos = " 6,-6!", label = "ZUI"]
   
   2200 [pos = " 2, 1!"]
   2201 [pos = "-2, 0!"]
@@ -27,17 +27,17 @@ digraph G {
   2206 [pos = " 4,-1!"]
   2207 [pos = " 5,-1!"]
   2208 [pos = " 5, 0!"]
-  2209 [pos = " 8, 0!"]
-  2210 [pos = " 8, 1!"]
-  2211 [pos = "10, 1!"]
-  2212 [pos = "10, 0!"]
-  2213 [pos = "11, 0!"]
-  2214 [pos = "11, 1!"]
-  2215 [pos = "13, 1!"]
-  2216 [pos = "13, 0!"]
-  2217 [pos = "14, 0!"]
-  2218 [pos = "14,-1!"]
-  2219 [pos = "12,-1!", label = "MUI"]
+  2209 [pos = " 7, 0!"]
+  2210 [pos = " 7, 1!"]
+  2211 [pos = " 8, 1!"]
+  2212 [pos = " 8, 0!"]
+  2213 [pos = " 9, 0!", height=0.01]
+  2214 [pos = " 9, 1!"]
+  2215 [pos = "11, 1!"]
+  2216 [pos = "11, 0!"]
+  2217 [pos = "12, 0!"]
+  2218 [pos = "12,-1!"]
+  2219 [pos = "11,-1!", label = "MUI"]
   
   3602 [pos = " 2, 6!"]
   3603 [pos = " 4, 7!"]
@@ -57,7 +57,7 @@ digraph G {
   3617 [pos = " 8, 4!"]
   3618 [pos = " 7, 4!", height=0.01]
   3619 [pos = " 7, 5!"]
-  3620 [pos = " 9, 5!", label = "NRD"]
+  3620 [pos = " 8, 5!", label = "NRD"]
   
   6101 [pos = "-3, 0!"]
   6102 [pos = "-3, 1!"]
@@ -82,8 +82,10 @@ digraph G {
   1501 -> 1502 [label = "Kimpoweg"]
   1502 -> 1503 [label = "Haarlemmer-
 -weg"]
-  1503 -> 1504 [label = "Einsteinweg"]
-  1504 -> 1505 [label = "Bos en Lommerplein"]
+  1503 -> 1504 [label = "Einsteinweg
+(aka [A10])"]
+  1504 -> 1505 [label = "Bos en -
+- Lommerplein"]
   1505 -> 1506 [label = "Hoofdweg"]
   1506 -> 1507 [label = "Surinameplein"]
   1507 -> 1508 [label = "Haarlemmermeerstraat"]
@@ -98,10 +100,12 @@ digraph G {
  -weg 
  Olympiaplein"]
   1511 -> 1512 [label = "Parnassusweg"]
-  1512 -> 1513 [label = "Strawinskylaan"]
+  1512 -> 1513 [label = "Strawin-
+-skylaan"]
   
   1500 -> 2201 [label = "Arlandaweg 
- (lijn 22, 36, 61, 369)"]
+ (lijn 22, 36, 
+ 61, 369)"]
   2201 -> 2202 [label = "Radarweg 
  (lijn 22, 36)"]
   2202 -> 2200 [label = "Basisweg 
@@ -117,11 +121,12 @@ digraph G {
  Haarlemmer Houttuinen 
  Nieuwe Westerdokstraat"]
   2209 -> 2210 [label = "Droogbak"]
-  2210 -> 2211 [label = "De Ruijterkade 
- (via Centraal St.)"]
-  2211 -> 2212 [label = "Kamperbrug"]
-  2212 -> 2213 [label = "Prins Hendrik-
--kade"]
+  2210 -> 2211 [label = "De Ruijterkade (via Centraal St.)"]
+  2211 -> 2212 [label = "Kam-
+-per-
+-brug"]
+  2212 -> 2213 [label = "Prins -
+- Hendrikkade"]
   2213 -> 2214 [label = ""]
   2214 -> 2215 [label = "Kattenburger-plein 
  - gracht 
@@ -131,7 +136,8 @@ digraph G {
   2215 -> 2216 [label = "Panamalaan"]
   2216 -> 2217 [label = "Zeeburgerdijk"]
   2217 -> 2218 [label = "Molukkenstraat"]
-  2218 -> 2219 [label = "Insulindeweg"]
+  2218 -> 2219 [label = "Insulinde-
+-weg"]
   
   2200 -> 3602 [label = "Einsteinweg 
  (aka [A10])
@@ -153,20 +159,23 @@ digraph G {
   3611 -> 3612 [label = "Strekkerweg"]
   3612 -> 3613 [label = "Atatürk"]
   3613 -> 3614 [label = "Klaprozenweg"]
-  3614 -> 3615 [label = "Floraweg"]
+  3614 -> 3615 [label = ""]
   3615 -> 3616 [label = "Floraweg"]
   3616 -> 3617 [label = "Kamperfoelieweg"]
   3617 -> 3618 [label = "Banne Buikslootlaan"]
   3618 -> 3619 [label = ""]
-  3619 -> 3620 [label = "IJdoornlaan"]
+  3619 -> 3620 [label = "IJdoorn-
+-laan"]
   
   2201 -> 6101 [label = "Arlandaweg 
  (lijn 61)"]
   6101 -> 6102 [label = "Barajasweg"]
   6102 -> 6103 [label = "Naritaweg"]
   6103 -> 36902 [label = "Seineweg"]
-  6104 -> 6105 [label = "Aalbersestraat"]  
-  6105 -> 6106 [label = "De Savornin Lohmanlaan"]  
+  6104 -> 6105 [label = "Aalberse-
+-straat"]  
+  6105 -> 6106 [label = "De Savornin- 
+ -Lohmanlaan"]  
   6106 -> 6107 [label = "Troelstralaan"]  
   6107 -> 6108 [label = "Ookmeerweg"]  
   6108 -> 6109 [label = "Meer en Vaart"]  

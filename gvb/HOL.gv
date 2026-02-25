@@ -38,8 +38,8 @@ digraph G {
   4713 [pos = " 3,-7!"]
   4714 [pos = " 2,-7!", label = "BMR"]
   
-  4102 -> 4100 [label = "Overzichtweg 
- Hugo de Vrieslaan"]
+  4102 -> 4100 [label = "Hugo de Vrieslaan 
+ Overzichtweg"]
   4103 -> 4102 [label = "Maxwellstraat"]
   4104 -> 4103 [label = "Kruislaan"]
   4105 -> 4104 [label = "Rozenburglaan"]

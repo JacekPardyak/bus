@@ -1,0 +1,55 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  23101 [pos = " 1, 0!", label = "SLO"]
+  23102 [pos = "-1, 0!"]
+  23103 [pos = "-1, 1!"]
+  23104 [pos = "-2, 1!"]
+  23105 [pos = "-2, 2!"]
+  23106 [pos = "-3, 3!"]
+  23107 [pos = "-4, 2!"]
+  23108 [pos = "-5, 3!"]
+  23109 [pos = "-5, 2!"]
+  23110 [pos = "-9, 2!"]
+  23111 [pos = "-9, 0!"]
+  23112 [pos = "-8, 0!", height=0.01]
+  23113 [pos = "-8, 1!"]
+  23114 [pos = "-7, 1!", label = "ABB"]
+  23115 [pos = "-6, 1!"]
+  23116 [pos = "-6, 0!", height=0.01]
+  23117 [pos = "-5, 0!"]
+
+
+  23101 -> 23102 [label = "Arlandaweg 
+ (lijn 231*)"]
+  23102 -> 23103 [label = "Radarweg"]
+  23103 -> 23104 [label = "Kastrupstraat 
+ Rhoneweg"]
+  23104 -> 23105 [label = "Seineweg"]
+  23105 -> 23106 [label = "Basisweg"]
+  23106 -> 23107 [label = "Noordzee-
+-weg"]
+  23107 -> 23108 [label = "West-
+-poort-
+-weg"]
+  23108 -> 23109 [label = "Australiëhavenweg"]
+  23109 -> 23110 [label = "Bornhout 
+ Scharenburg"]
+  23110 -> 23111 [label = "Dortmuiden"]
+  23111 -> 23112 [label = "Tijnmuiden"]
+  23112 -> 23113 [label = ""]
+  23113 -> 23114 [label = "Abberdaan"]
+  23114 -> 23115 [label = "Abberdaan", style = dashed, dir = "none"]
+  23115 -> 23116 [label = "Jarmuiden", style = dashed, dir = "none"]
+  23116 -> 23117 [label = "", style = dashed, dir = "none"]
+  23117 -> 23109 [label = "Australië-
+-havenweg", style = dashed, dir = "none"]
+
+  labelloc="b"
+  label="* Bij terugkomst volgt u de stippellijn"
+  fontsize=6
+  
+}
+
