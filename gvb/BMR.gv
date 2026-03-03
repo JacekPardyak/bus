@@ -36,37 +36,11 @@ digraph G {
   36002 [pos = "3,-2!"]
   36003 [pos = " 9, 1!", label = "BEDL"]
   
-  4401 [pos = "2, 1!"]
-  4402 [pos = "2, 3!"]
-  4403 [pos = "3, 3!"]
-  4404 [pos = "3, 5!"]
-  4405 [pos = "4, 5!"]
-  4406 [pos = "4, 3!"]
-  4407 [pos = "5, 3!"]
-  4408 [pos = "5, 4!"]
-  4409 [pos = "6, 4!"]
-  4410 [pos = "6, 3!"]
-  4411 [pos = "7, 3!"]
-  4412 [pos = "7, 4!"]
-  4413 [pos = "7.5, 4.5!", height=0.01]
-  4415 [pos = "8, 3!", label = "DMN"]
-  4416 [pos = "5, 5!"]
-  4417 [pos = "6, 5!"]
-  4418 [pos = "8, 5!"]
-  4419 [pos = "8, 4!"]
-  
-  4408 -> 4416 [label = "Wilhelminaplantsoen", style = dashed, dir = "none"]
-  4405 -> 4416 [label = "Burgemeester 
- Bickerstraat", style = dashed, dir = "none"]
-  4409 -> 4417 [label = "Buytenweg", style = dashed, dir = "none"]
-  4417 -> 4418 [label = "Oude Waelweg", style = dashed, dir = "none"]
-  4418 -> 4419 [label = "Meerkoet 
- Zeezigt", style = dashed, dir = "none"]
 
   4900 -> 4901 [label = "Hoogoord- 
  -dreef"]
   4901 -> 4902 [label = "Foppingadreef 
- (lijn 49, 360**)"]
+ (lijn 49, 360*)"]
   4902 -> 4903 [label = "Karspeldreef"]
   4903 -> 4904 [label = "Karspeldreef 
  (lijn 49)"]
@@ -112,35 +86,9 @@ digraph G {
  St. Gaasperplas)"]
 
   4901 -> 6601 [label = "Foppingadreef 
- (lijn 44*, 66)"]
-  6601 -> 4401 [label = "Bijlmerdreef"]
-  4401 -> 6602 [label = "Bijlmerdreef 
  (lijn 66)"]
-  4401 -> 4402 [label = "Dolingadreef 
- (lijn 44)"]
-  4402 -> 4403 [label = "Daalwijkdreef"]
-  4403 -> 4404 [label = "Bergwijkdreef 
- Boven Rijkersloot 
- Beneden R. 
- (via St. Diemen Zuid)"]
-  4404 -> 4405 [label = "Beneden R. 
- Boven R.
- Beukenhorst"]
-  4405 -> 4406 [label = "Hartveldseweg 
- Muiderstraatweg"]
-  4406 -> 4407 [label = "Prins Bernhardlaan"]
-  4407 -> 4408 [label = "Prinses Beatrixlaan"]
-  4408 -> 4409 [label = "Ouddiemerlaan 
- (via St. Diemen)"]
-  4409 -> 4410 [label = "Diemerpolderweg"]
-  4410 -> 4411 [label = "Vogelweg"]
-  4411 -> 4412 [label = "Tureluurweg"]
-  4412 -> 4413 [label = "Rietzangerweg"]
-  4413 -> 4419
-  4419 -> 4415 [label = "Meerkoet 
- Fregat 
- Hermelijnvlinder"]
-  
+  6601 -> 6602 [label = "Bijlmerdreef"]
+
   6602 -> 6603 [label = "Elsrijkdreef 
  (via St. Ganzenhoef)"]
   6603 -> 6604 [label = "Provincialeweg"]
@@ -161,8 +109,8 @@ digraph G {
  (lijn 360)"]
   
   labelloc="b"
-  label="* Bij terugkomst volgt u de stippellijn 
- ** Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
+  label="* Bij terugkomst gebruikt u afrit (1): Bijlmermeer"
   fontsize=6
 }
+
 
