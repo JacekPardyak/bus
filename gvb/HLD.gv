@@ -17,9 +17,9 @@ digraph G {
 
   4115 [pos = " 4,-6!"]
   4116 [pos = " 4,-8!"]
-  4117 [pos = " 0,-8!"]
-  4118 [pos = " 0,-9!"]
-  4119 [pos = "-1,-9!", label = "HOL"]
+  4117 [pos = " 1,-8!"]
+  4118 [pos = " 1,-9!"]
+  4119 [pos = "-1,-9!", label = "HLD"]
   
   4401 [pos = "2,-6!"]
   4402 [pos = "2,-5!"]
@@ -34,14 +34,14 @@ digraph G {
   4411 [pos = "9,-5!"]
   4412 [pos = "9,-4!"]
   4413 [pos = "9.5,-3.5!", height=0.01]
-  4415 [pos = "10,-5!", label = "DMN"]
+  4415 [pos = "10,-6!", label = "DMN"]
   4417 [pos = "8,-3!"]
   4418 [pos = "10,-3!"]
   4419 [pos = "10,-4!"]
   
-  4701 [pos = " 0,-10!", height=0.01]
-  4702 [pos = " 1,-10!"]
-  4703 [pos = " 1,-11!"]
+  4701 [pos = " 1,-10!", height=0.01]
+  4702 [pos = " 2,-10!"]
+  4703 [pos = " 2,-11!"]
   4704 [pos = " 5,-11!", height=0.01]
   4705 [pos = " 5,-10!"]
   4706 [pos = " 3,-10!"]
@@ -101,11 +101,8 @@ Stationsweg
  Beukenhorst"]
   4405 -> 4406 [label = "Hartveldseweg 
  Muiderstraatweg"]
-  4406 -> 4407 [label = "Prins Bernhard-
--laan"]
-  4407 -> 4408 [label = "Prinses
-Beatrix-
--laan"]
+  4406 -> 4407 [label = "Prins Bernhardlaan"]
+  4407 -> 4408 [label = "Prinses Beatrixlaan"]
   4408 -> 4409 [label = "Ouddiemerlaan 
  (via St. Diemen)"]
   4409 -> 4410 [label = "Diemerpolderweg"]
@@ -135,10 +132,11 @@ Beatrix-
   4712 -> 4713 [label = "Foppingadreef", dir = "both"]
   4713 -> 4714 [label = "Hoogoorddreef 
  (lijn 44*, 47)", dir = "both"]
-}
+
 
   labelloc="b"
-  label="* Bij terugkomst volgt u de stippellijn 
+  label="* Bij terugkomst volgt u de stippellijn"
   fontsize=6
 }
+
 

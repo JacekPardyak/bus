@@ -1,0 +1,110 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+
+
+  3901 [pos = " 3,-1!", label = "OLO"]
+  3902 [pos = " 5,-1!"]
+  3903 [pos = " 5, 3!"]
+  3904 [pos = " 4, 3!"]
+
+  3906 [pos = "-2,-2!", height=0.01]
+  3907 [pos = "-3,-2!"]
+  3908 [pos = "-5,-2!"]
+  3909 [pos = "-5,-1!"]
+  3910 [pos = "-6,-1!"]
+  3911 [pos = "-6, 0!", height=0.01]
+  3912 [pos = "-7, 0!"]
+  3913 [pos = "-8, 1!"]
+  3914 [pos = "-8, 2!"]
+  3915 [pos = "-9, 3!"]
+  3916 [pos = "-7, 3!"]
+  3917 [pos = "-7, 2!", height=0.01]
+  3918 [pos = "-6, 2!"]
+  3919 [pos = "-6, 3!", label = "MOL"]
+  3920 [pos = " 4, 4!"]
+  3921 [pos = " 2, 4!"]
+  3922 [pos = " 2, 3!"]
+  3923 [pos = " 0, 3!"]
+  3924 [pos = " 0, 2!", height=0.01]
+  3925 [pos = "-1, 2!"]
+  3926 [pos = "-1, 1!", height=0.01]
+  3927 [pos = "-2, 1!"]
+  3928 [pos = "-2, 0!"]
+  
+  3801 [pos = " 1,-4!", height=0.01]
+  3802 [pos = " 0,-4!"]
+  3803 [pos = " 0,-5!"]
+  3805 [pos = " 1,-1!"]
+  3806 [pos = "-1,-4!"]
+  3807 [pos = "-2,-5!"]
+  3808 [pos = "-2,-6!"]
+  3809 [pos = "-3,-4!"]
+  3810 [pos = "-3,-1!"]
+  3811 [pos = "-4,-1!"]
+  3812 [pos = "-4, 0!", height=0.01]
+  3813 [pos = "-5, 0!", label = "MET"]
+  
+
+  3803 -> 3802 [label = "Valkenweg 
+ Spreeuwenpark 
+ Sperwerlaan"]
+  3802 -> 3806 [label = "Hagedoornplein"]
+  3801 -> 3803 [label = ""]
+  
+
+  3902 -> 3903 [label = "Th. Weeversweg"]
+  3903 -> 3904 [label = "IJdoornlaan"]
+  3904 -> 3920 [label = "J. Drijverweg"]
+  3920 -> 3921 [label = "J.H. van Heekweg"]
+  3921 -> 3922 [label = "H. Cleyndertweg"]  
+  3922 -> 3923 [label = "IJdoornlaan (via St. Noord)"]
+  
+  3805 -> 3801 [label = "Waddenweg 
+ Meeuwenlaan"]
+  3923 -> 3924 [label = "Statenjachtstraat"]
+  3924 -> 3925 [label = ""]
+  
+  3925 -> 3926 [label = "Schepenlaan"]
+  3926 -> 3927 [label = ""]  
+  
+  3927 -> 3928 [label = "Kamperfoelieweg"]
+  3928 -> 3810 [label = "Floraweg"]  
+  
+  3907 -> 3908 [label = "Klaprozenweg 
+ (lijn 39)"]
+  3908 -> 3909 [label = "Atatürk"]
+  3909 -> 3910 [label = "Strekkerweg"]
+  3910 -> 3911 [label = "Scheepsbouwweg"]
+  3911 -> 3912 [label = "Werktuigstraat"]
+  3912 -> 3913 [label = "Meteorenweg"]
+  3913 -> 3914 [label = "Kometensingel"]
+  3914 -> 3915 [label = "Kometensingel 
+ Oostzanerdijk"]
+  3915 -> 3916 [label = "Molenaarsweg"]
+  3916 -> 3917 [label = "Stellingweg"]
+  3917 -> 3918 [label = ""]
+  3918 -> 3919 [label = "Stellingweg"]
+  
+  3901 -> 3805 [label = "Buikslotermeerplein 
+ (lijn 38)"]
+  3901 -> 3902 [label = "Buikslotermeerplein
+(lijn 39)"]
+
+  3806 -> 3807 [label = "Meidoornweg"]
+  3807 -> 3808 [dir = "both", label = "Ranonkelkade"]
+  3807 -> 3809 [label = "Van der Pekbrug 
+ Docklandsweg 
+ Asterweg"]
+  3809 -> 3907 [label = "Ridderspoorweg"]
+  3907 -> 3810 [label = "Floraweg", dir = both]
+  3810 -> 3811 [label = "Slijperweg"]
+  3811 -> 3812 [label = "Vuurwerkerweg"]
+  3812 -> 3813 [label = "Metaal- 
+ -bewerker- 
+ -weg"]
+}
+
+

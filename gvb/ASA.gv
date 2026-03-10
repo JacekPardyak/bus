@@ -4,30 +4,31 @@ digraph G {
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   4000 [pos = "0, 0!", label = "ASA"]
+  4001 [pos = "5, 1!", height=0.01]
   4002 [pos = "2, 0!"]
   4003 [pos = "2,-1!"]
-  4004 [pos = "4,-1!"]
-  4005 [pos = "5,-1!", height=0.01]
-  4006 [pos = "5,-2!", height=0.01]
-  4007 [pos = "4,-2!"]
-  4008 [pos = "5, 2!", label = "MDS"]
+  4004 [pos = " 5,-1!"]
+  4005 [pos = " 6,-1!", height=0.01]
+  4006 [pos = " 6,-2!", height=0.01]
+  4007 [pos = " 5,-2!"]
+  4008 [pos = "2, 3!", label = "MDS"]
   
-  6500 [pos = "3, 0!"]
-  6501 [pos = "3, 1!"]
-  6502 [pos = "4, 1!"]
-  6503 [pos = "5, 1!"]
-  6504 [pos = "6, 1!"]
-  6505 [pos = "6, 2!"]
-  6506 [pos = "7, 2!"]
-  6507 [pos = "7, 1!"]
-  6508 [pos = "8, 1!"]
-  6509 [pos = "8, 0!"]
-  6510 [pos = "7, 0!", label = "KNSM"]
+  6500 [pos = "3.5, 0!"]
+  6501 [pos = "3.5, 1!"]
+  6502 [pos = "4, 2!"]
+  6503 [pos = "4, 3!"]
+  6505 [pos = "4, 4!", height=0.01]
+  6506 [pos = "4, 6!"]
+  6507 [pos = "3, 4!"]
+  6508 [pos = "3, 5!"]
+  6509 [pos = "4, 5!"]
+  6510 [pos = "6, 6!", label = "KNSM"]
 
   4000 -> 4002 [label = "Overzichtweg 
  Hugo de Vrieslaan"]
   4002 -> 6500 [label = "Hugo de Vrieslaan 
- Wethouder Frankeweg 
+ Wethouder-
+ -Frankeweg 
  Galileïplantsoen 
  (lijn 65)"]
   
@@ -35,24 +36,23 @@ digraph G {
  (lijn 40)"]
   4003 -> 4004 [label = "Kruislaan"]
   4004 -> 4005 [label = "Science Park"]
-  4005 -> 4006 [label = "Science Park"]
-  4006 -> 4007 [label = "Science Park"]
+  4005 -> 4006 [label = ""]
+  4006 -> 4007 [label = ""]
   4007 -> 4004 [label = "Carolina MacGillavrylaan"]
-  4004 -> 6502 [label = "Carolina 
- MacGillavrylaan"]
-  
+  4004 -> 4001 [label = "Carolina 
+ MacGillavrylaan", dir = none]
+  4001 -> 6502 [label = ""]
   6500 -> 6501 [label = "Archimedesweg"]
-  6501 -> 6502 [label = ""]
+  6501 -> 6502 [label = "Molukkenstraat"]
   6502 -> 6503 [label = "Molukkenstraat"]
-  6503 -> 6504 [label = "Molukkenstraat 
+  6503 -> 6505 [label = "Molukkenstraat
+  Veelaan
  (lijn 65)"]
-  6504 -> 6505 [label = "Zeeburgerdijk"]
-  6505 -> 6506 [label = "Panamalaan"]
-  6506 -> 6507 [label = "Cruquiusweg"]
+  6505 -> 6507 [label = "Cruquiusweg"]
   6507 -> 6508 [label = "C. van Eesterenlaan"]
-  6508 -> 6509 [label = "J.F. Van Hengelstraat 
- Verbindingsdam"]
-  6509 -> 6510 [label = "KNSM-Laan"]
+  6508 -> 6509 [label = "J.F. Van Hengelstraat"]
+  6509 -> 6506 [label = "Verbindingsdam"]
+  6506 -> 6510 [label = "KNSM-Laan"]
   6503 -> 4008 [label = "Insulindeweg 
  (lijn 40)"]
 }

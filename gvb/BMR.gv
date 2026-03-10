@@ -2,14 +2,14 @@ digraph G {
   layout = neato
   node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color = gray, fontsize = 10, fontname = "Arial"]
-  4900 [pos = "0, 0!", label = "BMR"]
+  4900 [pos = "-1, 0!", label = "BMR"]
   4901 [pos = "1, 0!"]
   4902 [pos = "1,-1!"]
   4903 [pos = "2,-1!"]
   4904 [pos = "4,-1!"]
   4905 [pos = "4,-2!"]
   4906 [pos = "5,-3!"]
-  4907 [pos = "5,-4!", height=0.01]
+  4907 [pos = "5.3,-3.7!", height=0.01]
   4908 [pos = "6,-4!"]
   4909 [pos = "6,-3!"]
   4910 [pos = "7,-3!"]
@@ -19,26 +19,23 @@ digraph G {
   4914 [pos = "7,-1!"]
   4915 [pos = "7, 0!"]
   4916 [pos = "8, 0!"]
-  4917 [pos = "4,-3!", height=0.01]
+  4917 [pos = "4.3,-2.7!", height=0.01]
 
-  6601 [pos = "1, 1!"]
-  6602 [pos = "3, 1!"]
-  6603 [pos = "3, 2!"]
-  6604 [pos = "4, 2!"]
-  6605 [pos = "4, 1!"]
-  6606 [pos = "6, 1!"]
-  6607 [pos = "6, 0!"]
+  6601 [pos = " 1, 1!"]
+  6602 [pos = " 3, 1!"]
+  6603 [pos = " 3, 2!"]
+  6604 [pos = " 4, 2!"]
+  6605 [pos = " 4, 1!"]
+  6606 [pos = " 6, 1!"]
+  6607 [pos = " 6, 0!"]
   6608 [pos = " 8, 1!"]
-  6609 [pos = " 7, 1!"]
-  6610 [pos = " 7, 2!", label = "VPS"]
+  6609 [pos = " 7, 1!", height=0.01]
+  6610 [pos = " 7, 3!", label = "VPS"]
 
   36001 [pos = "2,-2!"]
-  36002 [pos = "3,-2!"]
-  36003 [pos = " 9, 1!", label = "BEDL"]
-  
+  36003 [pos = "10, 1!", label = "BEDL"]
 
-  4900 -> 4901 [label = "Hoogoord- 
- -dreef"]
+  4900 -> 4901 [label = "Hoogoorddreef"]
   4901 -> 4902 [label = "Foppingadreef 
  (lijn 49, 360*)"]
   4902 -> 4903 [label = "Karspeldreef"]
@@ -47,11 +44,11 @@ digraph G {
   4904 -> 4905 [label = "Kromwijkdreef 
  (via St. Kraaiennest)"]
   4905 -> 4917 [label = "Loosdrechtdreef 
- (lijn 49)"]
+ (lijn 49)", dir = none]
   4917 -> 4906 [label = ""]
   4906 -> 4907 [label = "Provincialeweg 
  Weesperbrug 
- Gooilandseweg"]
+ Gooilandseweg", dir = none]
   4907 -> 4908 [label = ""]
   4908 -> 4909 [label = "C.J. van Houtenlaan 
  Prinses Irenelaan 
@@ -79,11 +76,7 @@ digraph G {
 
   4903 -> 36001 [label = "Gooiseweg 
  (lijn 360)"]
-  36001 -> 36002 [label = "Langbroek- 
- -dreef"]
-  36002 -> 4905 [dir = "both", label = "Langbroekdreef 
- (lijn 49 via 
- St. Gaasperplas)"]
+  36001 -> 4905 [label = "Langbroekdreef"]
 
   4901 -> 6601 [label = "Foppingadreef 
  (lijn 66)"]

@@ -1,0 +1,26 @@
+digraph {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color = gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color = gray, fontsize = 10, fontname = "Arial", dir = none]
+  
+  2 [pos="37,13!" , label = "" ]
+5 [pos="32,13!" , label = "" ]
+6 [pos="25,11!" , label = "" ]
+7 [pos="23,18!" , label = "" ]
+8 [pos="22,21!" , label = "" ]
+9 [pos="10,17!" , label = "" ]
+10 [pos="9,21!" , label = "" ]
+11 [pos="2,15!" , label = "" ]
+13 [pos="37,3!" , label = "" ]
+14 [pos="99,1!" , label = "" ]
+  
+  5 -> 6 [label = "Pieter Calandlaan" ]
+6 -> 7 [label = "Meer en Vaart" ]
+7 -> 8 [label = "Meer en Vaart" ]
+8 -> 9 [label = "Osdorper Ban" ]
+9 -> 10 [label = "Baden Powellweg" ]
+10 -> 11 [label = "Ookmeerweg" ]
+2 -> 13 [label = "Johan Huizingalaan" ]
+13 -> 14 [label = "Aletta Jacobslaan <br> Vlaardingenlaan <br> (via St. Henk Sneevlietweg)" ]
+14 -> 14 [label = "The rest" ]
+}

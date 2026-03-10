@@ -3,7 +3,6 @@ digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  # lijn 63
   6300 [pos = " 0, 0!", label = "LLL"]
   6301 [pos = "-1, 0!"]
   6302 [pos = "-1, 1!"]
@@ -14,15 +13,14 @@ digraph G {
   6307 [pos = "-4, 1!"]
   6308 [pos = "-4, 2!"]
   6309 [pos = "-5, 2!"]
-  6310 [pos = "-5, 1!", label = "MTH"]
+  6310 [pos = "-5, 0!", label = "MTH"]
 
   6202 [pos = "-1,-1!"]
   6203 [pos = " 2,-1!"]
   6204 [pos = " 1,-1!"]
   6205 [pos = " 1, 0!"]
   6206 [pos = " 2, 0!"]
-  6207 [pos = " 2,-3!"]
-  6208 [pos = " 3,-3!"]
+  6207 [pos = " 3,-1!"]
   6209 [pos = " 3,-2!"]
   6210 [pos = " 4,-2!"]
   6211 [pos = " 4,-4!"]
@@ -30,43 +28,49 @@ digraph G {
   6213 [pos = " 5,-2!"]
   6214 [pos = " 6,-2!"]
   6215 [pos = " 6,-1!"]
-  6216 [pos = " 7,-1!"]
-  6217 [pos = " 7,-3!"]
+  6216 [pos = " 8,-1!"]
+  6217 [pos = " 8,-3!"]
   6218 [pos = " 6,-3!", label = "ASA"]
 
   6300 -> 6301 [label = "Pieter 
- Calandlaan"]
+Caland-
+-laan"]
   6301 -> 6302 [label = "Johan Huizingalaan 
- (lijn 63)"]
-  6302 -> 6303 [label = "Comeniusstraat"]
-  6303 -> 6304 [label = "Hemsterhuisstraat 
- Luis Bouw-
+(lijn 63)"]
+  6302 -> 6303 [label = "Comenius-
+-straat"]
+  6303 -> 6304 [label = "Hemster-
+-huisstraat 
+Luis Bouw-
 -meesterstraat"]
   6304 -> 6305 [label = "Pieter Calandlaan"]
   6305 -> 6306 [label = "Meer en Vaart"]
   6306 -> 6307 [label = "Osdorper Ban"]
-  6307 -> 6308 [label = "Baden Powellweg"]
+  6307 -> 6308 [label = "Baden-
+-Powellweg"]
   6308 -> 6309 [label = "Ookmeerweg"]
   6309 -> 6310 [label = "Baldwinstraat"]
 
   6301 -> 6202 [label = "Johan Huizingalaan 
- (lijn 62)"]
+(lijn 62)"]
   6202 -> 6204 [label = "Aletta Jacobslaan 
  Vlaardingenlaan 
  (via St. Henk Sneevlietweg)"]
   6204 -> 6205 [label = "Aalsmeer-plein 
  -weg"]
-  6205 -> 6206 [label = "Hoofddorp-plein 
- -weg 
- Zeil-brug 
- -straat"]
+  6205 -> 6206 [label = "Hoofddorp-
+-plein 
+-weg 
+Zeil-brug 
+-straat
+  "]
   6206 -> 6203 [label = "Amstelveenseweg 
- (via Haarlemmermeerstation)"]
-  6203 -> 6207 [label = "Stadionplein 
- Amstelveenseweg 
- (via St. Amstelveenseweg)"]
-  6207 -> 6208 [label = "De Boelelaan"]
-  6208 -> 6209 [label = "Parnassusweg"]
+ (via Haarlemmermeer-
+ -station)"]
+  6203 -> 6207 [label = "Stadionweg
+Olympia-
+-plein"]
+  6207 -> 6209 [label = "Parnassusweg"]
   6209 -> 6210 [label = "Strawinskylaan 
  (via St. Zuid)"]
   6210 -> 6211 [label = "Beethovenstraat 
@@ -83,8 +87,8 @@ digraph G {
  Vrijheidslaan 
  Berlagebrug 
  Mr. Treublaan 
- Prins Bernhard-
--plein"]
+ Prins Bernhardplein
+"]
   6216 -> 6217 [label = "Julianaplein"]
   6217 -> 6218 [label = "Over-
 -zichtweg"]
