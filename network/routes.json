@@ -1,0 +1,10 @@
+[
+  {
+    "line": "62",
+    "stops": ["Station Lelylaan", "Sierplein", "Johan Huizingalaan", "Aletta Jacobslaan", "Ottho Heldringstraat", "Maassluisstraat", "Naaldwijkstraat", "Aalsmeerplein", "Hoofddorpplein", "Haarlemmermeerstation", "Olympisch Stadion", "IJsbaanpad", "Amstelveenseweg", "VU medisch centrum", "De Boelelaan", "Station Zuid", "Hogewerf", "Gelderlandplein Oost", "Kastelenstraat", "Van Heenvlietlaan", "Nieuw Herlaer", "Amstelpark", "Europaboulevard", "Station RAI", "Europaplein", "Maasstraat", "President Kennedylaan", "Waalstraat", "Victorieplein", "Amsteldijk", "Amstelstation"]
+  },
+  {
+    "line": "63",
+    "stops": ["Station Lelylaan", "Cornelis Lelylaan", "Hemsterhuisstraat", "Van Mourik Broekmanstr", "Piet Wiedijkstraat", "C.K. Eloutstraat", "Osdorpplein Oost", "Osdorper Ban", "Bullepad", "Reimerswaalstraat", "Saaftingestraat", "Baden Powellweg", "Jan Rebelstraat", "Griendstraat", "Matterhorn"]
+  }
+]

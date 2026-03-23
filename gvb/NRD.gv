@@ -17,12 +17,11 @@ digraph G {
 
 
   3701 [pos = " 4, 0!", height=0.01]
-  3702 [pos = " 5,-1!"]
-  3703 [pos = " 6,-1!"]
-  3704 [pos = " 6,-2!", height=0.01]
-  3705 [pos = " 3, -5!"]
-  3706 [pos = " 3, -4!"]
-  3709 [pos = " 2, -4!"]
+  3702 [pos = " 5, -1!"]
+  3703 [pos = " 6, -1!"]
+  3704 [pos = " 6, -2!", height=0.01]
+  3705 [pos = " 4, -5!", height=0.01]
+  3709 [pos = " 2, -5!"]
   3707 [pos = " 2, -8!"]
   3708 [pos = " 0, -8!", label = "ASA"]  
   
@@ -53,13 +52,14 @@ digraph G {
   3704 -> 3705 [label = "Zuiderzeeweg 
  (via Schellingwouderbrug 
  en Amsterdamsebrug) 
- Insulindeweg 
 "]
-  3705 -> 3706 [label = "Molukkenstraat"]
-  3706 -> 3709 [label = "Zeeburgerdijk
-Mauritskade"]
+
+  3705 -> 3709 [label = "Insulindeweg 
+ (via Muiderpoortstation)
+ Wijttenbachstraat 
+ Oosterpark "]
   
-  3709 -> 3707 [label = "Oosterpark
+  3709 -> 3707 [label = "
 Beukenweg 
  Maritzstraat 
  Krugerplein 
@@ -70,6 +70,5 @@ Beukenweg
 
 
 }
-
 
 

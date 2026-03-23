@@ -34,26 +34,31 @@ digraph G {
   3927 [pos = "-2, 1!"]
   3928 [pos = "-2, 0!"]
   
-  3801 [pos = " 1,-4!", height=0.01]
-  3802 [pos = " 0,-4!"]
-  3803 [pos = " 0,-5!"]
+  3801 [pos = " 1,-3!"]
+  3802 [pos = "-1,-3.5!"]
+  3803 [pos = "-1,-3!"]
+  3804 [pos = "-3,-3!", label = "BUI"]
+  
   3805 [pos = " 1,-1!"]
-  3806 [pos = "-1,-4!"]
-  3807 [pos = "-2,-5!"]
-  3808 [pos = "-2,-6!"]
+  3806 [pos = " 0,-4.5!"]
+  3807 [pos = "-1,-5.5!"]
+  3808 [pos = "-1,-6!"]
   3809 [pos = "-3,-4!"]
   3810 [pos = "-3,-1!"]
-  3811 [pos = "-4,-1!"]
-  3812 [pos = "-4, 0!", height=0.01]
-  3813 [pos = "-5, 0!", label = "MET"]
-  
 
-  3803 -> 3802 [label = "Valkenweg 
- Spreeuwenpark 
- Sperwerlaan"]
-  3802 -> 3806 [label = "Hagedoornplein"]
-  3801 -> 3803 [label = ""]
+
+  3802 -> 3803 [label = "Mosplein"]
+
+  3801 -> 3803 [label = "Johan van Hasseltweg 
+ (via St. Noorderpark)"]
+  3803 -> 3907 [label = "Klaprozenweg"]
+  3907 -> 3804 [label = "Ridderspoorweg 
+ (lijn 38)"]
+  3804 -> 3809 [label = "Ridderspoorweg"]
   
+  3809 -> 3808 [label = "Asterweg 
+ Docklandsweg 
+ Van der Pekbrug"]
 
   3902 -> 3903 [label = "Th. Weeversweg"]
   3903 -> 3904 [label = "IJdoornlaan"]
@@ -93,18 +98,12 @@ digraph G {
   3901 -> 3902 [label = "Buikslotermeerplein
 (lijn 39)"]
 
-  3806 -> 3807 [label = "Meidoornweg"]
-  3807 -> 3808 [dir = "both", label = "Ranonkelkade"]
-  3807 -> 3809 [label = "Van der Pekbrug 
- Docklandsweg 
- Asterweg"]
-  3809 -> 3907 [label = "Ridderspoorweg"]
-  3907 -> 3810 [label = "Floraweg", dir = both]
-  3810 -> 3811 [label = "Slijperweg"]
-  3811 -> 3812 [label = "Vuurwerkerweg"]
-  3812 -> 3813 [label = "Metaal- 
- -bewerker- 
- -weg"]
+  3806 -> 3802 [label = "Hagedoornweg"]
+  3807 -> 3806 [label = "Meidoornweg"]
+  3808 -> 3807 [label = "Ranonkelkade"]
+
+  3810 -> 3907 [label = "Floraweg"]
+
 }
 
 
