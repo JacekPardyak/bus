@@ -3,12 +3,11 @@ digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-
-
   3901 [pos = " 3,-1!", label = "OLO"]
   3902 [pos = " 5,-1!"]
   3903 [pos = " 5, 3!"]
   3904 [pos = " 4, 3!"]
+  3905 [pos = "-6.5, 0!"]
 
   3906 [pos = "-2,-2!", height=0.01]
   3907 [pos = "-3,-2!"]
@@ -49,7 +48,7 @@ digraph G {
 
   3802 -> 3803 [label = "Mosplein"]
 
-  3801 -> 3803 [label = "Johan van Hasseltweg 
+  3801 -> 3803 [dir = "both", label = "Johan van Hasseltweg 
  (via St. Noorderpark)"]
   3803 -> 3907 [label = "Klaprozenweg"]
   3907 -> 3804 [label = "Ridderspoorweg 
@@ -67,7 +66,7 @@ digraph G {
   3921 -> 3922 [label = "H. Cleyndertweg"]  
   3922 -> 3923 [label = "IJdoornlaan (via St. Noord)"]
   
-  3805 -> 3801 [label = "Waddenweg 
+  3805 -> 3801 [dir = "both", label = "Waddenweg 
  Meeuwenlaan"]
   3923 -> 3924 [label = "Statenjachtstraat"]
   3924 -> 3925 [label = ""]
@@ -83,7 +82,8 @@ digraph G {
   3908 -> 3909 [label = "Atatürk"]
   3909 -> 3910 [label = "Strekkerweg"]
   3910 -> 3911 [label = "Scheepsbouwweg"]
-  3911 -> 3912 [label = "Werktuigstraat"]
+  3911 -> 3905 [label = "Werktuigstraat"]
+  3905 -> 3912 [label = ""]
   3912 -> 3913 [label = "Meteorenweg"]
   3913 -> 3914 [label = "Kometensingel"]
   3914 -> 3915 [label = "Kometensingel 
@@ -93,8 +93,8 @@ digraph G {
   3917 -> 3918 [label = ""]
   3918 -> 3919 [label = "Stellingweg"]
   
-  3901 -> 3805 [label = "Buikslotermeerplein 
- (lijn 38)"]
+  3901 -> 3805 [dir = "both", label = "Buikslotermeerplein 
+ (lijn 38*)"]
   3901 -> 3902 [label = "Buikslotermeerplein
 (lijn 39)"]
 
@@ -103,6 +103,10 @@ digraph G {
   3808 -> 3807 [label = "Ranonkelkade"]
 
   3810 -> 3907 [label = "Floraweg"]
+
+  labelloc="b"
+  label="* route in beide richtingen"
+  fontsize=6
 
 }
 

@@ -1,0 +1,88 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  24601 [pos = " 0,-1!", label = "BOR"]
+  24602 [pos = " 0, 1!"]
+  24603 [pos = " 1, 1!"]
+  24604 [pos = " 1, 2!"]
+  24605 [pos = "-1, 2!"]
+  24606 [pos = "-1, 0!", height=0.01]
+  24607 [pos = "-2, 0!"]
+  24608 [pos = "-3,-1!"]
+  24609 [pos = "-2,-2!"]
+  24610 [pos = "-3,-3!"]
+  24611 [pos = "-2,-4!"]
+  24612 [pos = "-3,-5!"]
+  24613 [pos = "-3,-6!"]
+  24614 [pos = "-4,-5!"]
+  24615 [pos = "-5,-5!"]
+  24616 [pos = "-5,-7!"]
+  24617 [pos = "-6,-7!"]
+  24618 [pos = "-6,-6!"]
+  24619 [pos = "-7,-6!"]
+  24620 [pos = "-7,-7!"]
+  24621 [pos = "-8,-7!"]
+  24622 [pos = "-8,-8!"]
+  24623 [pos = "-9,-8!"]
+  24624 [pos = "-9,-7!"]
+  24625 [pos = "-10,-7!", height=0.01]
+  24626 [pos = "-11,-8!", height=0.01]
+  24627 [pos = "-10,-8!", label = "SCH"]
+  
+  24601 -> 24602 [label = "C. van 
+ Eesterenlaan 
+ (lijn 246)"]
+  24602 -> 24603 [label = "J.F. Van Hengelstraat"]
+  24603 -> 24604 [label = "Verbindingsdam 
+ Azartplein"]
+  24604 -> 24605 [label = "Sumatrakade"]
+  24605 -> 24606 [label = "Tosaristraat 
+ Jan Schaeferbrug 
+ Vemenplein 
+ Kattenburgerstraat"]
+  24606 -> 24607 [label = "Prins 
+ Hendrikkade"]
+  24607 -> 24608 [label = "Foeliestraat 
+ Valkenburgerstraat 
+ Mr. Visserplein"]
+  24608 -> 24609 [label = "Jonas Daniël Meijerplein 
+ Weesper-straat 
+ -plein 
+ -poort 
+ Rhijnspoorplein"]
+  24609 -> 24610 [label = "Mauritskade 
+ Torontobrug"]
+  24610 -> 24611 [label = "Amsteldijk"]
+  24611 -> 24612 [label = "Ceintuurbaan 
+ (via Sarphatipark)"]
+  24612 -> 24613 [label = "Ferdinand Bolstraat 
+ Schelde-straat 
+ -plein"]    
+  24613 -> 24614 [label = "Wielingenstraat 
+ Diepenbrockstraat"] 
+  24614 -> 24615 [label = "Stadionweg"] 
+  24615 -> 24616 [label = "Beethoven-
+-straat"] 
+  24616 -> 24617 [label = "De Boelelaan"] 
+  24617 -> 24618 [label = "Amstel-
+-veenseweg"] 
+  24618 -> 24618 [label = ""] 
+  24618 -> 24619 [label = "[A10] 
+ [A4]: Den Haag 
+ (1): Sloten"]
+  24619 -> 24620 [label = "Anderlechtlaan"]
+  24620 -> 24621 [label = "Oude Haagseweg 
+ Zuidtangent"]
+  24621 -> 24622 [label = ""]
+  24622 -> 24623 [label = "Zuidtangent"]
+  24623 -> 24624 [label = "Cateringweg"]
+  24624 -> 24625 [label = "Schipholweg 
+ Zuidtangent 
+ (via Knooppunt 
+ Schiphol-Noord)"]
+  24625 -> 24626 [label = ""]
+  24626 -> 24627 [label = ""]
+}
+

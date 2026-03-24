@@ -1,0 +1,44 @@
+digraph G {
+  layout = neato
+  node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
+  edge [color=gray, fontsize = 10, fontname = "Arial"]
+
+  4300 [pos = " 0, 0!", label = "CEN"]
+  4301 [pos = " 3, 0!"]
+  4302 [pos = " 3, 1!"]
+  4303 [pos = " 5, 1!", height=0.01]
+  4304 [pos = " 5, 0!", height=0.01]
+  4305 [pos = " 4, 0!"]
+  4306 [pos = " 4,-1!"]
+  4307 [pos = " 5,-1!"]
+  4308 [pos = " 5,-2!"]
+  4309 [pos = " 6,-2!"]
+  4310 [pos = " 6,-1!"]
+  4311 [pos = " 7,-1!", label = "BOR"]
+
+  4201 [pos = " 7,-3!", label = "CRU"]
+
+  4300 -> 4301 [label = "De Ruijterkade 
+ Piet Heinkade  
+ (lijn 43)"]
+  4301 -> 4302 [label = "Vemenplein 
+ Jan Schaeferbrug 
+ Tosaristraat"]
+  4302 -> 4303 [label = "Sumatrakade"]
+  4303 -> 4304 [label = "Azartplein 
+ Verbindingsdam"]
+  4304 -> 4305 [label = "J.F. Van Hengelstraat"]
+  4305 -> 4306 [label = "C. van Eesterenlaan"]
+  4306 -> 4307 [label = "Borneolaan"]
+  4307 -> 4308 [label = "Borneolaan"]
+  4308 -> 4309 [label = "Feike de Boerlaan"]
+  4309 -> 4310 [label = "R.J.H. Fortuynstraat"]
+  4310 -> 4311 [label = "Stuurmankade"]
+  
+  4300 -> 4201 [label = "eee
+ (lijn 42)"]
+
+}
+
+
+
