@@ -1,0 +1,1599 @@
+[
+  {
+    "value": "Aalbersestraat",
+    "lat": 52.382,
+    "lon": 4.7977
+  },
+  {
+    "value": "Aalsmeerplein",
+    "lat": 52.3469,
+    "lon": 4.8464
+  },
+  {
+    "value": "Admiraal Helfrichstraat",
+    "lat": 52.3694,
+    "lon": 4.8439
+  },
+  {
+    "value": "Aletta Jacobslaan",
+    "lat": 52.3469,
+    "lon": 4.8285
+  },
+  {
+    "value": "Amerbos",
+    "lat": 52.4034,
+    "lon": 4.9414
+  },
+  {
+    "value": "Amsteldijk",
+    "lat": 52.3471,
+    "lon": 4.9112
+  },
+  {
+    "value": "Amstelpark",
+    "lat": 52.3317,
+    "lon": 4.8902
+  },
+  {
+    "value": "Amstelstation",
+    "lat": 52.3462,
+    "lon": 4.9187
+  },
+  {
+    "value": "Amstelveenseweg",
+    "lat": 52.3516,
+    "lon": 4.8569
+  },
+  {
+    "value": "Ananasplein",
+    "lat": 52.4103,
+    "lon": 4.8956
+  },
+  {
+    "value": "Anderlechtlaan",
+    "lat": 52.3357,
+    "lon": 4.815
+  },
+  {
+    "value": "Annie Romeinplein",
+    "lat": 52.3217,
+    "lon": 4.9716
+  },
+  {
+    "value": "Anton de Komplein",
+    "lat": 52.316,
+    "lon": 4.9541
+  },
+  {
+    "value": "Antony Moddermanstraat",
+    "lat": 52.3833,
+    "lon": 4.8134
+  },
+  {
+    "value": "Antwerpenbaan",
+    "lat": 52.346,
+    "lon": 4.8162
+  },
+  {
+    "value": "Appelweg",
+    "lat": 52.4158,
+    "lon": 4.8954
+  },
+  {
+    "value": "Archimedesweg",
+    "lat": 52.3557,
+    "lon": 4.9397
+  },
+  {
+    "value": "Assendelftstraat",
+    "lat": 52.3894,
+    "lon": 4.8794
+  },
+  {
+    "value": "Atatürk",
+    "lat": 52.4033,
+    "lon": 4.8978
+  },
+  {
+    "value": "Azartplein",
+    "lat": 52.3766,
+    "lon": 4.9373
+  },
+  {
+    "value": "Baden Powellweg",
+    "lat": 52.3509,
+    "lon": 4.7944
+  },
+  {
+    "value": "Bakkerswaal",
+    "lat": 52.4022,
+    "lon": 4.9373
+  },
+  {
+    "value": "Barentszplein",
+    "lat": 52.3894,
+    "lon": 4.8916
+  },
+  {
+    "value": "Barkpad",
+    "lat": 52.4026,
+    "lon": 4.9117
+  },
+  {
+    "value": "Basisweg",
+    "lat": 52.3925,
+    "lon": 4.8451
+  },
+  {
+    "value": "Beemsterstraat",
+    "lat": 52.3976,
+    "lon": 4.9511
+  },
+  {
+    "value": "Belgiëplein",
+    "lat": 52.3449,
+    "lon": 4.8123
+  },
+  {
+    "value": "Beukenhorst"
+  },
+  {
+    "value": "Beukenplein",
+    "lat": 52.3573,
+    "lon": 4.9181
+  },
+  {
+    "value": "Beukenweg",
+    "lat": 52.3591,
+    "lon": 4.9167
+  },
+  {
+    "value": "Bijlmerplein",
+    "lat": 52.3143,
+    "lon": 4.9495
+  },
+  {
+    "value": "Borneolaan",
+    "lat": 52.3712,
+    "lon": 4.9392
+  },
+  {
+    "value": "Bos en Lommerplein",
+    "lat": 52.3771,
+    "lon": 4.8465
+  },
+  {
+    "value": "Bos en Lommerweg",
+    "lat": 52.3801,
+    "lon": 4.8537
+  },
+  {
+    "value": "Boven Rijkersloot"
+  },
+  {
+    "value": "Bovenkruier",
+    "lat": 52.4203,
+    "lon": 4.8841
+  },
+  {
+    "value": "Buikslotermeerplein",
+    "lat": 52.3999,
+    "lon": 4.9389
+  },
+  {
+    "value": "Buiksloterwegveer",
+    "lat": 52.3833,
+    "lon": 4.9058
+  },
+  {
+    "value": "Buiten Brouwersstraat",
+    "lat": 52.3817,
+    "lon": 4.8913
+  },
+  {
+    "value": "Buiten Oranjestraat",
+    "lat": 52.3833,
+    "lon": 4.8878
+  },
+  {
+    "value": "Buitenlust"
+  },
+  {
+    "value": "Bullepad",
+    "lat": 52.362,
+    "lon": 4.7993
+  },
+  {
+    "value": "Burg. De Vlugtlaan",
+    "lat": 52.38,
+    "lon": 4.8384
+  },
+  {
+    "value": "Burg. Van Damstraat"
+  },
+  {
+    "value": "Burgemeester Eliasstraat",
+    "lat": 52.3808,
+    "lon": 4.8256
+  },
+  {
+    "value": "Burgemeester Fockstraat",
+    "lat": 52.3795,
+    "lon": 4.8334
+  },
+  {
+    "value": "Burgemeester Röellstraat",
+    "lat": 52.3768,
+    "lon": 4.8195
+  },
+  {
+    "value": "C. van Eesterenlaan",
+    "lat": 52.3736,
+    "lon": 4.9389
+  },
+  {
+    "value": "C.J. van Houtenlaan"
+  },
+  {
+    "value": "C.K. Eloutstraat",
+    "lat": 52.3545,
+    "lon": 4.8117
+  },
+  {
+    "value": "Carolina MacGillavrylaan",
+    "lat": 52.3577,
+    "lon": 4.9442
+  },
+  {
+    "value": "Casparuslaan"
+  },
+  {
+    "value": "Centraal Station",
+    "lat": 52.378,
+    "lon": 4.8995
+  },
+  {
+    "value": "Centrumeiland",
+    "lat": 52.3535,
+    "lon": 5.0125
+  },
+  {
+    "value": "Contactweg",
+    "lat": 52.3922,
+    "lon": 4.8543
+  },
+  {
+    "value": "Corantijnstraat",
+    "lat": 52.3618,
+    "lon": 4.8533
+  },
+  {
+    "value": "Cornelis Lelylaan",
+    "lat": 52.358,
+    "lon": 4.8277
+  },
+  {
+    "value": "Dalsteindreef",
+    "lat": 52.3248,
+    "lon": 4.9424
+  },
+  {
+    "value": "Dapperstraat",
+    "lat": 52.3609,
+    "lon": 4.9289
+  },
+  {
+    "value": "De Boelelaan",
+    "lat": 52.335,
+    "lon": 4.8675
+  },
+  {
+    "value": "De Egmondenstraat",
+    "lat": 52.3936,
+    "lon": 4.9495
+  },
+  {
+    "value": "Dennenrode",
+    "lat": 52.3219,
+    "lon": 4.9512
+  },
+  {
+    "value": "Derkinderenstraat",
+    "lat": 52.358,
+    "lon": 4.8397
+  },
+  {
+    "value": "Diemerbrug"
+  },
+  {
+    "value": "Diemerknoop"
+  },
+  {
+    "value": "Diemerparklaan",
+    "lat": 52.3551,
+    "lon": 4.9955
+  },
+  {
+    "value": "Dijkmanshuizenstraat",
+    "lat": 52.3955,
+    "lon": 4.9548
+  },
+  {
+    "value": "Distelweg",
+    "lat": 52.3958,
+    "lon": 4.8964
+  },
+  {
+    "value": "Dolingadreef",
+    "lat": 52.3192,
+    "lon": 4.9485
+  },
+  {
+    "value": "Dostojevskisingel",
+    "lat": 52.3231,
+    "lon": 4.9446
+  },
+  {
+    "value": "Druivenstraat",
+    "lat": 52.4127,
+    "lon": 4.8987
+  },
+  {
+    "value": "Echtenstein",
+    "lat": 52.3247,
+    "lon": 4.9598
+  },
+  {
+    "value": "Egidiusstraat",
+    "lat": 52.379,
+    "lon": 4.8515
+  },
+  {
+    "value": "Europaboulevard",
+    "lat": 52.3352,
+    "lon": 4.8901
+  },
+  {
+    "value": "Europaplein",
+    "lat": 52.3413,
+    "lon": 4.8918
+  },
+  {
+    "value": "Fizeaustraat",
+    "lat": 52.3459,
+    "lon": 4.9246
+  },
+  {
+    "value": "Floraweg",
+    "lat": 52.399,
+    "lon": 4.9061
+  },
+  {
+    "value": "Florijn",
+    "lat": 52.3176,
+    "lon": 4.9586
+  },
+  {
+    "value": "Foppingadreef",
+    "lat": 52.3127,
+    "lon": 4.9497
+  },
+  {
+    "value": "Frederik Hendrikplnts",
+    "lat": 52.3785,
+    "lon": 4.8752
+  },
+  {
+    "value": "G.J. Scheurleerweg",
+    "lat": 52.4037,
+    "lon": 4.9291
+  },
+  {
+    "value": "Gaasp",
+    "lat": 52.3148,
+    "lon": 4.9929
+  },
+  {
+    "value": "Gaasperplas",
+    "lat": 52.3111,
+    "lon": 4.9852
+  },
+  {
+    "value": "Ganzenhoef",
+    "lat": 52.324,
+    "lon": 4.9729
+  },
+  {
+    "value": "Geerdinkhof",
+    "lat": 52.3236,
+    "lon": 4.9803
+  },
+  {
+    "value": "Gein",
+    "lat": 52.2965,
+    "lon": 4.9895
+  },
+  {
+    "value": "Geinbrug",
+    "lat": 52.3044,
+    "lon": 5.0131
+  },
+  {
+    "value": "Gelderlandplein Oost",
+    "lat": 52.3308,
+    "lon": 4.8794
+  },
+  {
+    "value": "Geldershoofd",
+    "lat": 52.3252,
+    "lon": 4.9709
+  },
+  {
+    "value": "Gillis van Ledenberchstr",
+    "lat": 52.3752,
+    "lon": 4.8706
+  },
+  {
+    "value": "Gooioord",
+    "lat": 52.3199,
+    "lon": 4.9694
+  },
+  {
+    "value": "Grasweg",
+    "lat": 52.3891,
+    "lon": 4.9049
+  },
+  {
+    "value": "Griendstraat",
+    "lat": 52.3583,
+    "lon": 4.7794
+  },
+  {
+    "value": "Grootzeil",
+    "lat": 52.4088,
+    "lon": 4.9243
+  },
+  {
+    "value": "Grubbehoeve",
+    "lat": 52.3235,
+    "lon": 4.9763
+  },
+  {
+    "value": "Haardstee",
+    "lat": 52.3112,
+    "lon": 4.951
+  },
+  {
+    "value": "Haarlemmermeerstation",
+    "lat": 52.3492,
+    "lon": 4.8576
+  },
+  {
+    "value": "Haarlemmermeerstraat",
+    "lat": 52.3554,
+    "lon": 4.8504
+  },
+  {
+    "value": "Haarlemmerplein",
+    "lat": 52.3848,
+    "lon": 4.8834
+  },
+  {
+    "value": "Hagedoornplein",
+    "lat": 52.3875,
+    "lon": 4.9133
+  },
+  {
+    "value": "Hakfort",
+    "lat": 52.308,
+    "lon": 4.9558
+  },
+  {
+    "value": "Hamerstraat",
+    "lat": 52.386,
+    "lon": 4.921
+  },
+  {
+    "value": "Haparandaweg",
+    "lat": 52.3945,
+    "lon": 4.8763
+  },
+  {
+    "value": "Havikslaan",
+    "lat": 52.3853,
+    "lon": 4.9183
+  },
+  {
+    "value": "Hemsterhuisstraat",
+    "lat": 52.3592,
+    "lon": 4.8219
+  },
+  {
+    "value": "Herman Bonpad",
+    "lat": 52.3689,
+    "lon": 4.8006
+  },
+  {
+    "value": "Het Breed",
+    "lat": 52.3981,
+    "lon": 4.9319
+  },
+  {
+    "value": "Het Funen",
+    "lat": 52.3675,
+    "lon": 4.9316
+  },
+  {
+    "value": "Hilversumstraat",
+    "lat": 52.3903,
+    "lon": 4.9588
+  },
+  {
+    "value": "Hogevecht",
+    "lat": 52.3095,
+    "lon": 4.9596
+  },
+  {
+    "value": "Hogewerf",
+    "lat": 52.3346,
+    "lon": 4.8789
+  },
+  {
+    "value": "Holendrechtplein",
+    "lat": 52.2995,
+    "lon": 4.964
+  },
+  {
+    "value": "Hoofddorpplein",
+    "lat": 52.3512,
+    "lon": 4.8496
+  },
+  {
+    "value": "Hoofdweg",
+    "lat": 52.3643,
+    "lon": 4.8524
+  },
+  {
+    "value": "Houtmankade",
+    "lat": 52.3911,
+    "lon": 4.8844
+  },
+  {
+    "value": "Huigenbos",
+    "lat": 52.3069,
+    "lon": 4.9608
+  },
+  {
+    "value": "IJsbaanpad",
+    "lat": 52.3417,
+    "lon": 4.8577
+  },
+  {
+    "value": "Ilperveldstraat",
+    "lat": 52.395,
+    "lon": 4.9446
+  },
+  {
+    "value": "Industrieweg"
+  },
+  {
+    "value": "Insulindeweg",
+    "lat": 52.3647,
+    "lon": 4.9476
+  },
+  {
+    "value": "J. Drijverweg",
+    "lat": 52.3996,
+    "lon": 4.9442
+  },
+  {
+    "value": "J.H. Leopoldhof"
+  },
+  {
+    "value": "J.M. den Uylstraat",
+    "lat": 52.3817,
+    "lon": 4.7901
+  },
+  {
+    "value": "Jacob Cabeliaustraat",
+    "lat": 52.3825,
+    "lon": 4.8041
+  },
+  {
+    "value": "James Wattstraat",
+    "lat": 52.3512,
+    "lon": 4.9233
+  },
+  {
+    "value": "Jan Evertsenstraat",
+    "lat": 52.372,
+    "lon": 4.8594
+  },
+  {
+    "value": "Jan Rebelstraat",
+    "lat": 52.3619,
+    "lon": 4.7842
+  },
+  {
+    "value": "Jan Schaeferbrug",
+    "lat": 52.3766,
+    "lon": 4.9219
+  },
+  {
+    "value": "Jan Tooropstraat",
+    "lat": 52.3717,
+    "lon": 4.8382
+  },
+  {
+    "value": "Jan Voermanstraat",
+    "lat": 52.3696,
+    "lon": 4.8385
+  },
+  {
+    "value": "Jan van Galenstraat",
+    "lat": 52.374,
+    "lon": 4.8588
+  },
+  {
+    "value": "Javaplein",
+    "lat": 52.3641,
+    "lon": 4.9386
+  },
+  {
+    "value": "Johan Huizingalaan",
+    "lat": 52.3578,
+    "lon": 4.8258
+  },
+  {
+    "value": "Johan van Hasseltweg",
+    "lat": 52.3881,
+    "lon": 4.9246
+  },
+  {
+    "value": "Justus Lipsiusstraat",
+    "lat": 52.3615,
+    "lon": 4.8273
+  },
+  {
+    "value": "Kabelweg",
+    "lat": 52.392,
+    "lon": 4.8483
+  },
+  {
+    "value": "Kadijksplein",
+    "lat": 52.3707,
+    "lon": 4.9136
+  },
+  {
+    "value": "Kastelenstraat",
+    "lat": 52.3267,
+    "lon": 4.8795
+  },
+  {
+    "value": "Kattenburgerplein",
+    "lat": 52.3706,
+    "lon": 4.9162
+  },
+  {
+    "value": "Kelbergen",
+    "lat": 52.3135,
+    "lon": 4.9718
+  },
+  {
+    "value": "Kikkenstein",
+    "lat": 52.3168,
+    "lon": 4.9724
+  },
+  {
+    "value": "Klipperweg"
+  },
+  {
+    "value": "Knooppunt Schiphol Noord"
+  },
+  {
+    "value": "Kometensingel",
+    "lat": 52.4166,
+    "lon": 4.8828
+  },
+  {
+    "value": "Koornhorst",
+    "lat": 52.3191,
+    "lon": 4.984
+  },
+  {
+    "value": "Korenbloemstraat"
+  },
+  {
+    "value": "Kostverlorenstraat",
+    "lat": 52.3795,
+    "lon": 4.8717
+  },
+  {
+    "value": "Kraaiennest",
+    "lat": 52.3168,
+    "lon": 4.9794
+  },
+  {
+    "value": "Krugerplein",
+    "lat": 52.3531,
+    "lon": 4.9208
+  },
+  {
+    "value": "Kruidenommegang"
+  },
+  {
+    "value": "Kruislaan",
+    "lat": 52.3474,
+    "lon": 4.9397
+  },
+  {
+    "value": "La Guardiaweg",
+    "lat": 52.3915,
+    "lon": 4.8404
+  },
+  {
+    "value": "Leerdamhof",
+    "lat": 52.3054,
+    "lon": 4.9753
+  },
+  {
+    "value": "Leusdenhof",
+    "lat": 52.3099,
+    "lon": 4.9784
+  },
+  {
+    "value": "Levantplein",
+    "lat": 52.3771,
+    "lon": 4.9429
+  },
+  {
+    "value": "Liergouw",
+    "lat": 52.3831,
+    "lon": 4.9705
+  },
+  {
+    "value": "Linnaeusparkweg",
+    "lat": 52.3486,
+    "lon": 4.9415
+  },
+  {
+    "value": "Linnaeusstraat",
+    "lat": 52.3599,
+    "lon": 4.9249
+  },
+  {
+    "value": "Lorentzlaan",
+    "lat": 52.3464,
+    "lon": 4.9313
+  },
+  {
+    "value": "Louis Davidsstraat",
+    "lat": 52.3538,
+    "lon": 4.8085
+  },
+  {
+    "value": "Louweshoek",
+    "lat": 52.3463,
+    "lon": 4.8234
+  },
+  {
+    "value": "Louwesweg",
+    "lat": 52.3467,
+    "lon": 4.8244
+  },
+  {
+    "value": "Lumièrestraat",
+    "lat": 52.3528,
+    "lon": 4.9999
+  },
+  {
+    "value": "Maanstraat",
+    "lat": 52.4121,
+    "lon": 4.8873
+  },
+  {
+    "value": "Maasdrielhof",
+    "lat": 52.3022,
+    "lon": 4.9648
+  },
+  {
+    "value": "Maassluisstraat",
+    "lat": 52.347,
+    "lon": 4.8383
+  },
+  {
+    "value": "Maasstraat",
+    "lat": 52.3431,
+    "lon": 4.8968
+  },
+  {
+    "value": "Majanggracht",
+    "lat": 52.3787,
+    "lon": 4.9314
+  },
+  {
+    "value": "Marco Polostraat",
+    "lat": 52.371,
+    "lon": 4.8555
+  },
+  {
+    "value": "Markthallen",
+    "lat": 52.3758,
+    "lon": 4.8667
+  },
+  {
+    "value": "Marnixplein",
+    "lat": 52.3786,
+    "lon": 4.8792
+  },
+  {
+    "value": "Masthof",
+    "lat": 52.4119,
+    "lon": 4.926
+  },
+  {
+    "value": "Maxwellstraat",
+    "lat": 52.3482,
+    "lon": 4.9283
+  },
+  {
+    "value": "Meerkoet"
+  },
+  {
+    "value": "Meernhof",
+    "lat": 52.2997,
+    "lon": 4.9671
+  },
+  {
+    "value": "Meidoornplein",
+    "lat": 52.3875,
+    "lon": 4.9117
+  },
+  {
+    "value": "Mercatorplein",
+    "lat": 52.3702,
+    "lon": 4.8515
+  },
+  {
+    "value": "Merelstraat",
+    "lat": 52.39,
+    "lon": 4.9251
+  },
+  {
+    "value": "Meteorensingel",
+    "lat": 52.4102,
+    "lon": 4.8916
+  },
+  {
+    "value": "Meteorenweg",
+    "lat": 52.4147,
+    "lon": 4.8813
+  },
+  {
+    "value": "Michel de Klerkhof",
+    "lat": 52.3761,
+    "lon": 4.7977
+  },
+  {
+    "value": "Middenweg",
+    "lat": 52.3504,
+    "lon": 4.9346
+  },
+  {
+    "value": "Molenwijk",
+    "lat": 52.4182,
+    "lon": 4.8937
+  },
+  {
+    "value": "Molukkenstraat",
+    "lat": 52.3618,
+    "lon": 4.941
+  },
+  {
+    "value": "Mosplein",
+    "lat": 52.393,
+    "lon": 4.9136
+  },
+  {
+    "value": "Muiderpoortstation",
+    "lat": 52.3612,
+    "lon": 4.9328
+  },
+  {
+    "value": "Naaldwijkstraat",
+    "lat": 52.3469,
+    "lon": 4.8425
+  },
+  {
+    "value": "Nachtwachtlaan",
+    "lat": 52.3642,
+    "lon": 4.8431
+  },
+  {
+    "value": "Nageljongenstraat",
+    "lat": 52.4082,
+    "lon": 4.8989
+  },
+  {
+    "value": "Naritaweg",
+    "lat": 52.3878,
+    "lon": 4.8219
+  },
+  {
+    "value": "Nassauplein",
+    "lat": 52.3854,
+    "lon": 4.8816
+  },
+  {
+    "value": "Nelson Mandelapark",
+    "lat": 52.3113,
+    "lon": 4.9653
+  },
+  {
+    "value": "Nienoord"
+  },
+  {
+    "value": "Nieuw Herlaer",
+    "lat": 52.3259,
+    "lon": 4.8903
+  },
+  {
+    "value": "Nieuwe Purmerweg",
+    "lat": 52.3945,
+    "lon": 4.9341
+  },
+  {
+    "value": "Nieuwe Willemsstraat",
+    "lat": 52.3813,
+    "lon": 4.8809
+  },
+  {
+    "value": "Nolensstraat",
+    "lat": 52.3752,
+    "lon": 4.801
+  },
+  {
+    "value": "Noorderpark",
+    "lat": 52.3895,
+    "lon": 4.9198
+  },
+  {
+    "value": "Olympiaplein",
+    "lat": 52.3463,
+    "lon": 4.8658
+  },
+  {
+    "value": "Olympiaweg",
+    "lat": 52.3452,
+    "lon": 4.8587
+  },
+  {
+    "value": "Olympisch Stadion",
+    "lat": 52.3438,
+    "lon": 4.857
+  },
+  {
+    "value": "Ookmeerweg",
+    "lat": 52.3656,
+    "lon": 4.8043
+  },
+  {
+    "value": "Oostenburgergracht",
+    "lat": 52.3679,
+    "lon": 4.9243
+  },
+  {
+    "value": "Oosterlengte",
+    "lat": 52.4058,
+    "lon": 4.9223
+  },
+  {
+    "value": "Oostzanerdijk",
+    "lat": 52.4204,
+    "lon": 4.8808
+  },
+  {
+    "value": "Osdorper Ban",
+    "lat": 52.3631,
+    "lon": 4.8046
+  },
+  {
+    "value": "Osdorpplein Oost",
+    "lat": 52.3586,
+    "lon": 4.8081
+  },
+  {
+    "value": "Ottho Heldringstraat",
+    "lat": 52.347,
+    "lon": 4.833
+  },
+  {
+    "value": "Pekelharingstraat",
+    "lat": 52.3458,
+    "lon": 4.9368
+  },
+  {
+    "value": "Peter Martensstraat",
+    "lat": 52.3488,
+    "lon": 5.0142
+  },
+  {
+    "value": "Petmolen",
+    "lat": 52.4172,
+    "lon": 4.8862
+  },
+  {
+    "value": "Piet Heinkade",
+    "lat": 52.3774,
+    "lon": 4.9127
+  },
+  {
+    "value": "Piet Wiedijkstraat",
+    "lat": 52.3552,
+    "lon": 4.8153
+  },
+  {
+    "value": "Pieter Oosterhuisstraat",
+    "lat": 52.3519,
+    "lon": 5.0076
+  },
+  {
+    "value": "Pinksterbloemstraat",
+    "lat": 52.3985,
+    "lon": 4.9122
+  },
+  {
+    "value": "Plataanstraat"
+  },
+  {
+    "value": "Plein '40 - '45",
+    "lat": 52.3808,
+    "lon": 4.8211
+  },
+  {
+    "value": "Plesostraat",
+    "lat": 52.3879,
+    "lon": 4.8265
+  },
+  {
+    "value": "Pomonastraat",
+    "lat": 52.4089,
+    "lon": 4.8955
+  },
+  {
+    "value": "Pontanusstraat",
+    "lat": 52.3659,
+    "lon": 4.9281
+  },
+  {
+    "value": "Postjesweg",
+    "lat": 52.3647,
+    "lon": 4.8338
+  },
+  {
+    "value": "President Kennedylaan",
+    "lat": 52.3409,
+    "lon": 4.9017
+  },
+  {
+    "value": "Prins Bernhardlaan"
+  },
+  {
+    "value": "Prins Hendrikkade",
+    "lat": 52.3745,
+    "lon": 4.9046
+  },
+  {
+    "value": "Prinses Beatrixlaan"
+  },
+  {
+    "value": "Prinses Irenestraat",
+    "lat": 52.3426,
+    "lon": 4.8768
+  },
+  {
+    "value": "Provincialeweg"
+  },
+  {
+    "value": "Purmerplein",
+    "lat": 52.3905,
+    "lon": 4.9457
+  },
+  {
+    "value": "Purmerweg",
+    "lat": 52.39,
+    "lon": 4.9486
+  },
+  {
+    "value": "Radioweg",
+    "lat": 52.3534,
+    "lon": 4.9395
+  },
+  {
+    "value": "Reigersbos",
+    "lat": 52.2956,
+    "lon": 4.9736
+  },
+  {
+    "value": "Reigersbroeck",
+    "lat": 52.311,
+    "lon": 5.0004
+  },
+  {
+    "value": "Reimerswaalstraat",
+    "lat": 52.3612,
+    "lon": 4.7956
+  },
+  {
+    "value": "Rhenenhof",
+    "lat": 52.2984,
+    "lon": 4.9708
+  },
+  {
+    "value": "Rietzangerweg"
+  },
+  {
+    "value": "Robert Fruinlaan",
+    "lat": 52.364,
+    "lon": 4.8301
+  },
+  {
+    "value": "Rode Kruisstraat",
+    "lat": 52.3949,
+    "lon": 4.9288
+  },
+  {
+    "value": "Rudolf Nurejevstraat",
+    "lat": 52.3745,
+    "lon": 4.9628
+  },
+  {
+    "value": "Saaftingestraat",
+    "lat": 52.3604,
+    "lon": 4.7914
+  },
+  {
+    "value": "Sam van Houtenstraat",
+    "lat": 52.3787,
+    "lon": 4.7979
+  },
+  {
+    "value": "Schaarsbergenstraat",
+    "lat": 52.2928,
+    "lon": 4.9813
+  },
+  {
+    "value": "Scherpenzeelstraat",
+    "lat": 52.2929,
+    "lon": 4.9772
+  },
+  {
+    "value": "Schoonhovendreef",
+    "lat": 52.294,
+    "lon": 4.9746
+  },
+  {
+    "value": "Science Park",
+    "lat": 52.3545,
+    "lon": 4.9509
+  },
+  {
+    "value": "Science Park Aer",
+    "lat": 52.3552,
+    "lon": 4.9527
+  },
+  {
+    "value": "Science Park Aqua",
+    "lat": 52.3561,
+    "lon": 4.9541
+  },
+  {
+    "value": "Science Park Terra",
+    "lat": 52.3541,
+    "lon": 4.9577
+  },
+  {
+    "value": "Seineweg",
+    "lat": 52.3865,
+    "lon": 4.8189
+  },
+  {
+    "value": "Sierplein",
+    "lat": 52.355,
+    "lon": 4.8273
+  },
+  {
+    "value": "Slijperweg",
+    "lat": 52.3992,
+    "lon": 4.9077
+  },
+  {
+    "value": "Sloterweg",
+    "lat": 52.3442,
+    "lon": 4.8275
+  },
+  {
+    "value": "Sneeuwbalstraat",
+    "lat": 52.3964,
+    "lon": 4.9141
+  },
+  {
+    "value": "Soembawastraat",
+    "lat": 52.3623,
+    "lon": 4.9439
+  },
+  {
+    "value": "Solebaystraat",
+    "lat": 52.385,
+    "lon": 4.8559
+  },
+  {
+    "value": "Spaarndammerdijk",
+    "lat": 52.3924,
+    "lon": 4.862
+  },
+  {
+    "value": "Spaarndammerstraat",
+    "lat": 52.3922,
+    "lon": 4.8777
+  },
+  {
+    "value": "Spelderholt",
+    "lat": 52.4011,
+    "lon": 4.9442
+  },
+  {
+    "value": "Spreeuwenpark",
+    "lat": 52.3845,
+    "lon": 4.9141
+  },
+  {
+    "value": "Staghof",
+    "lat": 52.4134,
+    "lon": 4.9229
+  },
+  {
+    "value": "Stammerkamp"
+  },
+  {
+    "value": "Standerdmolen",
+    "lat": 52.4163,
+    "lon": 4.8933
+  },
+  {
+    "value": "Statenjachtstraat",
+    "lat": 52.4079,
+    "lon": 4.9138
+  },
+  {
+    "value": "Station Bijlmer ArenA",
+    "lat": 52.3111,
+    "lon": 4.9477
+  },
+  {
+    "value": "Station Diemen"
+  },
+  {
+    "value": "Station Diemen Zuid"
+  },
+  {
+    "value": "Station Duivendrecht"
+  },
+  {
+    "value": "Station Holendrecht",
+    "lat": 52.2972,
+    "lon": 4.9591
+  },
+  {
+    "value": "Station Lelylaan",
+    "lat": 52.3579,
+    "lon": 4.8346
+  },
+  {
+    "value": "Station Noord",
+    "lat": 52.4019,
+    "lon": 4.933
+  },
+  {
+    "value": "Station RAI",
+    "lat": 52.337,
+    "lon": 4.8906
+  },
+  {
+    "value": "Station Science Park",
+    "lat": 52.3524,
+    "lon": 4.9481
+  },
+  {
+    "value": "Station Sloterdijk",
+    "lat": 52.3877,
+    "lon": 4.8388
+  },
+  {
+    "value": "Station Zuid",
+    "lat": 52.3408,
+    "lon": 4.8742
+  },
+  {
+    "value": "Stationsweg",
+    "lat": 52.3242,
+    "lon": 4.9311
+  },
+  {
+    "value": "Staverdenplein",
+    "lat": 52.2928,
+    "lon": 4.986
+  },
+  {
+    "value": "Surinameplein",
+    "lat": 52.3581,
+    "lon": 4.8509
+  },
+  {
+    "value": "Tarwekamp"
+  },
+  {
+    "value": "Th. Weeversweg",
+    "lat": 52.3982,
+    "lon": 4.9445
+  },
+  {
+    "value": "Tjalkstraat",
+    "lat": 52.4057,
+    "lon": 4.9112
+  },
+  {
+    "value": "Tosaristraat",
+    "lat": 52.3797,
+    "lon": 4.9235
+  },
+  {
+    "value": "Troelstralaan",
+    "lat": 52.375,
+    "lon": 4.802
+  },
+  {
+    "value": "Tulastraat",
+    "lat": 52.3199,
+    "lon": 4.9658
+  },
+  {
+    "value": "Tureluurweg"
+  },
+  {
+    "value": "Tussendek",
+    "lat": 52.4125,
+    "lon": 4.9192
+  },
+  {
+    "value": "VU medisch centrum",
+    "lat": 52.3352,
+    "lon": 4.8601
+  },
+  {
+    "value": "Valentijnkade",
+    "lat": 52.359,
+    "lon": 4.9408
+  },
+  {
+    "value": "Valkenweg",
+    "lat": 52.3831,
+    "lon": 4.9133
+  },
+  {
+    "value": "Van Beuningenplein",
+    "lat": 52.3812,
+    "lon": 4.8711
+  },
+  {
+    "value": "Van Hallstraat",
+    "lat": 52.3842,
+    "lon": 4.8699
+  },
+  {
+    "value": "Van Heenvlietlaan",
+    "lat": 52.3249,
+    "lon": 4.883
+  },
+  {
+    "value": "Van Mourik Broekmanstr",
+    "lat": 52.3565,
+    "lon": 4.8214
+  },
+  {
+    "value": "Van der Hoopstraat",
+    "lat": 52.3833,
+    "lon": 4.8703
+  },
+  {
+    "value": "Veelaan",
+    "lat": 52.3686,
+    "lon": 4.9375
+  },
+  {
+    "value": "Veenendaalplein",
+    "lat": 52.3015,
+    "lon": 4.9809
+  },
+  {
+    "value": "Victorieplein",
+    "lat": 52.3464,
+    "lon": 4.9057
+  },
+  {
+    "value": "Vinkenbrug"
+  },
+  {
+    "value": "Vogelweg"
+  },
+  {
+    "value": "Volendammerweg",
+    "lat": 52.3931,
+    "lon": 4.9568
+  },
+  {
+    "value": "Volkstuin",
+    "lat": 52.3871,
+    "lon": 4.9683
+  },
+  {
+    "value": "Voordek",
+    "lat": 52.411,
+    "lon": 4.9174
+  },
+  {
+    "value": "Vredenhof",
+    "lat": 52.3852,
+    "lon": 4.8638
+  },
+  {
+    "value": "Waalstraat",
+    "lat": 52.3446,
+    "lon": 4.901
+  },
+  {
+    "value": "Waddenweg",
+    "lat": 52.3926,
+    "lon": 4.927
+  },
+  {
+    "value": "Wamelstraat",
+    "lat": 52.3015,
+    "lon": 4.9859
+  },
+  {
+    "value": "Waterlandplein",
+    "lat": 52.3918,
+    "lon": 4.9539
+  },
+  {
+    "value": "Werengouw",
+    "lat": 52.3964,
+    "lon": 4.9423
+  },
+  {
+    "value": "Wervershoofstraat",
+    "lat": 52.3925,
+    "lon": 4.9404
+  },
+  {
+    "value": "Westerdoksdijk",
+    "lat": 52.3855,
+    "lon": 4.8933
+  },
+  {
+    "value": "Willem Gertenbachstraat",
+    "lat": 52.2986,
+    "lon": 4.9891
+  },
+  {
+    "value": "Willem Schoutenstraat",
+    "lat": 52.367,
+    "lon": 4.8526
+  },
+  {
+    "value": "Willinklaan",
+    "lat": 52.3709,
+    "lon": 4.8003
+  },
+  {
+    "value": "Winkelcentrum"
+  },
+  {
+    "value": "Wittenburgergracht",
+    "lat": 52.3695,
+    "lon": 4.9195
+  },
+  {
+    "value": "Woudrichemstraat",
+    "lat": 52.2942,
+    "lon": 4.9888
+  },
+  {
+    "value": "Zaaiersweg",
+    "lat": 52.3398,
+    "lon": 4.9384
+  },
+  {
+    "value": "Zaanstraat",
+    "lat": 52.3929,
+    "lon": 4.8699
+  },
+  {
+    "value": "Zeeburgerdijk",
+    "lat": 52.3657,
+    "lon": 4.9329
+  },
+  {
+    "value": "Zuiderzeeweg",
+    "lat": 52.3721,
+    "lon": 4.9612
+  },
+  {
+    "value": "van Houten Industriepark"
+  },
+  {
+    "value": "R.J.H. Fortuynplein",
+    "lat": 52.3723,
+    "lon": 4.9467
+  },
+  {
+    "value": "Buiteneilandlaan",
+    "lat": 52.3554,
+    "lon": 5.0183
+  },
+  {
+    "value": "Vennepluimstraat",
+    "lat": 52.358,
+    "lon": 4.9901
+  },
+  {
+    "value": "Matterhorn",
+    "lat": 52.355,
+    "lon": 4.7751
+  },
+  {
+    "value": "Koivistokade",
+    "lat": 52.3979,
+    "lon": 4.8752
+  },
+  {
+    "value": "Station Weesp"
+  },
+  {
+    "value": "Diemen Noord"
+  },
+  {
+    "value": "Schiphol Airport/Plaza"
+  },
+  {
+    "value": "KNSM-laan",
+    "lat": 52.3771,
+    "lon": 4.946
+  },
+  {
+    "value": "De Savornin Lohmanstraat",
+    "lat": 52.3754,
+    "lon": 4.8008
+  },
+  {
+    "value": "Osdorpplein Noord",
+    "lat": 52.3603,
+    "lon": 4.8053
+  },
+  {
+    "value": "Metaalbewerkerweg",
+    "lat": 52.4018,
+    "lon": 4.9058
+  },
+  {
+    "value": "John M. Keynesplein",
+    "lat": 52.3404,
+    "lon": 4.8243
+  },
+  {
+    "value": "Olof Palmeplein",
+    "lat": 52.3967,
+    "lon": 4.9398
+  }
+]

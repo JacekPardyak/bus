@@ -4,21 +4,30 @@ digraph G {
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   4300 [pos = " 0, 0!", label = "CEN"]
-  4301 [pos = " 3, 0!"]
-  4302 [pos = " 3, 1!"]
+  4301 [pos = " 4, 0!"]
+  4302 [pos = " 4, 1!"]
   4303 [pos = " 5, 1!", height=0.01]
   4304 [pos = " 5, 0!", height=0.01]
-  4305 [pos = " 4, 0!"]
-  4306 [pos = " 4,-1!"]
+  4305 [pos = " 4.5, 0!"]
+  4306 [pos = " 4.5,-1!"]
   4307 [pos = " 5,-1!"]
-  4308 [pos = " 5,-2!"]
-  4309 [pos = " 6,-2!"]
-  4310 [pos = " 6,-1!"]
-  4311 [pos = " 7,-1!", label = "BOR"]
+  4308 [pos = " 5,-1.5!"]
+  4309 [pos = " 7,-1.5!"]
+  4310 [pos = " 7,-1!"]
+  4311 [pos = " 8,-1!", label = "BOR"]
 
-  4201 [pos = " 7,-3!", label = "CRU"]
-
-  4300 -> 4301 [label = "De Ruijterkade 
+  4201 [pos = " 2, 0!"]
+  4202 [pos = " 2,-2.5!"]
+  4203 [pos = " 4,-2.5!", height=0.01]
+  4204 [pos = " 4,-2!"]
+  4205 [pos = " 6,-2!"]
+  4206 [pos = " 6,-2.5!"]
+  4207 [pos = " 7,-2.5!"]
+  4208 [pos = " 7,-2!"]
+  
+  4209 [pos = " 9,-2!", label = "CRU"]
+  
+  4201 -> 4301 [label = "De Ruijterkade 
  Piet Heinkade  
  (lijn 43)"]
   4301 -> 4302 [label = "Vemenplein 
@@ -35,10 +44,21 @@ digraph G {
   4309 -> 4310 [label = "R.J.H. Fortuynstraat"]
   4310 -> 4311 [label = "Stuurmankade"]
   
-  4300 -> 4201 [label = "eee
- (lijn 42)"]
-
+  4300 -> 4201 [label = "De Ruijterkade
+ (lijn 42, 43)"]
+  4201 -> 4202 [label = "Kamperbrug
+  (lijn 42)"]
+  4202 -> 4203 [label = "Prins Hendrikkade"]
+  4203 -> 4204 [label = ""]
+  4204 -> 4205 [label = "Kattenburger-plein
+  -gracht
+  Wittenburgergracht
+  Oostenburgergracht
+  Cruquiuskade"]
+  4205 -> 4206 [label = "Panamalaan"]
+  4206 -> 4207 [label = "Zeeburgerpad"]
+  4207 -> 4208 [label = "Th. K. van Lohuizenlaan"]
+  4208 -> 4209 [label = "Cruquiusweg"]
 }
-
 
 

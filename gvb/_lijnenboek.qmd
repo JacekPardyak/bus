@@ -23,19 +23,18 @@ library(ggraph)
 
 "label, from, to
 Bus15, Station Sloterdijk, Station Zuid
-Bus18, Centraal Station, Slotervaart
+Bus18, Centraal Station, Nieuwe Meer
 Bus21, Centraal Station, Geuzenveld De Sav. Lohmanstraat
 Bus22, Station Sloterdijk, Centraal Station
 Bus34, Station Noord, Vogelbuurt Zuid
-Bus35, Station Noord, Molenwijk
 Bus36, Station Sloterdijk, Olof Palmeplein
 Bus37, Station Noord, Amstelstation
-Bus38, Olof Palmeplein, Buiksloterham
+Bus38, Olof Palmeplein, Overhoeks
 Bus39, Olof Palmeplein, Molenwijk
 Bus40, Amstelstation, Muiderpoortstation
 Bus41, Station Holendrecht, Amstelstation
 Bus42, Centraal Station, Cruquius-eiland
-Bus43, Centraal Station, Borneo Eiland
+Bus43, Centraal Station, Borneo-eiland
 Bus44, Station Bijlmer ArenA, Diemen Noord
 Bus47, Station Holendrecht, Station Bijlmer ArenA
 Bus48, Centraal Station, Houthavens
@@ -43,7 +42,7 @@ Bus49, Station Bijlmer ArenA, IJburg Strandeiland
 Bus61, Station Sloterdijk, Osdorpplein Noord
 Bus62, Station Lelylaan, Amstelstation
 Bus63, Station Lelylaan, Osdorp De Aker
-Bus65, Amstelstation, KNSM-laan
+Bus65, Amstelstation, KNSM-eiland
 Bus66, Station Bijlmer ArenA, IJburg
 Bus68, Henk Sneevlietweg, John M. Keynesplein
 Bus73, OLVG West, Slotermeerlaan
@@ -63,8 +62,7 @@ Bus218, Schiphol Airport/Plaza, Nieuwe Meer
 Bus231, Station Sloterdijk, Abberdaan
 Bus233, Station Sloterdijk, Sicilieweg
 Bus245, Oostzanerdijk, Schiphol Airport/Plaza
-Bus246, Borneolaan, Schiphol Airport/Plaza
-Bus247, Bos en Lommerplein, Schiphol Airport/Plaza
+Bus247, Jan Voermanstraat, Schiphol Airport/Plaza
 Bus267, Anderlechtlaan, Anderlechtlaan
 Bus360, Station Bijlmer ArenA, IJburg Strandeiland
 Bus369, Station Sloterdijk, Schiphol Airport/Plaza
@@ -104,21 +102,30 @@ CEN_O <- 'digraph G {
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
   4300 [pos = " 0, 0!", label = "CEN"]
-  4301 [pos = " 3, 0!"]
-  4302 [pos = " 3, 1!"]
+  4301 [pos = " 4, 0!"]
+  4302 [pos = " 4, 1!"]
   4303 [pos = " 5, 1!", height=0.01]
   4304 [pos = " 5, 0!", height=0.01]
-  4305 [pos = " 4, 0!"]
-  4306 [pos = " 4,-1!"]
+  4305 [pos = " 4.5, 0!"]
+  4306 [pos = " 4.5,-1!"]
   4307 [pos = " 5,-1!"]
-  4308 [pos = " 5,-2!"]
-  4309 [pos = " 6,-2!"]
-  4310 [pos = " 6,-1!"]
-  4311 [pos = " 7,-1!", label = "BOR"]
+  4308 [pos = " 5,-1.5!"]
+  4309 [pos = " 7,-1.5!"]
+  4310 [pos = " 7,-1!"]
+  4311 [pos = " 8,-1!", label = "BOR"]
 
-  4201 [pos = " 7,-3!", label = "CRU"]
-
-  4300 -> 4301 [label = "De Ruijterkade 
+  4201 [pos = " 2, 0!"]
+  4202 [pos = " 2,-2.5!"]
+  4203 [pos = " 4,-2.5!", height=0.01]
+  4204 [pos = " 4,-2!"]
+  4205 [pos = " 6,-2!"]
+  4206 [pos = " 6,-2.5!"]
+  4207 [pos = " 7,-2.5!"]
+  4208 [pos = " 7,-2!"]
+  
+  4209 [pos = " 9,-2!", label = "CRU"]
+  
+  4201 -> 4301 [label = "De Ruijterkade 
  Piet Heinkade  
  (lijn 43)"]
   4301 -> 4302 [label = "Vemenplein 
@@ -135,11 +142,22 @@ CEN_O <- 'digraph G {
   4309 -> 4310 [label = "R.J.H. Fortuynstraat"]
   4310 -> 4311 [label = "Stuurmankade"]
   
-  4300 -> 4201 [label = "eee
- (lijn 42)"]
-
+  4300 -> 4201 [label = "De Ruijterkade
+ (lijn 42, 43)"]
+  4201 -> 4202 [label = "Kamperbrug
+  (lijn 42)"]
+  4202 -> 4203 [label = "Prins Hendrikkade"]
+  4203 -> 4204 [label = ""]
+  4204 -> 4205 [label = "Kattenburger-plein
+  -gracht
+  Wittenburgergracht
+  Oostenburgergracht
+  Cruquiuskade"]
+  4205 -> 4206 [label = "Panamalaan"]
+  4206 -> 4207 [label = "Zeeburgerpad"]
+  4207 -> 4208 [label = "Th. K. van Lohuizenlaan"]
+  4208 -> 4209 [label = "Cruquiusweg"]
 }
-
 
 '
 
@@ -181,8 +199,11 @@ CEN_W <- 'digraph G {
   1809 [pos = "-5,-4!"]
   1810 [pos = "-5,-5!"]
   1811 [pos = "-6,-5!"]
-  1812 [pos = "-6,-6!"]
-  1813 [pos = "-7,-6!", label = "SLO"]
+  1812 [pos = "-6,-5.5!"]
+  1813 [pos = "-4,-5.5!"]
+  1814 [pos = "-6,-6!"]
+  1815 [pos = "-7,-6!"]
+  1816 [pos = "-7,-7!", label = "NMR"]
   
   2101 [pos = "-4,-2!", height=0.01]
   2102 [pos = "-4,-1!"]
@@ -191,8 +212,10 @@ CEN_W <- 'digraph G {
   2105 [pos = "-7,-2!", height=0.01]
   2106 [pos = "-7,-1.5!"]
   2107 [pos = "-8,-1.5!", height=0.01]
-  2108 [pos = "-8,-3.5!"]
-  2109 [pos = "-7,-3.5!", label = "GEU"]
+  2108 [pos = "-8,-2.5!"]
+  2109 [pos = "-8,-3.5!"]
+  2110 [pos = "-10,-2.5!", label = "GEU"]
+  2112 [pos = "-6,-3.5!", label = "GEU"]
   
   4801 [pos = "-2, 0!"]
   4802 [pos = "-2, 1!", height=0.01]
@@ -200,7 +223,7 @@ CEN_W <- 'digraph G {
   4804 [pos = "-3, 2!"]
   4805 [pos = "-2, 2!"]
   4806 [pos = "-2, 3!"]
-  4807 [pos = "-3, 3!", label = "HOU"]
+  4807 [pos = "-4, 3!", label = "HOU"]
 
   1800 -> 1801 [label = "De Ruijterkade 
  (lijn 18, 21, 48)"]
@@ -224,7 +247,11 @@ CEN_W <- 'digraph G {
   1810 -> 1811 [label = "Postjesweg 
  Robert Fruinlaan"]
   1811 -> 1812 [label = "Johan Huizingalaan"]
-  1812 -> 1813 [label = "Louwesweg"]
+  1812 -> 1813 [label = "Pieter Calandlaan
+  (via St. Lelylaan)", dir = both]
+  1812 -> 1814 [label = ""]
+  1814 -> 1815 [label = "David Ricardostraat"]
+  1815 -> 1816 [label = "John M. Keynesplein"]
   
   1805 -> 2101 [label = "Kostverlorenstraat 
  Van Hallstraat 
@@ -238,7 +265,11 @@ CEN_W <- 'digraph G {
   2106 -> 2107 [label = "Ruys de Beerenbrouckstraat 
  Antony Moddermanstraat"]
   2107 -> 2108 [label = "Aalbersestraat"]
-  2108 -> 2109 [label = "De Savornin Lohmanlaan"]
+  2108 -> 2110 [label = "Cornelis Outshoornstraat
+  J.M. den Uylstraat"]
+  2108 -> 2109 [label = "Aalbersestraat"]
+  
+  2109 -> 2112 [label = "De Savornin Lohmanlaan"]
   
   1801 -> 4801 [label = "De Ruijterkade 
  (lijn 48)"]
@@ -284,7 +315,7 @@ NRD <- 'digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  3400 [pos = " 1, 0!", label = "NRD"]
+  3400 [pos = " 1, 0!", label = "ND"]
   3401 [pos = "-1, 0!"]
   3402 [pos = "-1, 1!", height=0.01]
   3403 [pos = "-2, 1!", height=0.01]
@@ -295,7 +326,7 @@ NRD <- 'digraph G {
   3408 [pos = " 1,-4!"]
   3409 [pos = " 0,-4!"]
   3410 [pos = " 1,-6!"]
-  3411 [pos = " 1,-5!", label = "VLK"]
+  3411 [pos = " 1,-5!", label = "VKW"]
   3412 [pos = "-2, 0!"]
   3413 [pos = "-1,-2.5!"]
 
@@ -392,7 +423,7 @@ OLO <- 'digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  3901 [pos = " 3,-1!", label = "OLO"]
+  3901 [pos = " 3,-1!", label = "OFPP"]
   3902 [pos = " 5,-1!"]
   3903 [pos = " 5, 3!"]
   3904 [pos = " 4, 3!"]
@@ -411,7 +442,7 @@ OLO <- 'digraph G {
   3916 [pos = "-7, 3!"]
   3917 [pos = "-7, 2!", height=0.01]
   3918 [pos = "-6, 2!"]
-  3919 [pos = "-6, 3!", label = "MOL"]
+  3919 [pos = "-6, 3!", label = "MWK"]
   3920 [pos = " 4, 4!"]
   3921 [pos = " 2, 4!"]
   3922 [pos = " 2, 3!"]
@@ -425,7 +456,7 @@ OLO <- 'digraph G {
   3801 [pos = " 1,-3!"]
   3802 [pos = "-1,-3.5!"]
   3803 [pos = "-1,-3!"]
-  3804 [pos = "-3,-3!", label = "BUI"]
+  3804 [pos = "-3,-3!", label = "DSW"]
   
   3805 [pos = " 1,-1!"]
   3806 [pos = " 0,-4.5!"]
@@ -453,7 +484,8 @@ OLO <- 'digraph G {
   3904 -> 3920 [label = "J. Drijverweg"]
   3920 -> 3921 [label = "J.H. van Heekweg"]
   3921 -> 3922 [label = "H. Cleyndertweg"]  
-  3922 -> 3923 [label = "IJdoornlaan (via St. Noord)"]
+  3922 -> 3923 [label = "IJdoornlaan
+(via St. Noord)"]
   
   3805 -> 3801 [dir = "both", label = "Waddenweg 
  Meeuwenlaan"]
@@ -1721,16 +1753,11 @@ edges %>% filter(zone == "Noord") %>%
 
 ## Centraal Station (lijnen 42, 43)
 
-todo: 42
-
 ![](CEN_O.pdf){height=20.8cm}
 
 ## Centraal Station (lijnen 18, 21, 48)
 
-todo: 18, 21
-
 ![](CEN_W.pdf){height=20.8cm}
-
 
 ## Station Noord (lijnen 34, 37)
 

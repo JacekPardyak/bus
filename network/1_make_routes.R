@@ -19,7 +19,7 @@ lines = c(Centraal_Station,
           Station_Lelylaan, 
           Station_Sloterdijk)
 
-lines <- c(62, 63) #18, 21, 43, 48, # Centraal     34, 37 # Noord  )
+# lines <- c(62, 63) #18, 21, 43, 48, # Centraal     34, 37 # Noord  )
 
 paths <- list.files(path = "./network/data/", 
                     pattern = "\\.pdf$", 

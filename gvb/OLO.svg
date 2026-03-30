@@ -13,8 +13,8 @@
 <!-- 3901 -->
 <g id="node1" class="node">
 <title>3901</title>
-<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="893.1717" cy="-378.7" rx="26.4937" ry="26.4937"/>
-<text text-anchor="middle" x="893.1717" y="-375.7" font-family="Arial" font-size="10.00" fill="#000000">OLO</text>
+<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="893.1717" cy="-378.7" rx="30.6309" ry="30.6309"/>
+<text text-anchor="middle" x="893.1717" y="-375.7" font-family="Arial" font-size="10.00" fill="#000000">OFPP</text>
 </g>
 <!-- 3902 -->
 <g id="node2" class="node">
@@ -24,10 +24,10 @@
 <!-- 3901&#45;&gt;3902 -->
 <g id="edge34" class="edge">
 <title>3901&#45;&gt;3902</title>
-<path fill="none" stroke="#c0c0c0" d="M919.5835,-378.7C950.1418,-378.7 999.312,-378.7 1023.22,-378.7"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1023.4079,-382.2001 1033.4078,-378.7 1023.4078,-375.2001 1023.4079,-382.2001"/>
-<text text-anchor="middle" x="971.4017" y="-369.7" font-family="Arial" font-size="10.00" fill="#000000">Buikslotermeerplein</text>
-<text text-anchor="middle" x="971.4017" y="-357.7" font-family="Arial" font-size="10.00" fill="#000000">(lijn 39)</text>
+<path fill="none" stroke="#c0c0c0" d="M924.0633,-378.7C954.8791,-378.7 1000.8039,-378.7 1023.4844,-378.7"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1023.6579,-382.2001 1033.6579,-378.7 1023.6578,-375.2001 1023.6579,-382.2001"/>
+<text text-anchor="middle" x="973.7738" y="-369.7" font-family="Arial" font-size="10.00" fill="#000000">Buikslotermeerplein</text>
+<text text-anchor="middle" x="973.7738" y="-357.7" font-family="Arial" font-size="10.00" fill="#000000">(lijn 39)</text>
 </g>
 <!-- 3805 -->
 <g id="node33" class="node">
@@ -37,11 +37,11 @@
 <!-- 3901&#45;&gt;3805 -->
 <g id="edge33" class="edge">
 <title>3901&#45;&gt;3805</title>
-<path fill="none" stroke="#c0c0c0" d="M856.4681,-378.7C826.0836,-378.7 784.5558,-378.7 763.1685,-378.7"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="856.7599,-382.2001 866.7598,-378.7 856.7598,-375.2001 856.7599,-382.2001"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="762.9355,-375.2001 752.9355,-378.7 762.9354,-382.2001 762.9355,-375.2001"/>
-<text text-anchor="middle" x="809.8183" y="-369.7" font-family="Arial" font-size="10.00" fill="#000000">Buikslotermeerplein </text>
-<text text-anchor="middle" x="809.8183" y="-357.7" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 38*)</text>
+<path fill="none" stroke="#c0c0c0" d="M851.9185,-378.7C821.8977,-378.7 783.0958,-378.7 762.8453,-378.7"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="852.2801,-382.2001 862.28,-378.7 852.28,-375.2001 852.2801,-382.2001"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="762.6855,-375.2001 752.6854,-378.7 762.6854,-382.2001 762.6855,-375.2001"/>
+<text text-anchor="middle" x="807.3819" y="-369.7" font-family="Arial" font-size="10.00" fill="#000000">Buikslotermeerplein </text>
+<text text-anchor="middle" x="807.3819" y="-357.7" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 38*)</text>
 </g>
 <!-- 3903 -->
 <g id="node3" class="node">
@@ -121,16 +121,16 @@
 <!-- 3804 -->
 <g id="node32" class="node">
 <title>3804</title>
-<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="461.1716" cy="-234.7" rx="23.1985" ry="23.1985"/>
-<text text-anchor="middle" x="461.1716" y="-231.7" font-family="Arial" font-size="10.00" fill="#000000">BUI</text>
+<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="461.1716" cy="-234.7" rx="27.6181" ry="27.6181"/>
+<text text-anchor="middle" x="461.1716" y="-231.7" font-family="Arial" font-size="10.00" fill="#000000">DSW</text>
 </g>
 <!-- 3907&#45;&gt;3804 -->
 <g id="edge4" class="edge">
 <title>3907&#45;&gt;3804</title>
-<path fill="none" stroke="#c0c0c0" d="M461.1716,-302.829C461.1716,-296.172 461.1716,-281.9423 461.1716,-268.2007"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="464.6717,-267.921 461.1716,-257.921 457.6717,-267.921 464.6717,-267.921"/>
-<text text-anchor="middle" x="423.3886" y="-276.5148" font-family="Arial" font-size="10.00" fill="#000000">Ridderspoorweg </text>
-<text text-anchor="middle" x="423.3886" y="-264.5148" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 38)</text>
+<path fill="none" stroke="#c0c0c0" d="M461.1716,-302.829C461.1716,-296.9415 461.1716,-285.1308 461.1716,-272.973"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="464.6717,-272.8012 461.1716,-262.8013 457.6717,-272.8013 464.6717,-272.8012"/>
+<text text-anchor="middle" x="423.3886" y="-278.901" font-family="Arial" font-size="10.00" fill="#000000">Ridderspoorweg </text>
+<text text-anchor="middle" x="423.3886" y="-266.901" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 38)</text>
 </g>
 <!-- 3909 -->
 <g id="node9" class="node">
@@ -250,15 +250,15 @@
 <!-- 3919 -->
 <g id="node19" class="node">
 <title>3919</title>
-<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="245.1716" cy="-666.7" rx="26.7699" ry="26.7699"/>
-<text text-anchor="middle" x="245.1716" y="-663.7" font-family="Arial" font-size="10.00" fill="#000000">MOL</text>
+<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="245.1716" cy="-666.7" rx="28.6869" ry="28.6869"/>
+<text text-anchor="middle" x="245.1716" y="-663.7" font-family="Arial" font-size="10.00" fill="#000000">MWK</text>
 </g>
 <!-- 3918&#45;&gt;3919 -->
 <g id="edge32" class="edge">
 <title>3918&#45;&gt;3919</title>
-<path fill="none" stroke="#c0c0c0" d="M245.1716,-598.571C245.1716,-604.7018 245.1716,-617.2553 245.1716,-629.9353"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="241.6717,-630.0113 245.1716,-640.0113 248.6717,-630.0114 241.6717,-630.0113"/>
-<text text-anchor="middle" x="219.6121" y="-617.2532" font-family="Arial" font-size="10.00" fill="#000000">Stellingweg</text>
+<path fill="none" stroke="#c0c0c0" d="M245.1716,-598.571C245.1716,-604.3672 245.1716,-615.9044 245.1716,-627.8617"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="241.6717,-627.8879 245.1716,-637.888 248.6717,-627.888 241.6717,-627.8879"/>
+<text text-anchor="middle" x="219.6121" y="-616.2164" font-family="Arial" font-size="10.00" fill="#000000">Stellingweg</text>
 </g>
 <!-- 3921 -->
 <g id="node21" class="node">
@@ -294,7 +294,8 @@
 <title>3922&#45;&gt;3923</title>
 <path fill="none" stroke="#c0c0c0" d="M817.6121,-666.7C800.1006,-666.7 722.6638,-666.7 690.8688,-666.7"/>
 <polygon fill="#c0c0c0" stroke="#c0c0c0" points="690.8668,-663.2001 680.8668,-666.7 690.8668,-670.2001 690.8668,-663.2001"/>
-<text text-anchor="middle" x="754.2405" y="-657.7" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan (via St. Noord)</text>
+<text text-anchor="middle" x="722.0175" y="-681.7" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan</text>
+<text text-anchor="middle" x="722.0175" y="-669.7" font-family="Arial" font-size="10.00" fill="#000000">(via St. Noord)</text>
 </g>
 <!-- 3924 -->
 <g id="node24" class="node">
@@ -412,9 +413,9 @@
 <!-- 3804&#45;&gt;3809 -->
 <g id="edge5" class="edge">
 <title>3804&#45;&gt;3809</title>
-<path fill="none" stroke="#c0c0c0" d="M461.1716,-211.5224C461.1716,-199.9605 461.1716,-186.3688 461.1716,-176.466"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="464.6717,-176.326 461.1716,-166.326 457.6717,-176.326 464.6717,-176.326"/>
-<text text-anchor="middle" x="424.7781" y="-196.9942" font-family="Arial" font-size="10.00" fill="#000000">Ridderspoorweg</text>
+<path fill="none" stroke="#c0c0c0" d="M461.1716,-206.6567C461.1716,-196.2573 461.1716,-184.9255 461.1716,-176.3722"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="464.6717,-176.2612 461.1716,-166.2613 457.6717,-176.2613 464.6717,-176.2612"/>
+<text text-anchor="middle" x="424.7781" y="-194.5145" font-family="Arial" font-size="10.00" fill="#000000">Ridderspoorweg</text>
 </g>
 <!-- 3805&#45;&gt;3801 -->
 <g id="edge13" class="edge">

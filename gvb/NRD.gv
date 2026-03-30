@@ -3,7 +3,7 @@ digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  3400 [pos = " 1, 0!", label = "NRD"]
+  3400 [pos = " 1, 0!", label = "ND"]
   3401 [pos = "-1, 0!"]
   3402 [pos = "-1, 1!", height=0.01]
   3403 [pos = "-2, 1!", height=0.01]
@@ -14,7 +14,7 @@ digraph G {
   3408 [pos = " 1,-4!"]
   3409 [pos = " 0,-4!"]
   3410 [pos = " 1,-6!"]
-  3411 [pos = " 1,-5!", label = "VLK"]
+  3411 [pos = " 1,-5!", label = "VKW"]
   3412 [pos = "-2, 0!"]
   3413 [pos = "-1,-2.5!"]
 

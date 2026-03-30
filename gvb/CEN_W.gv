@@ -15,8 +15,11 @@ digraph G {
   1809 [pos = "-5,-4!"]
   1810 [pos = "-5,-5!"]
   1811 [pos = "-6,-5!"]
-  1812 [pos = "-6,-6!"]
-  1813 [pos = "-7,-6!", label = "SLO"]
+  1812 [pos = "-6,-5.5!"]
+  1813 [pos = "-4,-5.5!"]
+  1814 [pos = "-6,-6!"]
+  1815 [pos = "-7,-6!"]
+  1816 [pos = "-7,-7!", label = "NMR"]
   
   2101 [pos = "-4,-2!", height=0.01]
   2102 [pos = "-4,-1!"]
@@ -25,8 +28,10 @@ digraph G {
   2105 [pos = "-7,-2!", height=0.01]
   2106 [pos = "-7,-1.5!"]
   2107 [pos = "-8,-1.5!", height=0.01]
-  2108 [pos = "-8,-3.5!"]
-  2109 [pos = "-7,-3.5!", label = "GEU"]
+  2108 [pos = "-8,-2.5!"]
+  2109 [pos = "-8,-3.5!"]
+  2110 [pos = "-10,-2.5!", label = "GEU"]
+  2112 [pos = "-6,-3.5!", label = "GEU"]
   
   4801 [pos = "-2, 0!"]
   4802 [pos = "-2, 1!", height=0.01]
@@ -34,7 +39,7 @@ digraph G {
   4804 [pos = "-3, 2!"]
   4805 [pos = "-2, 2!"]
   4806 [pos = "-2, 3!"]
-  4807 [pos = "-3, 3!", label = "HOU"]
+  4807 [pos = "-4, 3!", label = "HOU"]
 
   1800 -> 1801 [label = "De Ruijterkade 
  (lijn 18, 21, 48)"]
@@ -58,7 +63,11 @@ digraph G {
   1810 -> 1811 [label = "Postjesweg 
  Robert Fruinlaan"]
   1811 -> 1812 [label = "Johan Huizingalaan"]
-  1812 -> 1813 [label = "Louwesweg"]
+  1812 -> 1813 [label = "Pieter Calandlaan
+  (via St. Lelylaan)", dir = both]
+  1812 -> 1814 [label = ""]
+  1814 -> 1815 [label = "David Ricardostraat"]
+  1815 -> 1816 [label = "John M. Keynesplein"]
   
   1805 -> 2101 [label = "Kostverlorenstraat 
  Van Hallstraat 
@@ -72,7 +81,11 @@ digraph G {
   2106 -> 2107 [label = "Ruys de Beerenbrouckstraat 
  Antony Moddermanstraat"]
   2107 -> 2108 [label = "Aalbersestraat"]
-  2108 -> 2109 [label = "De Savornin Lohmanlaan"]
+  2108 -> 2110 [label = "Cornelis Outshoornstraat
+  J.M. den Uylstraat"]
+  2108 -> 2109 [label = "Aalbersestraat"]
+  
+  2109 -> 2112 [label = "De Savornin Lohmanlaan"]
   
   1801 -> 4801 [label = "De Ruijterkade 
  (lijn 48)"]

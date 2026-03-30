@@ -13,8 +13,8 @@
 <!-- 3400 -->
 <g id="node1" class="node">
 <title>3400</title>
-<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="307.143" cy="-544.6608" rx="26.7557" ry="26.7557"/>
-<text text-anchor="middle" x="307.143" y="-541.6608" font-family="Arial" font-size="10.00" fill="#000000">NRD</text>
+<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="307.143" cy="-544.6608" rx="21.5459" ry="21.5459"/>
+<text text-anchor="middle" x="307.143" y="-541.6608" font-family="Arial" font-size="10.00" fill="#000000">ND</text>
 </g>
 <!-- 3401 -->
 <g id="node2" class="node">
@@ -24,11 +24,11 @@
 <!-- 3400&#45;&gt;3401 -->
 <g id="edge1" class="edge">
 <title>3400&#45;&gt;3401</title>
-<path fill="none" stroke="#c0c0c0" d="M270.0949,-544.6608C239.7086,-544.6608 198.3564,-544.6608 177.0702,-544.6608"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="270.3952,-548.1609 280.3952,-544.6608 270.3951,-541.1609 270.3952,-548.1609"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="176.8873,-541.1609 166.8873,-544.6608 176.8873,-548.1609 176.8873,-541.1609"/>
-<text text-anchor="middle" x="196.0731" y="-559.6608" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan </text>
-<text text-anchor="middle" x="196.0731" y="-547.6608" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 34*)</text>
+<path fill="none" stroke="#c0c0c0" d="M275.3907,-544.6608C244.6095,-544.6608 199.369,-544.6608 176.8813,-544.6608"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="275.5848,-548.1609 285.5847,-544.6608 275.5847,-541.1609 275.5848,-548.1609"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="176.7566,-541.1609 166.7565,-544.6608 176.7565,-548.1609 176.7566,-541.1609"/>
+<text text-anchor="middle" x="198.6265" y="-559.6608" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan </text>
+<text text-anchor="middle" x="198.6265" y="-547.6608" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 34*)</text>
 </g>
 <!-- 3701 -->
 <g id="node15" class="node">
@@ -38,10 +38,10 @@
 <!-- 3400&#45;&gt;3701 -->
 <g id="edge15" class="edge">
 <title>3400&#45;&gt;3701</title>
-<path fill="none" stroke="#c0c0c0" d="M333.8908,-544.6608C365.7641,-544.6608 417.5342,-544.6608 440.0723,-544.6608"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="440.2837,-548.1609 450.2837,-544.6608 440.2837,-541.1609 440.2837,-548.1609"/>
-<text text-anchor="middle" x="414.491" y="-559.6608" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan </text>
-<text text-anchor="middle" x="414.491" y="-547.6608" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 37)</text>
+<path fill="none" stroke="#c0c0c0" d="M328.7013,-544.6608C359.9599,-544.6608 416.7097,-544.6608 440.3524,-544.6608"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="440.6135,-548.1609 450.6135,-544.6608 440.6135,-541.1609 440.6135,-548.1609"/>
+<text text-anchor="middle" x="357.0173" y="-559.6608" font-family="Arial" font-size="10.00" fill="#000000">IJdoornlaan </text>
+<text text-anchor="middle" x="357.0173" y="-547.6608" font-family="Arial" font-size="10.00" fill="#000000"> (lijn 37)</text>
 </g>
 <!-- 3402 -->
 <g id="node3" class="node">
@@ -174,20 +174,20 @@
 <!-- 3411 -->
 <g id="node12" class="node">
 <title>3411</title>
-<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="307.143" cy="-184.6608" rx="24.8531" ry="24.8531"/>
-<text text-anchor="middle" x="307.143" y="-181.6608" font-family="Arial" font-size="10.00" fill="#000000">VLK</text>
+<ellipse fill="#d3d3d3" stroke="#c0c0c0" cx="307.143" cy="-184.6608" rx="27.3392" ry="27.3392"/>
+<text text-anchor="middle" x="307.143" y="-181.6608" font-family="Arial" font-size="10.00" fill="#000000">VKW</text>
 </g>
 <!-- 3410&#45;&gt;3411 -->
 <g id="edge13" class="edge">
 <title>3410&#45;&gt;3411</title>
-<path fill="none" stroke="#c0c0c0" d="M307.143,-116.5318C307.143,-122.956 307.143,-136.4326 307.143,-149.7172"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="303.6431,-149.7186 307.143,-159.7186 310.6431,-149.7186 303.6431,-149.7186"/>
+<path fill="none" stroke="#c0c0c0" d="M307.143,-116.5318C307.143,-122.4649 307.143,-134.4134 307.143,-146.6705"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="303.6431,-146.9138 307.143,-156.9138 310.6431,-146.9139 303.6431,-146.9138"/>
 </g>
 <!-- 3411&#45;&gt;3408 -->
 <g id="edge14" class="edge">
 <title>3411&#45;&gt;3408</title>
-<path fill="none" stroke="#c0c0c0" d="M307.143,-209.4391C307.143,-220.5263 307.143,-233.1914 307.143,-242.6123"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="303.6431,-242.7225 307.143,-252.7226 310.6431,-242.7226 303.6431,-242.7225"/>
+<path fill="none" stroke="#c0c0c0" d="M307.143,-212.2919C307.143,-222.7366 307.143,-234.1762 307.143,-242.8234"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="303.6431,-243.0533 307.143,-253.0533 310.6431,-243.0533 303.6431,-243.0533"/>
 </g>
 <!-- 3412&#45;&gt;3404 -->
 <g id="edge5" class="edge">

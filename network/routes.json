@@ -1,10 +1,94 @@
 [
   {
+    "line": "41",
+    "stops": ["Station Holendrecht", "Holendrechtplein", "Maasdrielhof", "Huigenbos", "Hogevecht", "Nelson Mandelapark", "Kelbergen", "Kraaiennest", "Koornhorst", "Geerdinkhof", "Grubbehoeve", "Ganzenhoef", "Annie Romeinplein", "Tulastraat", "Florijn", "Anton de Komplein", "Dolingadreef", "Dostojevskisingel", "Dalsteindreef", "Station Duivendrecht", "Stationsweg", "Kruidenommegang", "Korenbloemstraat", "Plataanstraat", "Burg. Van Damstraat", "Industrieweg", "Zaaiersweg", "Lorentzlaan", "Maxwellstraat", "Fizeaustraat", "Amstelstation"]
+  },
+  {
+    "line": "47",
+    "stops": ["Station Holendrecht", "Holendrechtplein", "Meernhof", "Rhenenhof", "Reigersbos", "Schoonhovendreef", "Scherpenzeelstraat", "Schaarsbergenstraat", "Staverdenplein", "Woudrichemstraat", "Gein", "Willem Gertenbachstraat", "Wamelstraat", "Veenendaalplein", "Leerdamhof", "Leusdenhof", "Gaasperplas", "Kraaiennest", "Kikkenstein", "Gooioord", "Tulastraat", "Florijn", "Anton de Komplein", "Foppingadreef", "Station Bijlmer ArenA"]
+  },
+  {
+    "line": "360",
+    "stops": ["Station Bijlmer ArenA", "Gaasperplas", "Diemerknoop", "Peter Martensstraat", "Centrumeiland", "Buiteneilandlaan"]
+  },
+  {
+    "line": "44",
+    "stops": ["Station Bijlmer ArenA", "Bijlmerplein", "Dolingadreef", "Dennenrode", "Echtenstein", "Nienoord", "Station Diemen Zuid", "Tarwekamp", "Boven Rijkersloot", "Beukenhorst", "Diemerbrug", "Prins Bernhardlaan", "Prinses Beatrixlaan", "Winkelcentrum", "Station Diemen", "Buitenlust", "Vogelweg", "Rietzangerweg", "Meerkoet", "Tureluurweg", "Klipperweg", "Diemen Noord"]
+  },
+  {
+    "line": "49",
+    "stops": ["Station Bijlmer ArenA", "Haardstee", "Hakfort", "Hogevecht", "Nelson Mandelapark", "Kelbergen", "Kraaiennest", "Gaasperplas", "Gaasp", "Reigersbroeck", "Geinbrug", "C.J. van Houtenlaan", "van Houten Industriepark", "Casparuslaan", "J.H. Leopoldhof", "Station Weesp"]
+  },
+  {
+    "line": "66",
+    "stops": ["Station Bijlmer ArenA", "Bijlmerplein", "Anton de Komplein", "Florijn", "Tulastraat", "Annie Romeinplein", "Ganzenhoef", "Geldershoofd", "Provincialeweg", "Vinkenbrug", "Stammerkamp", "Diemerknoop", "Peter Martensstraat", "Pieter Oosterhuisstraat", "Lumièrestraat", "Diemerparklaan", "Vennepluimstraat"]
+  },
+  {
+    "line": "34",
+    "stops": ["Station Noord", "G.J. Scheurleerweg", "Oosterlengte", "Grootzeil", "Masthof", "Staghof", "Tussendek", "Voordek", "Statenjachtstraat", "Tjalkstraat", "Barkpad", "Pinksterbloemstraat", "Sneeuwbalstraat", "Mosplein", "Noorderpark", "Johan van Hasseltweg", "Hamerstraat", "Havikslaan", "Spreeuwenpark", "Valkenweg"]
+  },
+  {
+    "line": "37",
+    "stops": ["Station Noord", "Buikslotermeerplein", "J. Drijverweg", "Beemsterstraat", "Dijkmanshuizenstraat", "Volendammerweg", "Hilversumstraat", "Volkstuin", "Liergouw", "Rudolf Nurejevstraat", "Zuiderzeeweg", "Insulindeweg", "Soembawastraat", "Molukkenstraat", "Muiderpoortstation", "Javaplein", "Dapperstraat", "Zeeburgerdijk", "Linnaeusstraat", "Pontanusstraat", "Beukenweg", "Beukenplein", "Krugerplein", "James Wattstraat", "Maxwellstraat", "Fizeaustraat", "Amstelstation"]
+  },
+  {
+    "line": "38",
+    "stops": ["Station Noord", "Bakkerswaal", "Amerbos", "Spelderholt", "J. Drijverweg", "Th. Weeversweg", "Werengouw", "Het Breed", "Rode Kruisstraat", "Waddenweg", "Merelstraat", "Johan van Hasseltweg", "Hamerstraat", "Havikslaan", "Valkenweg", "Spreeuwenpark", "Hagedoornplein", "Meidoornplein", "Buiksloterwegveer", "Grasweg", "Distelweg", "Slijperweg", "Metaalbewerkerweg"]
+  },
+  {
+    "line": "39",
+    "stops": ["Station Noord", "G.J. Scheurleerweg", "Oosterlengte", "Statenjachtstraat", "Tjalkstraat", "Barkpad", "Floraweg", "Atatürk", "Nageljongenstraat", "Pomonastraat", "Meteorensingel", "Maanstraat", "Meteorenweg", "Kometensingel", "Oostzanerdijk", "Bovenkruier", "Petmolen", "Standerdmolen", "Molenwijk"]
+  },
+  {
+    "line": "15",
+    "stops": ["Station Sloterdijk", "Bos en Lommerplein", "Jan van Galenstraat", "Mercatorplein", "Willem Schoutenstraat", "Postjesweg", "Corantijnstraat", "Surinameplein", "Haarlemmermeerstraat", "Hoofddorpplein", "Haarlemmermeerstation", "Olympiaweg", "Olympiaplein", "Prinses Irenestraat", "Station Zuid"]
+  },
+  {
+    "line": "22",
+    "stops": ["Station Sloterdijk", "La Guardiaweg", "Kabelweg", "Contactweg", "Spaarndammerdijk", "Zaanstraat", "Spaarndammerstraat", "Assendelftstraat", "Nassauplein", "Haarlemmerplein", "Buiten Oranjestraat", "Buiten Brouwersstraat", "Centraal Station", "Prins Hendrikkade", "Kadijksplein", "Kattenburgerplein", "Wittenburgergracht", "Oostenburgergracht", "Het Funen", "Zeeburgerdijk", "Javaplein", "Molukkenstraat", "Muiderpoortstation"]
+  },
+  {
+    "line": "36",
+    "stops": ["Station Sloterdijk", "La Guardiaweg", "Basisweg", "Oostzanerdijk", "Bovenkruier", "Petmolen", "Standerdmolen", "Molenwijk", "Appelweg", "Druivenstraat", "Ananasplein", "Pomonastraat", "Nageljongenstraat", "Atatürk", "Floraweg", "Slijperweg", "Mosplein", "Barkpad", "Noorderpark", "Tjalkstraat", "Johan van Hasseltweg", "Statenjachtstraat", "Merelstraat", "Oosterlengte", "Rode Kruisstraat", "G.J. Scheurleerweg", "Nieuwe Purmerweg", "Station Noord", "Wervershoofstraat", "Purmerplein", "Purmerweg", "Waterlandplein", "Volendammerweg", "De Egmondenstraat", "Dijkmanshuizenstraat", "Ilperveldstraat", "Beemsterstraat", "Th. Weeversweg", "Olof Palmeplein"]
+  },
+  {
+    "line": "369",
+    "stops": ["Station Sloterdijk", "Plein '40 - '45", "Burgemeester Röellstraat", "Ookmeerweg", "Osdorpplein Oost", "Louis Davidsstraat", "Antwerpenbaan", "Belgiëplein", "Anderlechtlaan", "Knooppunt Schiphol Noord", "Schiphol Airport/Plaza"]
+  },
+  {
+    "line": "61",
+    "stops": ["Station Sloterdijk", "Plesostraat", "Naritaweg", "Seineweg", "Antony Moddermanstraat", "Jacob Cabeliaustraat", "Aalbersestraat", "Sam van Houtenstraat", "Michel de Klerkhof", "Troelstralaan", "Willinklaan", "Herman Bonpad", "Ookmeerweg", "Osdorper Ban", "Osdorpplein Noord"]
+  },
+  {
     "line": "62",
     "stops": ["Station Lelylaan", "Sierplein", "Johan Huizingalaan", "Aletta Jacobslaan", "Ottho Heldringstraat", "Maassluisstraat", "Naaldwijkstraat", "Aalsmeerplein", "Hoofddorpplein", "Haarlemmermeerstation", "Olympisch Stadion", "IJsbaanpad", "Amstelveenseweg", "VU medisch centrum", "De Boelelaan", "Station Zuid", "Hogewerf", "Gelderlandplein Oost", "Kastelenstraat", "Van Heenvlietlaan", "Nieuw Herlaer", "Amstelpark", "Europaboulevard", "Station RAI", "Europaplein", "Maasstraat", "President Kennedylaan", "Waalstraat", "Victorieplein", "Amsteldijk", "Amstelstation"]
   },
   {
     "line": "63",
     "stops": ["Station Lelylaan", "Cornelis Lelylaan", "Hemsterhuisstraat", "Van Mourik Broekmanstr", "Piet Wiedijkstraat", "C.K. Eloutstraat", "Osdorpplein Oost", "Osdorper Ban", "Bullepad", "Reimerswaalstraat", "Saaftingestraat", "Baden Powellweg", "Jan Rebelstraat", "Griendstraat", "Matterhorn"]
+  },
+  {
+    "line": "40",
+    "stops": ["Amstelstation", "Fizeaustraat", "Lorentzlaan", "Pekelharingstraat", "Kruislaan", "Linnaeusparkweg", "Station Science Park", "Science Park Aer", "Science Park Aqua", "Science Park Terra", "Science Park", "Carolina MacGillavrylaan", "Valentijnkade", "Molukkenstraat", "Muiderpoortstation"]
+  },
+  {
+    "line": "65",
+    "stops": ["Amstelstation", "Fizeaustraat", "Maxwellstraat", "Middenweg", "Radioweg", "Archimedesweg", "Valentijnkade", "Javaplein", "Zeeburgerdijk", "Veelaan", "Borneolaan", "C. van Eesterenlaan", "Azartplein", "Levantplein", "KNSM-laan"]
+  },
+  {
+    "line": "18",
+    "stops": ["Centraal Station", "Buiten Brouwersstraat", "Buiten Oranjestraat", "Haarlemmerplein", "Nieuwe Willemsstraat", "Marnixplein", "Frederik Hendrikplnts", "Gillis van Ledenberchstr", "Markthallen", "Jan van Galenstraat", "Jan Evertsenstraat", "Marco Polostraat", "Mercatorplein", "Admiraal Helfrichstraat", "Willem Schoutenstraat", "Jan Voermanstraat", "Hoofdweg", "Nachtwachtlaan", "Derkinderenstraat", "Jan Tooropstraat", "Robert Fruinlaan", "Justus Lipsiusstraat", "Cornelis Lelylaan", "Louwesweg", "Sierplein", "Louweshoek", "Johan Huizingalaan", "Sloterweg", "John M. Keynesplein"]
+  },
+  {
+    "line": "21",
+    "stops": ["Centraal Station", "Buiten Brouwersstraat", "Buiten Oranjestraat", "Haarlemmerplein", "Nieuwe Willemsstraat", "Marnixplein", "Frederik Hendrikplnts", "Kostverlorenstraat", "Van Beuningenplein", "Van der Hoopstraat", "Van Hallstraat", "Vredenhof", "Solebaystraat", "Bos en Lommerweg", "Egidiusstraat", "Bos en Lommerplein", "Burg. De Vlugtlaan", "Burgemeester Fockstraat", "Burgemeester Eliasstraat", "Plein '40 - '45", "Antony Moddermanstraat", "Jacob Cabeliaustraat", "Aalbersestraat", "J.M. den Uylstraat", "Sam van Houtenstraat", "Michel de Klerkhof", "Nolensstraat", "De Savornin Lohmanstraat"]
+  },
+  {
+    "line": "43",
+    "stops": ["Centraal Station", "Piet Heinkade", "Jan Schaeferbrug", "Tosaristraat", "Majanggracht", "Azartplein", "C. van Eesterenlaan", "Borneolaan", "R.J.H. Fortuynplein"]
+  },
+  {
+    "line": "48",
+    "stops": ["Centraal Station", "Westerdoksdijk", "Barentszplein", "Houtmankade", "Spaarndammerstraat", "Haparandaweg", "Koivistokade"]
   }
 ]

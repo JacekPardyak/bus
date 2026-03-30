@@ -3,7 +3,7 @@ digraph G {
   node [shape = circle, style = filled, fillcolor = lightgray, color=gray, height=0.1, label = "", fontsize = 10, fontname = "Arial"]
   edge [color=gray, fontsize = 10, fontname = "Arial"]
 
-  3901 [pos = " 3,-1!", label = "OLO"]
+  3901 [pos = " 3,-1!", label = "OFPP"]
   3902 [pos = " 5,-1!"]
   3903 [pos = " 5, 3!"]
   3904 [pos = " 4, 3!"]
@@ -22,7 +22,7 @@ digraph G {
   3916 [pos = "-7, 3!"]
   3917 [pos = "-7, 2!", height=0.01]
   3918 [pos = "-6, 2!"]
-  3919 [pos = "-6, 3!", label = "MOL"]
+  3919 [pos = "-6, 3!", label = "MWK"]
   3920 [pos = " 4, 4!"]
   3921 [pos = " 2, 4!"]
   3922 [pos = " 2, 3!"]
@@ -36,7 +36,7 @@ digraph G {
   3801 [pos = " 1,-3!"]
   3802 [pos = "-1,-3.5!"]
   3803 [pos = "-1,-3!"]
-  3804 [pos = "-3,-3!", label = "BUI"]
+  3804 [pos = "-3,-3!", label = "DSW"]
   
   3805 [pos = " 1,-1!"]
   3806 [pos = " 0,-4.5!"]
@@ -64,7 +64,8 @@ digraph G {
   3904 -> 3920 [label = "J. Drijverweg"]
   3920 -> 3921 [label = "J.H. van Heekweg"]
   3921 -> 3922 [label = "H. Cleyndertweg"]  
-  3922 -> 3923 [label = "IJdoornlaan (via St. Noord)"]
+  3922 -> 3923 [label = "IJdoornlaan
+(via St. Noord)"]
   
   3805 -> 3801 [dir = "both", label = "Waddenweg 
  Meeuwenlaan"]
